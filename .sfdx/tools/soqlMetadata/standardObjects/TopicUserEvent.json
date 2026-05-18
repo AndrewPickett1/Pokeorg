@@ -1,0 +1,169 @@
+{
+  "name": "TopicUserEvent",
+  "label": "Topic User Event",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Event ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "User ID",
+      "name": "UserId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Topic ID",
+      "name": "TopicId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Topic"
+      ],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Action",
+      "name": "ActionEnum",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": null,
+          "value": "like"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "comment"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "post"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "assign"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "shared"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "favorite"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "unfavorite"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "atmention"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "bangmention"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "commentlike"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "userEndorsement"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "skillPeerEndorsement"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "skillSelfEndorsement"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "bestAnswer"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Create Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    }
+  ],
+  "childRelationships": []
+}

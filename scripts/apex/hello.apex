@@ -1,0 +1,1 @@
+wildPkmnCreator.generateWildPkmnBattle('Canyons');

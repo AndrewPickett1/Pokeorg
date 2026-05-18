@@ -1,0 +1,2546 @@
+{
+  "name": "ApexTrigger",
+  "label": "Apex Trigger",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Apex Trigger ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Namespace Prefix",
+      "name": "NamespacePrefix",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Name",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Custom Object Definition ID",
+      "name": "TableEnumOrId",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": null,
+          "value": "AccessControlPolicy"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Account"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AccountChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AccountCleanInfoChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AccountContactRoleChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ActivityEngagementRollup"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ActorReactiveAskRespEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AIConsentMgmtStatusEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AiJobRun"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AiJobRunStatusEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AiMetadataSyncStatus"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AIMetric"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AIPredictionEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AIRecordInsight"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AITenantProvisionedFeature"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AnalyticRecipeCompleteEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AnalyticsTaskStatusEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AnalyticsUserAttrFuncTkn"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AnlytDataAssetUsageEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ApexHammerOrgResult"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ApexHammerResult"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ApiPrtcPolicyChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AppAnalyticsQueryRequest"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ApprovalSubmission"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ApprovalSubmissionDetail"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ApprovalWorkItem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Asset"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AssetAction"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AssetActionSource"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AssetChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AssetRelationship"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AssetRelationshipChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AssetStatePeriod"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AssetTokenEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AssignmentDeltaChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AssistantRecommendation"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AssociatedLocation"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AssociatedLocationChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AsyncOperationEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AsyncOperationLog"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AsyncOperationStatus"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Attachment"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AuthDomainStatusEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AuthorizationForm"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AuthorizationFormChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AuthorizationFormConsent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AuthorizationFormConsentChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AuthorizationFormDataUse"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AuthorizationFormDataUseChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AuthorizationFormText"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AuthorizationFormTextChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AutomationStepProgress"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BackgroundOpOutcomeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BackgroundOpStatusEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BatchApexErrorEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BatchJob"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BatchJobExecutionEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BatchJobPart"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BatchJobPartFailedRecord"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BatchJobProcessExecEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BatchJobStatusChangedEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BatchPaymentEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Battle__ChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BriefcaseAssignmentChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BriefcaseDefinitionChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BulkApi2JobEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BusinessBrand"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BusinessBrandChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CalendarViewChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Campaign"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CampaignChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CampaignMember"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CampaignMemberChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CampaignMemberStatusChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Case"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CaseChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CaseComment"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CaseHistory2ChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CaseRelatedIssue"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CaseRelatedIssueChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ChangeRequest"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ChangeRequestChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ChangeRequestRelatedIssue"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ChangeRequestRelatedIssueChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ChangeRequestRelatedItem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ChangeRequestRelatedItemChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ChatterActivity"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ChatterMessage"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CollabDocumentMetric"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CollabDocumentMetricRecord"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CollaborationGroup"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CollaborationGroupMember"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CollaborationGroupRecord"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CollaborationGroupRecordChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CollabTemplateMetric"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CollabTemplateMetricChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CollabTemplateMetricRecord"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CollabUserEngagementMetric"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CollabUserEngmtRecordLink"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CommerceSearchIndexInfoChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CommerceTranslationEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CommitStatusChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CommonEventSubscriptionChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CommSubscription"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CommSubscriptionChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CommSubscriptionChannelType"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CommSubscriptionChannelTypeChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CommSubscriptionConsent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CommSubscriptionConsentChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CommSubscriptionTiming"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CommSubscriptionTimingChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CompleteProgressCalcEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ConferenceNumberChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ConsumptionRate"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ConsumptionSchedule"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Contact"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactCleanInfoChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointAddress"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointAddressChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointConsent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointConsentChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointEmail"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointEmailChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointPhone"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointPhoneChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointTypeConsent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointTypeConsentChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactRequest"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContentBuilderChannel"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContentDistribution"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContentDocument"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContentDocumentChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContentDocumentLink"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContentDocumentLinkChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContentDocumentLinkEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContentDocumentListViewMapping"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContentExternalStorage"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContentFolderChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContentVersion"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContentVersionChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Contract"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContractChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContractLineItem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContractLineItemChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ConvCoachingRecommendation"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ConvEntryRelatedRecordCopy"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ConversationApiLog"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ConversationApiLogObjSum"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ConversationEntryCopy"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CreditMemo"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CreditMemoInvApplication"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CreditMemoLine"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CuratedExpJobEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CuratedExpPlanEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Customer"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DandBCompany"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DataAssetSemanticGraphEdge"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DataAssetUsageTrackingInfo"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DataMaskCustomValueLibrary"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DataObjectDataChgEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DatasetExportEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DataUseLegalBasis"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DataUseLegalBasisChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DataUsePurpose"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DataUsePurposeChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DcvrDataModelJobEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DcvrFeatureProgress"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DcvrPreEnblStepProgress"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DcvrRecipeProgress"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DcvrRecipeStepProgress"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DevopsActivityLog"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DevopsEnvDeployment"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DevopsEnvDeploymentMbr"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DevopsEnvironment"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DevopsRequestInfo"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DevopsRequestInfoChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DevopsRequestInfoEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DgtAssetMgmtPrvdLghtCpntInstance"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DuplicateRecordItem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DuplicateRecordSet"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EaasEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EmailBounceEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EmailMessage"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EmailMessageChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EmailTemplateChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EmailThreadingToken"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EngagementChannelType"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EngagementChannelTypeChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EngagementEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EnqueueProgressCalcEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Entitlement"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EntitlementChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EntitlementContact"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EntityMilestone"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Event"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EventChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EventRelationChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EventRelayConfigChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EventRelayFeedback"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ExperienceDiagnosticEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ExternalEventChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FeatureConfigProgress"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FeatureGroupSetupProgress"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FeatureSetupProgress"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FeatureUsageEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FeedComment"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FeedItem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FieldRestrictionRule"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FileBasedDataImport"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FinanceBalanceSnapshotChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FinanceTransactionChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowAutoSaveStsChngEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowExecutionEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowOrchestration"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowOrchestrationChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowOrchestrationVersion"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowOrchestrationVersionChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowRecElementWinningPath"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowRecordChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowRecordElement"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowRecordElementChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowRecordElementOccurrence"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowRecordVersion"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowRecordVersionChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowRecordVersionOccurrence"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "GenericHammerResult"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "GisPrvdCnctrJobObjRun"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "HawkingTenantProvStatus"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Idea"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "IdeaComment"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Image"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Incident"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "IncidentChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "IncidentRelatedItem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "IncidentRelatedItemChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Individual"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "IndividualChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Invoice"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "InvoiceLine"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "IotActivityLog"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "IoTActivityLogEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Lead"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "LeadChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "LegalEntity"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ListEmailChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ListEmailSentResult"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ListEmailSentResultChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Location"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "LocationChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "LocationGroup"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "LocationGroupAssignment"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "LocationGroupAssignmentChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "LocationGroupChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "LoginAnomalyEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "LoginAnomalyEventStore"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "LogoutEventStream"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Macro"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MacroChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MacroInstructionChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MacroUsage"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ManagedContentChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ManagedContentPublishedUrlChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ManagedContentSpaceMember"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ManagedContentVariantChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ManagedEventSubscriptionChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MessagingEndUser"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MessagingEndUserChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MessagingSession"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MessagingSessionChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MetadataProcessingEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MicrobatchEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MLEngagementEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MLModel"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MLModelFactor"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MLModelFactorComponent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MLModelMetric"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MLPipelineEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MobileHomeConfiguration"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Move__ChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Note"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Opportunity"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "OpportunityChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "OpportunityContactRole"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "OpportunityContactRoleChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "OpportunityLineItem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "OpportunityLineItemChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "OpportunityRelatedDeleteLog"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "OrchestrationContextRuntimeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "OrchestrationRuntimeEventHv"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Order"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "OrderChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "OrderItem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "OrderItemChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "OrgDeleteRequest"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "OrgLifecycleNotification"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "OrgMetric"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "OrgMetricScanResult"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "OrgMetricScanSummary"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "OrgSharingEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PackageSubscriberOrgInfo"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PackagingHammerResult"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Partner"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PartyConsent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PartyConsentChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PaymentPageChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PersonalizationResource"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PlatformStatusAlertEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Pokedex_Entry__ChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Pokemon__ChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Pricebook2"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Pricebook2ChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PricebookEntryChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PrivacyBatchReservation"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PrivacyJobSession"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PrivacyObjectSession"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PrivacyProcessorOrchestrator"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PrivacyRTBFRequest"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PrivacySessionRecordFailure"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Problem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ProblemChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ProblemIncident"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ProblemIncidentChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ProblemRelatedItem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ProblemRelatedItemChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ProcessException"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ProcessExceptionChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ProcessExceptionEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ProcessInstanceChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ProcessInstanceStepChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Product2"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Product2ChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ProductConsumptionSchedule"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PromptAction"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PromptError"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "QuickText"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "QuickTextChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "QuickTextUsage"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "QuickTextUsageChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "RebatePayoutSnapshot"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Recommendation"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "RecommendationChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "RecommendationReaction"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "RecommendationReactionChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "RecommendationResponse"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "RecordAction"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "RecordMergeHistory"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "RecordOrigin"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ReleaseUpdateStep"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ReleaseUpdateStepLog"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "RemoteKeyCalloutEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "RequestsForAccessSIQ"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "RestrictionRule"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "RetentionStoreUsage"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "SearchRecencyIndexingJob"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Seller"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ServiceContract"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ServiceContractChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "SetupAssistantStep"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "SiqUserBlacklist"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "SiteUserViewMode"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "SlackChannelRelatedRecord"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "SocialPersona"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Solution"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "SolutionDeploymentStatus"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "SolutionDplymtStepStatus"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "StatsInvalidationEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "StrategyExecutionEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "StrategyMonthlyStats"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "StreamActivityAccess"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "StreamingChannel"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "TableauHostMapping"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Task"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "TaskChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "TaskRelationChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "TenantConsumptionAlert"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "TenantEntitlementTransaction"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "TenantEntitlementTransactionChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "TenantUsageTypeMultiplier"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "TenantUsageTypeMultiplierChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "TenantUsageTypeMultiplierDef"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "TM__ChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "TodayGoalChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Topic"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "TopicAssignment"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UniversalAnomalyEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UniversalAnomalyEventStore"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UnstructuredStorageSpace"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "User"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UserAppInfoChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UserChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UserDevopsPreference"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UserEmailPreferredPersonChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UserNavItem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UserPrioritizedRecord"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UserProvAccount"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UserProvAccountStaging"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UserProvisioningLog"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UserProvisioningRequest"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UserProvMockTarget"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WaveAssetEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WaveAutoInstallRequestChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WebCartDocument"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkAccessChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkBadge"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkBadgeChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkBadgeDefinition"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkBadgeDefinitionChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkflowSLAAction"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkOrder"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkOrderChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkOrderLineItem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkOrderLineItemChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkPlan"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkPlanChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkPlanTemplate"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkPlanTemplateChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkPlanTemplateEntry"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkPlanTemplateEntryChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkStep"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkStepChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkStepTemplate"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkStepTemplateChangeEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkThanks"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkThanksChangeEvent"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "BeforeInsert",
+      "name": "UsageBeforeInsert",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "AfterInsert",
+      "name": "UsageAfterInsert",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "BeforeUpdate",
+      "name": "UsageBeforeUpdate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "AfterUpdate",
+      "name": "UsageAfterUpdate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "BeforeDelete",
+      "name": "UsageBeforeDelete",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "AfterDelete",
+      "name": "UsageAfterDelete",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "IsBulk",
+      "name": "UsageIsBulk",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "AfterUndelete",
+      "name": "UsageAfterUndelete",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Api Version",
+      "name": "ApiVersion",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Status",
+      "name": "Status",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Inactive",
+          "value": "Inactive"
+        },
+        {
+          "active": true,
+          "label": "Active",
+          "value": "Active"
+        },
+        {
+          "active": true,
+          "label": "Deleted",
+          "value": "Deleted"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Is Valid",
+      "name": "IsValid",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Body CRC",
+      "name": "BodyCrc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Body",
+      "name": "Body",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Size Without Comments",
+      "name": "LengthWithoutComments",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    }
+  ],
+  "childRelationships": []
+}

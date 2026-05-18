@@ -1,0 +1,914 @@
+{
+  "name": "ExtlClntAppOauthPlcyCnfg",
+  "label": "External Client App OAuth Policy Configuration",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "External Client App OAuth Policy Configuration ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Name",
+      "name": "DeveloperName",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Master Language",
+      "name": "Language",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "English",
+          "value": "en_US"
+        },
+        {
+          "active": true,
+          "label": "German",
+          "value": "de"
+        },
+        {
+          "active": true,
+          "label": "Spanish",
+          "value": "es"
+        },
+        {
+          "active": true,
+          "label": "French",
+          "value": "fr"
+        },
+        {
+          "active": true,
+          "label": "Italian",
+          "value": "it"
+        },
+        {
+          "active": true,
+          "label": "Japanese",
+          "value": "ja"
+        },
+        {
+          "active": true,
+          "label": "Swedish",
+          "value": "sv"
+        },
+        {
+          "active": true,
+          "label": "Korean",
+          "value": "ko"
+        },
+        {
+          "active": true,
+          "label": "Chinese (Traditional)",
+          "value": "zh_TW"
+        },
+        {
+          "active": true,
+          "label": "Chinese (Simplified)",
+          "value": "zh_CN"
+        },
+        {
+          "active": true,
+          "label": "Portuguese (Brazil)",
+          "value": "pt_BR"
+        },
+        {
+          "active": true,
+          "label": "Dutch",
+          "value": "nl_NL"
+        },
+        {
+          "active": true,
+          "label": "Danish",
+          "value": "da"
+        },
+        {
+          "active": true,
+          "label": "Thai",
+          "value": "th"
+        },
+        {
+          "active": true,
+          "label": "Finnish",
+          "value": "fi"
+        },
+        {
+          "active": true,
+          "label": "Russian",
+          "value": "ru"
+        },
+        {
+          "active": true,
+          "label": "Spanish (Mexico)",
+          "value": "es_MX"
+        },
+        {
+          "active": true,
+          "label": "Norwegian",
+          "value": "no"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Label",
+      "name": "MasterLabel",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "External Client Application ID",
+      "name": "ExternalClientApplicationId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "ExternalClientApplication"
+      ],
+      "relationshipName": "ExternalClientApplication",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Refresh Token Policy Type",
+      "name": "RefreshTokenPolicyType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "-1",
+          "value": "Infinite"
+        },
+        {
+          "active": true,
+          "label": "0",
+          "value": "Zero"
+        },
+        {
+          "active": true,
+          "label": "1",
+          "value": "SpecificLifetime"
+        },
+        {
+          "active": true,
+          "label": "2",
+          "value": "SpecificInactivity"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Refresh Token Validity Period",
+      "name": "RefreshTokenValidityPeriod",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Refresh Token Validity Unit",
+      "name": "RefreshTokenValidityUnit",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Day(s)",
+          "value": "0"
+        },
+        {
+          "active": true,
+          "label": "Hour(s)",
+          "value": "1"
+        },
+        {
+          "active": true,
+          "label": "Month(s)",
+          "value": "2"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "IP Relaxation Policy Type",
+      "name": "IpRelaxationPolicyType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Enforce IP restrictions",
+          "value": "0"
+        },
+        {
+          "active": true,
+          "label": "Relax IP restrictions for activated devices",
+          "value": "1"
+        },
+        {
+          "active": true,
+          "label": "Relax IP restrictions",
+          "value": "2"
+        },
+        {
+          "active": true,
+          "label": "Enforce IP restrictions, but relax for refresh tokens",
+          "value": "3"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Permitted Users Policy Type",
+      "name": "PermittedUsersPolicyType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "0",
+          "value": "AllSelfAuthorized"
+        },
+        {
+          "active": true,
+          "label": "1",
+          "value": "AdminApprovedPreAuthorized"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Session Timeout Value",
+      "name": "SessionTimeoutInMinutes",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Required Session Level",
+      "name": "RequiredSessionLevel",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": null,
+          "value": "LOW"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "STANDARD"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "HIGH_ASSURANCE"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Policy Action",
+      "name": "PolicyAction",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": null,
+          "value": "Block"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "RaiseSessionLevel"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "External Client App Oauth Settings ID",
+      "name": "ExtlClntAppOauthSettingsId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "ExtlClntAppOauthSettings"
+      ],
+      "relationshipName": "ExtlClntAppOauthSettings",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Is Client Credentials Flow Enabled",
+      "name": "IsClientCredentialsFlowEnabled",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "OAuth Client Credentials Flow User",
+      "name": "ClientCredentialsFlowUser",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "email"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Class ID",
+      "name": "ApexHandlerId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "ApexClass"
+      ],
+      "relationshipName": "ApexHandler",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "User ID",
+      "name": "ExecuteHandlerAsId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "ExecuteHandlerAs",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Single Logout URL",
+      "name": "SingleLogoutUrl",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "url"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Start URL",
+      "name": "StartUrl",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "url"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Is Token Exchange Flow Enabled",
+      "name": "IsTokenExchangeFlowEnabled",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Is Code and Credential Flow Enabled for Guest",
+      "name": "IsGuestCodeCredFlowEnabled",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Is Named User JWTs Enabled",
+      "name": "IsNamedUserJwtEnabled",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Guest JWT Timeout",
+      "name": "GuestJwtTimeout",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "1 Minute",
+          "value": "1"
+        },
+        {
+          "active": true,
+          "label": "5 Minutes",
+          "value": "5"
+        },
+        {
+          "active": true,
+          "label": "10 Minutes",
+          "value": "10"
+        },
+        {
+          "active": true,
+          "label": "15 Minutes",
+          "value": "15"
+        },
+        {
+          "active": true,
+          "label": "30 Minutes",
+          "value": "30"
+        },
+        {
+          "active": true,
+          "label": "1 Hour",
+          "value": "60"
+        },
+        {
+          "active": true,
+          "label": "90 Minutes",
+          "value": "90"
+        },
+        {
+          "active": true,
+          "label": "2 Hours",
+          "value": "120"
+        },
+        {
+          "active": true,
+          "label": "4 Hours",
+          "value": "240"
+        },
+        {
+          "active": true,
+          "label": "8 Hours",
+          "value": "480"
+        },
+        {
+          "active": true,
+          "label": "12 Hours",
+          "value": "720"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Named User JWT Timeout",
+      "name": "NamedUserJwtTimeout",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "1 Minute",
+          "value": "1"
+        },
+        {
+          "active": true,
+          "label": "5 Minutes",
+          "value": "5"
+        },
+        {
+          "active": true,
+          "label": "10 Minutes",
+          "value": "10"
+        },
+        {
+          "active": true,
+          "label": "15 Minutes",
+          "value": "15"
+        },
+        {
+          "active": true,
+          "label": "30 Minutes",
+          "value": "30"
+        },
+        {
+          "active": true,
+          "label": "1 Hour",
+          "value": "60"
+        },
+        {
+          "active": true,
+          "label": "90 Minutes",
+          "value": "90"
+        },
+        {
+          "active": true,
+          "label": "2 Hours",
+          "value": "120"
+        },
+        {
+          "active": true,
+          "label": "4 Hours",
+          "value": "240"
+        },
+        {
+          "active": true,
+          "label": "8 Hours",
+          "value": "480"
+        },
+        {
+          "active": true,
+          "label": "12 Hours",
+          "value": "720"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Named User JWT-Based Access Token Timeout",
+      "name": "NamedUserJwtSessionTimeoutType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Use the user’s default session timeout: ",
+          "value": "UserSession"
+        },
+        {
+          "active": true,
+          "label": "Set app-specific token timeout: ",
+          "value": "Custom"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Guest JWT-Based Access Token Timeout",
+      "name": "GuestJwtSessionTimeoutType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Use the user’s default session timeout: ",
+          "value": "UserSession"
+        },
+        {
+          "active": true,
+          "label": "Set app-specific token timeout: ",
+          "value": "Custom"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    }
+  ],
+  "childRelationships": [
+    {
+      "childSObject": "ExtlClntAppOauthPlcyAttr",
+      "field": "ExtlClntAppOauthPlcyCnfgId",
+      "relationshipName": "ExtlClntAppOauthPlcyAttrs"
+    },
+    {
+      "childSObject": "ExtlClntAppOauthPlcyCustmScp",
+      "field": "ExtlClntAppOauthPlcyCnfgId",
+      "relationshipName": "ExtlClntAppOauthPlcyCustmScps"
+    }
+  ]
+}

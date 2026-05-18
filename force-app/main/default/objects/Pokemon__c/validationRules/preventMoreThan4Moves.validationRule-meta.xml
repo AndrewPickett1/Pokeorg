@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>preventMoreThan4Moves</fullName>
+    <active>true</active>
+    <errorConditionFormula>of_Moves__c &gt; 4</errorConditionFormula>
+    <errorMessage>Pokemon can have no more than 4 moves</errorMessage>
+</ValidationRule>

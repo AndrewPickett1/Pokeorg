@@ -1,0 +1,2155 @@
+{
+  "name": "DatacloudCompany",
+  "label": "Data.com Company",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "System ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Data.com Company ID",
+      "name": "ExternalId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Data.com Company ID",
+      "name": "CompanyId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Company Name",
+      "name": "Name",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Company Synopsis",
+      "name": "Description",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Inactive Status",
+      "name": "IsInactive",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Phone Number",
+      "name": "Phone",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "phone"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fax Number",
+      "name": "Fax",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "phone"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Street Address",
+      "name": "Street",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "City",
+      "name": "City",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "State",
+      "name": "State",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "State",
+      "name": "StateCode",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Alabama",
+          "value": "AL"
+        },
+        {
+          "active": true,
+          "label": "Alaska",
+          "value": "AK"
+        },
+        {
+          "active": true,
+          "label": "American Samoa",
+          "value": "AS"
+        },
+        {
+          "active": true,
+          "label": "Arizona",
+          "value": "AZ"
+        },
+        {
+          "active": true,
+          "label": "Arkansas",
+          "value": "AR"
+        },
+        {
+          "active": true,
+          "label": "California",
+          "value": "CA"
+        },
+        {
+          "active": true,
+          "label": "Colorado",
+          "value": "CO"
+        },
+        {
+          "active": true,
+          "label": "Connecticut",
+          "value": "CT"
+        },
+        {
+          "active": true,
+          "label": "Delaware",
+          "value": "DE"
+        },
+        {
+          "active": true,
+          "label": "District of Columbia",
+          "value": "DC"
+        },
+        {
+          "active": true,
+          "label": "Federated Micronesia",
+          "value": "FM"
+        },
+        {
+          "active": true,
+          "label": "Florida",
+          "value": "FL"
+        },
+        {
+          "active": true,
+          "label": "Georgia",
+          "value": "GA"
+        },
+        {
+          "active": true,
+          "label": "Guam",
+          "value": "GU"
+        },
+        {
+          "active": true,
+          "label": "Hawaii",
+          "value": "HI"
+        },
+        {
+          "active": true,
+          "label": "Idaho",
+          "value": "ID"
+        },
+        {
+          "active": true,
+          "label": "Illinois",
+          "value": "IL"
+        },
+        {
+          "active": true,
+          "label": "Indiana",
+          "value": "IN"
+        },
+        {
+          "active": true,
+          "label": "Iowa",
+          "value": "IA"
+        },
+        {
+          "active": true,
+          "label": "Kansas",
+          "value": "KS"
+        },
+        {
+          "active": true,
+          "label": "Kentucky",
+          "value": "KY"
+        },
+        {
+          "active": true,
+          "label": "Louisiana",
+          "value": "LA"
+        },
+        {
+          "active": true,
+          "label": "Maine",
+          "value": "ME"
+        },
+        {
+          "active": true,
+          "label": "Marshall Islands",
+          "value": "MH"
+        },
+        {
+          "active": true,
+          "label": "Maryland",
+          "value": "MD"
+        },
+        {
+          "active": true,
+          "label": "Massachusetts",
+          "value": "MA"
+        },
+        {
+          "active": true,
+          "label": "Michigan",
+          "value": "MI"
+        },
+        {
+          "active": true,
+          "label": "Minnesota",
+          "value": "MN"
+        },
+        {
+          "active": true,
+          "label": "Mississippi",
+          "value": "MS"
+        },
+        {
+          "active": true,
+          "label": "Missouri",
+          "value": "MO"
+        },
+        {
+          "active": true,
+          "label": "Montana",
+          "value": "MT"
+        },
+        {
+          "active": true,
+          "label": "Nebraska",
+          "value": "NE"
+        },
+        {
+          "active": true,
+          "label": "Nevada",
+          "value": "NV"
+        },
+        {
+          "active": true,
+          "label": "New Hampshire",
+          "value": "NH"
+        },
+        {
+          "active": true,
+          "label": "New Jersey",
+          "value": "NJ"
+        },
+        {
+          "active": true,
+          "label": "New Mexico",
+          "value": "NM"
+        },
+        {
+          "active": true,
+          "label": "New York",
+          "value": "NY"
+        },
+        {
+          "active": true,
+          "label": "North Carolina",
+          "value": "NC"
+        },
+        {
+          "active": true,
+          "label": "North Dakota",
+          "value": "ND"
+        },
+        {
+          "active": true,
+          "label": "Northern Mariana Islands",
+          "value": "MP"
+        },
+        {
+          "active": true,
+          "label": "Ohio",
+          "value": "OH"
+        },
+        {
+          "active": true,
+          "label": "Oklahoma",
+          "value": "OK"
+        },
+        {
+          "active": true,
+          "label": "Oregon",
+          "value": "OR"
+        },
+        {
+          "active": true,
+          "label": "Palau",
+          "value": "PW"
+        },
+        {
+          "active": true,
+          "label": "Pennsylvania",
+          "value": "PA"
+        },
+        {
+          "active": true,
+          "label": "Puerto Rico",
+          "value": "PR"
+        },
+        {
+          "active": true,
+          "label": "Rhode Island",
+          "value": "RI"
+        },
+        {
+          "active": true,
+          "label": "South Carolina",
+          "value": "SC"
+        },
+        {
+          "active": true,
+          "label": "South Dakota",
+          "value": "SD"
+        },
+        {
+          "active": true,
+          "label": "Tennessee",
+          "value": "TN"
+        },
+        {
+          "active": true,
+          "label": "Texas",
+          "value": "TX"
+        },
+        {
+          "active": true,
+          "label": "Utah",
+          "value": "UT"
+        },
+        {
+          "active": true,
+          "label": "Vermont",
+          "value": "VT"
+        },
+        {
+          "active": true,
+          "label": "US Virgin Islands",
+          "value": "VI"
+        },
+        {
+          "active": true,
+          "label": "Virginia",
+          "value": "VA"
+        },
+        {
+          "active": true,
+          "label": "Washington",
+          "value": "WA"
+        },
+        {
+          "active": true,
+          "label": "West Virginia",
+          "value": "WV"
+        },
+        {
+          "active": true,
+          "label": "Wisconsin",
+          "value": "WI"
+        },
+        {
+          "active": true,
+          "label": "Wyoming",
+          "value": "WY"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Country/Territory",
+      "name": "Country",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Country/Territory",
+      "name": "CountryCode",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Afghanistan",
+          "value": "AF"
+        },
+        {
+          "active": true,
+          "label": "Albania",
+          "value": "AL"
+        },
+        {
+          "active": true,
+          "label": "Algeria",
+          "value": "DZ"
+        },
+        {
+          "active": true,
+          "label": "American Samoa",
+          "value": "AS"
+        },
+        {
+          "active": true,
+          "label": "Andorra",
+          "value": "AD"
+        },
+        {
+          "active": true,
+          "label": "Angola",
+          "value": "AO"
+        },
+        {
+          "active": true,
+          "label": "Anguilla",
+          "value": "AI"
+        },
+        {
+          "active": true,
+          "label": "Antigua and Barbuda",
+          "value": "AG"
+        },
+        {
+          "active": true,
+          "label": "Argentina",
+          "value": "AR"
+        },
+        {
+          "active": true,
+          "label": "Armenia",
+          "value": "AM"
+        },
+        {
+          "active": true,
+          "label": "Aruba",
+          "value": "AW"
+        },
+        {
+          "active": true,
+          "label": "Austria",
+          "value": "AT"
+        },
+        {
+          "active": true,
+          "label": "Australia",
+          "value": "AU"
+        },
+        {
+          "active": true,
+          "label": "Azerbaijan",
+          "value": "AZ"
+        },
+        {
+          "active": true,
+          "label": "Bahamas",
+          "value": "BS"
+        },
+        {
+          "active": true,
+          "label": "Bahrain",
+          "value": "BH"
+        },
+        {
+          "active": true,
+          "label": "Bangladesh",
+          "value": "BD"
+        },
+        {
+          "active": true,
+          "label": "Barbados",
+          "value": "BB"
+        },
+        {
+          "active": true,
+          "label": "Belarus",
+          "value": "BY"
+        },
+        {
+          "active": true,
+          "label": "Belgium",
+          "value": "BE"
+        },
+        {
+          "active": true,
+          "label": "Belize",
+          "value": "BZ"
+        },
+        {
+          "active": true,
+          "label": "Bhutan",
+          "value": "BT"
+        },
+        {
+          "active": true,
+          "label": "Benin",
+          "value": "BJ"
+        },
+        {
+          "active": true,
+          "label": "Bermuda",
+          "value": "BM"
+        },
+        {
+          "active": true,
+          "label": "Bolivia, Plurinational State of",
+          "value": "BO"
+        },
+        {
+          "active": true,
+          "label": "Bosnia and Herzegovina",
+          "value": "BA"
+        },
+        {
+          "active": true,
+          "label": "Botswana",
+          "value": "BW"
+        },
+        {
+          "active": true,
+          "label": "Brazil",
+          "value": "BR"
+        },
+        {
+          "active": true,
+          "label": "Brunei Darussalam",
+          "value": "BN"
+        },
+        {
+          "active": true,
+          "label": "Bulgaria",
+          "value": "BG"
+        },
+        {
+          "active": true,
+          "label": "Burkina Faso",
+          "value": "BF"
+        },
+        {
+          "active": true,
+          "label": "Burundi",
+          "value": "BI"
+        },
+        {
+          "active": true,
+          "label": "Cambodia",
+          "value": "KH"
+        },
+        {
+          "active": true,
+          "label": "Cameroon",
+          "value": "CM"
+        },
+        {
+          "active": true,
+          "label": "Canada",
+          "value": "CA"
+        },
+        {
+          "active": true,
+          "label": "Cape Verde",
+          "value": "CV"
+        },
+        {
+          "active": true,
+          "label": "Cayman Islands",
+          "value": "KY"
+        },
+        {
+          "active": true,
+          "label": "Central African Republic",
+          "value": "CF"
+        },
+        {
+          "active": true,
+          "label": "Chad",
+          "value": "TD"
+        },
+        {
+          "active": true,
+          "label": "Chile",
+          "value": "CL"
+        },
+        {
+          "active": true,
+          "label": "China",
+          "value": "CN"
+        },
+        {
+          "active": true,
+          "label": "Christmas Island",
+          "value": "CX"
+        },
+        {
+          "active": true,
+          "label": "Colombia",
+          "value": "CO"
+        },
+        {
+          "active": true,
+          "label": "Comoros",
+          "value": "KM"
+        },
+        {
+          "active": true,
+          "label": "Congo",
+          "value": "CG"
+        },
+        {
+          "active": true,
+          "label": "Congo, the Democratic Republic of the",
+          "value": "CD"
+        },
+        {
+          "active": true,
+          "label": "Cook Islands",
+          "value": "CK"
+        },
+        {
+          "active": true,
+          "label": "Costa Rica",
+          "value": "CR"
+        },
+        {
+          "active": true,
+          "label": "Cote d'Ivoire",
+          "value": "CI"
+        },
+        {
+          "active": true,
+          "label": "Croatia",
+          "value": "HR"
+        },
+        {
+          "active": true,
+          "label": "Cyprus",
+          "value": "CY"
+        },
+        {
+          "active": true,
+          "label": "Czechia",
+          "value": "CZ"
+        },
+        {
+          "active": true,
+          "label": "Denmark",
+          "value": "DK"
+        },
+        {
+          "active": true,
+          "label": "Djibouti",
+          "value": "DJ"
+        },
+        {
+          "active": true,
+          "label": "Dominica",
+          "value": "DM"
+        },
+        {
+          "active": true,
+          "label": "Dominican Republic",
+          "value": "DO"
+        },
+        {
+          "active": true,
+          "label": "Ecuador",
+          "value": "EC"
+        },
+        {
+          "active": true,
+          "label": "Egypt",
+          "value": "EG"
+        },
+        {
+          "active": true,
+          "label": "Equatorial Guinea",
+          "value": "GQ"
+        },
+        {
+          "active": true,
+          "label": "El Salvador",
+          "value": "SV"
+        },
+        {
+          "active": true,
+          "label": "Eritrea",
+          "value": "ER"
+        },
+        {
+          "active": true,
+          "label": "Estonia",
+          "value": "EE"
+        },
+        {
+          "active": true,
+          "label": "Ethiopia",
+          "value": "ET"
+        },
+        {
+          "active": true,
+          "label": "Falkland Islands (Malvinas)",
+          "value": "FK"
+        },
+        {
+          "active": true,
+          "label": "Faroe Islands",
+          "value": "FO"
+        },
+        {
+          "active": true,
+          "label": "Fiji",
+          "value": "FJ"
+        },
+        {
+          "active": true,
+          "label": "Finland",
+          "value": "FI"
+        },
+        {
+          "active": true,
+          "label": "France",
+          "value": "FR"
+        },
+        {
+          "active": true,
+          "label": "French Guiana",
+          "value": "GF"
+        },
+        {
+          "active": true,
+          "label": "French Polynesia",
+          "value": "PF"
+        },
+        {
+          "active": true,
+          "label": "Gabon",
+          "value": "GA"
+        },
+        {
+          "active": true,
+          "label": "Gambia",
+          "value": "GM"
+        },
+        {
+          "active": true,
+          "label": "Georgia",
+          "value": "GE"
+        },
+        {
+          "active": true,
+          "label": "Germany",
+          "value": "DE"
+        },
+        {
+          "active": true,
+          "label": "Ghana",
+          "value": "GH"
+        },
+        {
+          "active": true,
+          "label": "Gibraltar",
+          "value": "GI"
+        },
+        {
+          "active": true,
+          "label": "Greece",
+          "value": "GR"
+        },
+        {
+          "active": true,
+          "label": "Greenland",
+          "value": "GL"
+        },
+        {
+          "active": true,
+          "label": "Grenada",
+          "value": "GD"
+        },
+        {
+          "active": true,
+          "label": "Guadeloupe",
+          "value": "GP"
+        },
+        {
+          "active": true,
+          "label": "Guam",
+          "value": "GU"
+        },
+        {
+          "active": true,
+          "label": "Guatemala",
+          "value": "GT"
+        },
+        {
+          "active": true,
+          "label": "Guinea",
+          "value": "GN"
+        },
+        {
+          "active": true,
+          "label": "Guinea-Bissau",
+          "value": "GW"
+        },
+        {
+          "active": true,
+          "label": "Guyana",
+          "value": "GY"
+        },
+        {
+          "active": true,
+          "label": "Haiti",
+          "value": "HT"
+        },
+        {
+          "active": true,
+          "label": "Honduras",
+          "value": "HN"
+        },
+        {
+          "active": true,
+          "label": "Hong Kong",
+          "value": "HK"
+        },
+        {
+          "active": true,
+          "label": "Hungary",
+          "value": "HU"
+        },
+        {
+          "active": true,
+          "label": "Iceland",
+          "value": "IS"
+        },
+        {
+          "active": true,
+          "label": "India",
+          "value": "IN"
+        },
+        {
+          "active": true,
+          "label": "Indonesia",
+          "value": "ID"
+        },
+        {
+          "active": true,
+          "label": "Iraq",
+          "value": "IQ"
+        },
+        {
+          "active": true,
+          "label": "Iran, Islamic Republic of",
+          "value": "IR"
+        },
+        {
+          "active": true,
+          "label": "Ireland",
+          "value": "IE"
+        },
+        {
+          "active": true,
+          "label": "Israel",
+          "value": "IL"
+        },
+        {
+          "active": true,
+          "label": "Italy",
+          "value": "IT"
+        },
+        {
+          "active": true,
+          "label": "Japan",
+          "value": "JP"
+        },
+        {
+          "active": true,
+          "label": "Jamaica",
+          "value": "JM"
+        },
+        {
+          "active": true,
+          "label": "Jordan",
+          "value": "JO"
+        },
+        {
+          "active": true,
+          "label": "Kazakhstan",
+          "value": "KZ"
+        },
+        {
+          "active": true,
+          "label": "Kenya",
+          "value": "KE"
+        },
+        {
+          "active": true,
+          "label": "Kiribati",
+          "value": "KI"
+        },
+        {
+          "active": true,
+          "label": "Korea, Republic of",
+          "value": "KR"
+        },
+        {
+          "active": true,
+          "label": "Kuwait",
+          "value": "KW"
+        },
+        {
+          "active": true,
+          "label": "Kyrgyzstan",
+          "value": "KG"
+        },
+        {
+          "active": true,
+          "label": "Lao People's Democratic Republic",
+          "value": "LA"
+        },
+        {
+          "active": true,
+          "label": "Latvia",
+          "value": "LV"
+        },
+        {
+          "active": true,
+          "label": "Lebanon",
+          "value": "LB"
+        },
+        {
+          "active": true,
+          "label": "Lesotho",
+          "value": "LS"
+        },
+        {
+          "active": true,
+          "label": "Liberia",
+          "value": "LR"
+        },
+        {
+          "active": true,
+          "label": "Libya",
+          "value": "LY"
+        },
+        {
+          "active": true,
+          "label": "Liechtenstein",
+          "value": "LI"
+        },
+        {
+          "active": true,
+          "label": "Lithuania",
+          "value": "LT"
+        },
+        {
+          "active": true,
+          "label": "Luxembourg",
+          "value": "LU"
+        },
+        {
+          "active": true,
+          "label": "Macao",
+          "value": "MO"
+        },
+        {
+          "active": true,
+          "label": "North Macedonia",
+          "value": "MK"
+        },
+        {
+          "active": true,
+          "label": "Madagascar",
+          "value": "MG"
+        },
+        {
+          "active": true,
+          "label": "Malawi",
+          "value": "MW"
+        },
+        {
+          "active": true,
+          "label": "Malaysia",
+          "value": "MY"
+        },
+        {
+          "active": true,
+          "label": "Mali",
+          "value": "ML"
+        },
+        {
+          "active": true,
+          "label": "Maldives",
+          "value": "MV"
+        },
+        {
+          "active": true,
+          "label": "Malta",
+          "value": "MT"
+        },
+        {
+          "active": true,
+          "label": "Marshall Islands",
+          "value": "MH"
+        },
+        {
+          "active": true,
+          "label": "Martinique",
+          "value": "MQ"
+        },
+        {
+          "active": true,
+          "label": "Mauritania",
+          "value": "MR"
+        },
+        {
+          "active": true,
+          "label": "Mauritius",
+          "value": "MU"
+        },
+        {
+          "active": true,
+          "label": "Mexico",
+          "value": "MX"
+        },
+        {
+          "active": true,
+          "label": "Micronesia",
+          "value": "FM"
+        },
+        {
+          "active": true,
+          "label": "Moldova, Republic of",
+          "value": "MD"
+        },
+        {
+          "active": true,
+          "label": "Monaco",
+          "value": "MC"
+        },
+        {
+          "active": true,
+          "label": "Montserrat",
+          "value": "MS"
+        },
+        {
+          "active": true,
+          "label": "Morocco",
+          "value": "MA"
+        },
+        {
+          "active": true,
+          "label": "Mozambique",
+          "value": "MZ"
+        },
+        {
+          "active": true,
+          "label": "Myanmar",
+          "value": "MM"
+        },
+        {
+          "active": true,
+          "label": "Namibia",
+          "value": "NA"
+        },
+        {
+          "active": true,
+          "label": "Nauru",
+          "value": "NR"
+        },
+        {
+          "active": true,
+          "label": "Nepal",
+          "value": "NP"
+        },
+        {
+          "active": true,
+          "label": "Netherlands Antilles",
+          "value": "AN"
+        },
+        {
+          "active": true,
+          "label": "New Caledonia",
+          "value": "NC"
+        },
+        {
+          "active": true,
+          "label": "New Zealand",
+          "value": "NZ"
+        },
+        {
+          "active": true,
+          "label": "Nicaragua",
+          "value": "NI"
+        },
+        {
+          "active": true,
+          "label": "Niger",
+          "value": "NE"
+        },
+        {
+          "active": true,
+          "label": "Nigeria",
+          "value": "NG"
+        },
+        {
+          "active": true,
+          "label": "Netherlands",
+          "value": "NL"
+        },
+        {
+          "active": true,
+          "label": "Norfolk Island",
+          "value": "NF"
+        },
+        {
+          "active": true,
+          "label": "Norway",
+          "value": "NO"
+        },
+        {
+          "active": true,
+          "label": "Northern Mariana Islands",
+          "value": "MP"
+        },
+        {
+          "active": true,
+          "label": "Oman",
+          "value": "OM"
+        },
+        {
+          "active": true,
+          "label": "Pakistan",
+          "value": "PK"
+        },
+        {
+          "active": true,
+          "label": "Panama",
+          "value": "PA"
+        },
+        {
+          "active": true,
+          "label": "Papua New Guinea",
+          "value": "PG"
+        },
+        {
+          "active": true,
+          "label": "Paraguay",
+          "value": "PY"
+        },
+        {
+          "active": true,
+          "label": "Peru",
+          "value": "PE"
+        },
+        {
+          "active": true,
+          "label": "Philippines",
+          "value": "PH"
+        },
+        {
+          "active": true,
+          "label": "Poland",
+          "value": "PL"
+        },
+        {
+          "active": true,
+          "label": "Portugal",
+          "value": "PT"
+        },
+        {
+          "active": true,
+          "label": "Qatar",
+          "value": "QA"
+        },
+        {
+          "active": true,
+          "label": "Reunion",
+          "value": "RE"
+        },
+        {
+          "active": true,
+          "label": "Romania",
+          "value": "RO"
+        },
+        {
+          "active": true,
+          "label": "Russian Federation",
+          "value": "RU"
+        },
+        {
+          "active": true,
+          "label": "Rwanda",
+          "value": "RW"
+        },
+        {
+          "active": true,
+          "label": "Saint Helena, Ascension and Tristan da Cunha",
+          "value": "SH"
+        },
+        {
+          "active": true,
+          "label": "Saint Kitts and Nevis",
+          "value": "KN"
+        },
+        {
+          "active": true,
+          "label": "Saint Lucia",
+          "value": "LC"
+        },
+        {
+          "active": true,
+          "label": "Saint Vincent and the Grenadines",
+          "value": "VC"
+        },
+        {
+          "active": true,
+          "label": "Samoa",
+          "value": "WS"
+        },
+        {
+          "active": true,
+          "label": "San Marino",
+          "value": "SM"
+        },
+        {
+          "active": true,
+          "label": "Sao Tome and Principe",
+          "value": "ST"
+        },
+        {
+          "active": true,
+          "label": "Saudi Arabia",
+          "value": "SA"
+        },
+        {
+          "active": true,
+          "label": "Senegal",
+          "value": "SN"
+        },
+        {
+          "active": true,
+          "label": "Serbia and Montenegro",
+          "value": "CS"
+        },
+        {
+          "active": true,
+          "label": "Seychelles",
+          "value": "SC"
+        },
+        {
+          "active": true,
+          "label": "Sierra Leone",
+          "value": "SL"
+        },
+        {
+          "active": true,
+          "label": "Singapore",
+          "value": "SG"
+        },
+        {
+          "active": true,
+          "label": "Slovakia",
+          "value": "SK"
+        },
+        {
+          "active": true,
+          "label": "Slovenia",
+          "value": "SI"
+        },
+        {
+          "active": true,
+          "label": "Solomon Islands",
+          "value": "SB"
+        },
+        {
+          "active": true,
+          "label": "Somalia",
+          "value": "SO"
+        },
+        {
+          "active": true,
+          "label": "South Africa",
+          "value": "ZA"
+        },
+        {
+          "active": true,
+          "label": "Spain",
+          "value": "ES"
+        },
+        {
+          "active": true,
+          "label": "Sri Lanka",
+          "value": "LK"
+        },
+        {
+          "active": true,
+          "label": "Sudan",
+          "value": "SD"
+        },
+        {
+          "active": true,
+          "label": "Suriname",
+          "value": "SR"
+        },
+        {
+          "active": true,
+          "label": "Eswatini",
+          "value": "SZ"
+        },
+        {
+          "active": true,
+          "label": "Sweden",
+          "value": "SE"
+        },
+        {
+          "active": true,
+          "label": "Switzerland",
+          "value": "CH"
+        },
+        {
+          "active": true,
+          "label": "Syrian Arab Republic",
+          "value": "SY"
+        },
+        {
+          "active": true,
+          "label": "Taiwan",
+          "value": "TW"
+        },
+        {
+          "active": true,
+          "label": "Tajikistan",
+          "value": "TJ"
+        },
+        {
+          "active": true,
+          "label": "Tanzania, United Republic of",
+          "value": "TZ"
+        },
+        {
+          "active": true,
+          "label": "Thailand",
+          "value": "TH"
+        },
+        {
+          "active": true,
+          "label": "Timor-Leste",
+          "value": "TL"
+        },
+        {
+          "active": true,
+          "label": "Togo",
+          "value": "TG"
+        },
+        {
+          "active": true,
+          "label": "Tokelau",
+          "value": "TK"
+        },
+        {
+          "active": true,
+          "label": "Tonga",
+          "value": "TO"
+        },
+        {
+          "active": true,
+          "label": "Trinidad and Tobago",
+          "value": "TT"
+        },
+        {
+          "active": true,
+          "label": "Tunisia",
+          "value": "TN"
+        },
+        {
+          "active": true,
+          "label": "Türkiye",
+          "value": "TR"
+        },
+        {
+          "active": true,
+          "label": "Turkmenistan",
+          "value": "TM"
+        },
+        {
+          "active": true,
+          "label": "Turks and Caicos Islands",
+          "value": "TC"
+        },
+        {
+          "active": true,
+          "label": "Tuvalu",
+          "value": "TV"
+        },
+        {
+          "active": true,
+          "label": "Uganda",
+          "value": "UG"
+        },
+        {
+          "active": true,
+          "label": "Ukraine",
+          "value": "UA"
+        },
+        {
+          "active": true,
+          "label": "United Arab Emirates",
+          "value": "AE"
+        },
+        {
+          "active": true,
+          "label": "United Kingdom",
+          "value": "GB"
+        },
+        {
+          "active": true,
+          "label": "United States",
+          "value": "US"
+        },
+        {
+          "active": true,
+          "label": "United States Minor Outlying Islands",
+          "value": "UM"
+        },
+        {
+          "active": true,
+          "label": "Uruguay",
+          "value": "UY"
+        },
+        {
+          "active": true,
+          "label": "Uzbekistan",
+          "value": "UZ"
+        },
+        {
+          "active": true,
+          "label": "Vanuatu",
+          "value": "VU"
+        },
+        {
+          "active": true,
+          "label": "Venezuela, Bolivarian Republic of",
+          "value": "VE"
+        },
+        {
+          "active": true,
+          "label": "Vietnam",
+          "value": "VN"
+        },
+        {
+          "active": true,
+          "label": "Virgin Islands, British",
+          "value": "VG"
+        },
+        {
+          "active": true,
+          "label": "Yemen",
+          "value": "YE"
+        },
+        {
+          "active": true,
+          "label": "Zambia",
+          "value": "ZM"
+        },
+        {
+          "active": true,
+          "label": "Zimbabwe",
+          "value": "ZW"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Zip",
+      "name": "Zip",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Location Type",
+      "name": "Site",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Branch",
+          "value": "Branch"
+        },
+        {
+          "active": true,
+          "label": "Headquarters",
+          "value": "Headquarters"
+        },
+        {
+          "active": true,
+          "label": "Single Location",
+          "value": "Single Location"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Industry",
+      "name": "Industry",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Employee Count",
+      "name": "NumberOfEmployees",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "int"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Annual Revenue",
+      "name": "AnnualRevenue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "currency"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Duns Number",
+      "name": "DunsNumber",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "NAICS Code",
+      "name": "NaicsCode",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "NAICS Description",
+      "name": "NaicsDesc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "SIC Code",
+      "name": "Sic",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "SIC Description",
+      "name": "SicDesc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Ownership Status",
+      "name": "Ownership",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Owned",
+      "name": "IsOwned",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Stock Ticker Symbol",
+      "name": "TickerSymbol",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Trade Style",
+      "name": "TradeStyle",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Company or Website",
+      "name": "Website",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "url"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Company Founding Date",
+      "name": "YearStarted",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Active Contacts",
+      "name": "ActiveContacts",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Updated Date",
+      "name": "UpdatedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fortune Rank",
+      "name": "FortuneRank",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "int"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Included In S&P 500",
+      "name": "IncludedInSnP500",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Premises Area Measurement",
+      "name": "PremisesMeasure",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "int"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Premises Area Measurement Reliability Text",
+      "name": "PremisesMeasureReliability",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Premises Area Unit of Measurement",
+      "name": "PremisesMeasureUnit",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Employee Quantity Growth Rate",
+      "name": "EmployeeQuantityGrowthRate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "double"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Sales Turnover Growth Rate",
+      "name": "SalesTurnoverGrowthRate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "double"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Prior Year Employee",
+      "name": "PriorYearEmployees",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "int"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Prior Year Revenue",
+      "name": "PriorYearRevenue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "currency"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "In CRM",
+      "name": "IsInCrm",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Address",
+      "name": "FullAddress",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Industry Codes",
+      "name": "SicCodeDesc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    }
+  ],
+  "childRelationships": []
+}

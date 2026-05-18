@@ -1,0 +1,517 @@
+{
+  "name": "ContactRequest",
+  "label": "Contact Request",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Contact Request ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Owner ID",
+      "name": "OwnerId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Group",
+        "User"
+      ],
+      "relationshipName": "Owner",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Contact Request Number",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Viewed Date",
+      "name": "LastViewedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Referenced Date",
+      "name": "LastReferencedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Related To ID",
+      "name": "WhatId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Account",
+        "Battle__c",
+        "Case",
+        "Move__c",
+        "Opportunity",
+        "Pokedex_Entry__c",
+        "Pokemon__c",
+        "TM__c",
+        "WorkOrder"
+      ],
+      "relationshipName": "What",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Requestor ID",
+      "name": "WhoId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Contact",
+        "Lead",
+        "User"
+      ],
+      "relationshipName": "Who",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Preferred Phone Number",
+      "name": "PreferredPhone",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "phone"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "Phone",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Preferred Channel",
+      "name": "PreferredChannel",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Phone",
+          "value": "Phone"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "New",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Request Status",
+      "name": "Status",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "New",
+          "value": "New"
+        },
+        {
+          "active": true,
+          "label": "Attempted",
+          "value": "Attempted"
+        },
+        {
+          "active": true,
+          "label": "Contacted",
+          "value": "Contacted"
+        },
+        {
+          "active": true,
+          "label": "Abandoned",
+          "value": "Abandoned"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "Account",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Request Reason",
+      "name": "RequestReason",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Account",
+          "value": "Account"
+        },
+        {
+          "active": true,
+          "label": "Billing",
+          "value": "Billing"
+        },
+        {
+          "active": true,
+          "label": "Case",
+          "value": "Case"
+        },
+        {
+          "active": true,
+          "label": "General",
+          "value": "General"
+        },
+        {
+          "active": true,
+          "label": "Order",
+          "value": "Order"
+        },
+        {
+          "active": true,
+          "label": "Product",
+          "value": "Product"
+        },
+        {
+          "active": true,
+          "label": "Other",
+          "value": "Other"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Request Description",
+      "name": "RequestDescription",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Is Callback",
+      "name": "IsCallback",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    }
+  ],
+  "childRelationships": [
+    {
+      "childSObject": "AIInsightValue",
+      "field": "SobjectLookupValueId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "AIRecordInsight",
+      "field": "TargetId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ActivityHistory",
+      "field": "WhatId",
+      "relationshipName": "ActivityHistories"
+    },
+    {
+      "childSObject": "ApprovalSubmission",
+      "field": "RelatedRecordId",
+      "relationshipName": "ApprovalSubmissions"
+    },
+    {
+      "childSObject": "ApprovalWorkItem",
+      "field": "RelatedRecordId",
+      "relationshipName": "ApprovalWorkItems"
+    },
+    {
+      "childSObject": "ContactRequestShare",
+      "field": "ParentId",
+      "relationshipName": "Shares"
+    },
+    {
+      "childSObject": "EmailMessage",
+      "field": "RelatedToId",
+      "relationshipName": "Emails"
+    },
+    {
+      "childSObject": "EmailMessageChangeEvent",
+      "field": "RelatedToId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "Event",
+      "field": "WhatId",
+      "relationshipName": "Events"
+    },
+    {
+      "childSObject": "EventChangeEvent",
+      "field": "WhatId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "EventRelationChangeEvent",
+      "field": "RelationId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "FlowExecutionErrorEvent",
+      "field": "ContextRecordId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "FlowOrchestrationWorkItem",
+      "field": "RelatedRecordId",
+      "relationshipName": "FlowOrchestrationWorkItems"
+    },
+    {
+      "childSObject": "FlowRecordRelation",
+      "field": "RelatedRecordId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "OpenActivity",
+      "field": "WhatId",
+      "relationshipName": "OpenActivities"
+    },
+    {
+      "childSObject": "OutgoingEmail",
+      "field": "RelatedToId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "RecordAction",
+      "field": "RecordId",
+      "relationshipName": "RecordActions"
+    },
+    {
+      "childSObject": "RecordActionHistory",
+      "field": "ParentRecordId",
+      "relationshipName": "RecordActionHistories"
+    },
+    {
+      "childSObject": "Task",
+      "field": "WhatId",
+      "relationshipName": "Tasks"
+    },
+    {
+      "childSObject": "TaskChangeEvent",
+      "field": "WhatId",
+      "relationshipName": null
+    }
+  ]
+}

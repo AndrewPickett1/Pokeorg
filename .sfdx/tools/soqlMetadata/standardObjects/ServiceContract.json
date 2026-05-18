@@ -1,0 +1,1273 @@
+{
+  "name": "ServiceContract",
+  "label": "Service Contract",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Service Contract ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Owner ID",
+      "name": "OwnerId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Group",
+        "User"
+      ],
+      "relationshipName": "Owner",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Contract Name",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Viewed Date",
+      "name": "LastViewedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Referenced Date",
+      "name": "LastReferencedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Account ID",
+      "name": "AccountId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Account"
+      ],
+      "relationshipName": "Account",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Contact ID",
+      "name": "ContactId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Contact"
+      ],
+      "relationshipName": "Contact",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Term (months)",
+      "name": "Term",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Start Date",
+      "name": "StartDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "date"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "End Date",
+      "name": "EndDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "date"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Activation Date",
+      "name": "ActivationDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "Draft",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Approval Status",
+      "name": "ApprovalStatus",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Draft",
+          "value": "Draft"
+        },
+        {
+          "active": true,
+          "label": "In Approval Process",
+          "value": "In Approval Process"
+        },
+        {
+          "active": true,
+          "label": "Activated",
+          "value": "Activated"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Description",
+      "name": "Description",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Billing Street",
+      "name": "BillingStreet",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Billing City",
+      "name": "BillingCity",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Billing State",
+      "name": "BillingState",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Billing Zip",
+      "name": "BillingPostalCode",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Billing Country",
+      "name": "BillingCountry",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Billing Latitude",
+      "name": "BillingLatitude",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Billing Longitude",
+      "name": "BillingLongitude",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Billing Geocode Accuracy",
+      "name": "BillingGeocodeAccuracy",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Address",
+          "value": "Address"
+        },
+        {
+          "active": true,
+          "label": "Near Address",
+          "value": "NearAddress"
+        },
+        {
+          "active": true,
+          "label": "Block",
+          "value": "Block"
+        },
+        {
+          "active": true,
+          "label": "Street",
+          "value": "Street"
+        },
+        {
+          "active": true,
+          "label": "Extended Zip",
+          "value": "ExtendedZip"
+        },
+        {
+          "active": true,
+          "label": "Zip",
+          "value": "Zip"
+        },
+        {
+          "active": true,
+          "label": "Neighborhood",
+          "value": "Neighborhood"
+        },
+        {
+          "active": true,
+          "label": "City",
+          "value": "City"
+        },
+        {
+          "active": true,
+          "label": "County",
+          "value": "County"
+        },
+        {
+          "active": true,
+          "label": "State",
+          "value": "State"
+        },
+        {
+          "active": true,
+          "label": "Unknown",
+          "value": "Unknown"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Billing Address",
+      "name": "BillingAddress",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "address"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Shipping Street",
+      "name": "ShippingStreet",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Shipping City",
+      "name": "ShippingCity",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Shipping State",
+      "name": "ShippingState",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Shipping Zip",
+      "name": "ShippingPostalCode",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Shipping Country",
+      "name": "ShippingCountry",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Shipping Latitude",
+      "name": "ShippingLatitude",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Shipping Longitude",
+      "name": "ShippingLongitude",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Shipping Geocode Accuracy",
+      "name": "ShippingGeocodeAccuracy",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Address",
+          "value": "Address"
+        },
+        {
+          "active": true,
+          "label": "Near Address",
+          "value": "NearAddress"
+        },
+        {
+          "active": true,
+          "label": "Block",
+          "value": "Block"
+        },
+        {
+          "active": true,
+          "label": "Street",
+          "value": "Street"
+        },
+        {
+          "active": true,
+          "label": "Extended Zip",
+          "value": "ExtendedZip"
+        },
+        {
+          "active": true,
+          "label": "Zip",
+          "value": "Zip"
+        },
+        {
+          "active": true,
+          "label": "Neighborhood",
+          "value": "Neighborhood"
+        },
+        {
+          "active": true,
+          "label": "City",
+          "value": "City"
+        },
+        {
+          "active": true,
+          "label": "County",
+          "value": "County"
+        },
+        {
+          "active": true,
+          "label": "State",
+          "value": "State"
+        },
+        {
+          "active": true,
+          "label": "Unknown",
+          "value": "Unknown"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Shipping Address",
+      "name": "ShippingAddress",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "address"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Price Book ID",
+      "name": "Pricebook2Id",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Pricebook2"
+      ],
+      "relationshipName": "Pricebook2",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Shipping and Handling",
+      "name": "ShippingHandling",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "currency"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Tax",
+      "name": "Tax",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "currency"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Subtotal",
+      "name": "Subtotal",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "currency"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Total Price",
+      "name": "TotalPrice",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "currency"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Line Items",
+      "name": "LineItemCount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Contract Number",
+      "name": "ContractNumber",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Special Terms",
+      "name": "SpecialTerms",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Discount",
+      "name": "Discount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "percent"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Grand Total",
+      "name": "GrandTotal",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "currency"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Status",
+      "name": "Status",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Inactive",
+          "value": "Inactive"
+        },
+        {
+          "active": true,
+          "label": "Active",
+          "value": "Active"
+        },
+        {
+          "active": true,
+          "label": "Expired",
+          "value": "Expired"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Parent Service Contract ID",
+      "name": "ParentServiceContractId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "ServiceContract"
+      ],
+      "relationshipName": "ParentServiceContract",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Root Service Contract ID",
+      "name": "RootServiceContractId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "ServiceContract"
+      ],
+      "relationshipName": "RootServiceContract",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Additional Discount",
+      "name": "AdditionalDiscount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "percent"
+    }
+  ],
+  "childRelationships": [
+    {
+      "childSObject": "AIInsightValue",
+      "field": "SobjectLookupValueId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "AIRecordInsight",
+      "field": "TargetId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ActivityHistory",
+      "field": "WhatId",
+      "relationshipName": "ActivityHistories"
+    },
+    {
+      "childSObject": "ApprovalSubmission",
+      "field": "RelatedRecordId",
+      "relationshipName": "ApprovalSubmissions"
+    },
+    {
+      "childSObject": "ApprovalWorkItem",
+      "field": "RelatedRecordId",
+      "relationshipName": "ApprovalWorkItems"
+    },
+    {
+      "childSObject": "AttachedContentDocument",
+      "field": "LinkedEntityId",
+      "relationshipName": "AttachedContentDocuments"
+    },
+    {
+      "childSObject": "Attachment",
+      "field": "ParentId",
+      "relationshipName": "Attachments"
+    },
+    {
+      "childSObject": "CombinedAttachment",
+      "field": "ParentId",
+      "relationshipName": "CombinedAttachments"
+    },
+    {
+      "childSObject": "ContentDocumentLink",
+      "field": "LinkedEntityId",
+      "relationshipName": "ContentDocumentLinks"
+    },
+    {
+      "childSObject": "ContentDocumentLinkChangeEvent",
+      "field": "LinkedEntityId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ContentVersion",
+      "field": "FirstPublishLocationId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ContentVersionChangeEvent",
+      "field": "FirstPublishLocationId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ContractLineItem",
+      "field": "ServiceContractId",
+      "relationshipName": "ContractLineItems"
+    },
+    {
+      "childSObject": "ContractLineItemChangeEvent",
+      "field": "ServiceContractId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "EmailMessage",
+      "field": "RelatedToId",
+      "relationshipName": "Emails"
+    },
+    {
+      "childSObject": "EmailMessageChangeEvent",
+      "field": "RelatedToId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "Entitlement",
+      "field": "ServiceContractId",
+      "relationshipName": "Entitlements"
+    },
+    {
+      "childSObject": "EntitlementChangeEvent",
+      "field": "ServiceContractId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "EntitySubscription",
+      "field": "ParentId",
+      "relationshipName": "FeedSubscriptionsForEntity"
+    },
+    {
+      "childSObject": "Event",
+      "field": "WhatId",
+      "relationshipName": "Events"
+    },
+    {
+      "childSObject": "EventChangeEvent",
+      "field": "WhatId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "EventRelationChangeEvent",
+      "field": "RelationId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "FeedComment",
+      "field": "ParentId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "FeedItem",
+      "field": "ParentId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "FlowExecutionErrorEvent",
+      "field": "ContextRecordId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "FlowOrchestrationWorkItem",
+      "field": "RelatedRecordId",
+      "relationshipName": "FlowOrchestrationWorkItems"
+    },
+    {
+      "childSObject": "FlowRecordRelation",
+      "field": "RelatedRecordId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "Note",
+      "field": "ParentId",
+      "relationshipName": "Notes"
+    },
+    {
+      "childSObject": "NoteAndAttachment",
+      "field": "ParentId",
+      "relationshipName": "NotesAndAttachments"
+    },
+    {
+      "childSObject": "OpenActivity",
+      "field": "WhatId",
+      "relationshipName": "OpenActivities"
+    },
+    {
+      "childSObject": "OutgoingEmail",
+      "field": "RelatedToId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ProcessInstance",
+      "field": "TargetObjectId",
+      "relationshipName": "ProcessInstances"
+    },
+    {
+      "childSObject": "ProcessInstanceChangeEvent",
+      "field": "TargetObjectId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ProcessInstanceHistory",
+      "field": "TargetObjectId",
+      "relationshipName": "ProcessSteps"
+    },
+    {
+      "childSObject": "RecordAction",
+      "field": "RecordId",
+      "relationshipName": "RecordActions"
+    },
+    {
+      "childSObject": "RecordActionHistory",
+      "field": "ParentRecordId",
+      "relationshipName": "RecordActionHistories"
+    },
+    {
+      "childSObject": "ServiceContract",
+      "field": "ParentServiceContractId",
+      "relationshipName": "ChildServiceContracts"
+    },
+    {
+      "childSObject": "ServiceContract",
+      "field": "RootServiceContractId",
+      "relationshipName": "DescendantServiceContracts"
+    },
+    {
+      "childSObject": "ServiceContractChangeEvent",
+      "field": "ParentServiceContractId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ServiceContractChangeEvent",
+      "field": "RootServiceContractId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ServiceContractFeed",
+      "field": "ParentId",
+      "relationshipName": "Feeds"
+    },
+    {
+      "childSObject": "ServiceContractHistory",
+      "field": "ServiceContractId",
+      "relationshipName": "Histories"
+    },
+    {
+      "childSObject": "ServiceContractShare",
+      "field": "ParentId",
+      "relationshipName": "Shares"
+    },
+    {
+      "childSObject": "Task",
+      "field": "WhatId",
+      "relationshipName": "Tasks"
+    },
+    {
+      "childSObject": "TaskChangeEvent",
+      "field": "WhatId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "WorkOrder",
+      "field": "ServiceContractId",
+      "relationshipName": "WorkOrders"
+    },
+    {
+      "childSObject": "WorkOrderChangeEvent",
+      "field": "ServiceContractId",
+      "relationshipName": null
+    }
+  ]
+}

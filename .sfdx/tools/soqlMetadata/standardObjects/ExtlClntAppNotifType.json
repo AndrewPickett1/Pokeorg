@@ -1,0 +1,961 @@
+{
+  "name": "ExtlClntAppNotifType",
+  "label": "External Client Application Notification Type",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "External Client Application Notification Type ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "External Client Application Notification Settings ID",
+      "name": "ExtlClntAppNotifSettingsId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "ExtlClntAppNotifSettings"
+      ],
+      "relationshipName": "ExtlClntAppNotifSettings",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Custom Notification Type ID",
+      "name": "NotificationType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Posts to a profile",
+          "value": "profile_post"
+        },
+        {
+          "active": true,
+          "label": "New comments on a post",
+          "value": "chatter_comment_on_post"
+        },
+        {
+          "active": true,
+          "label": "Individual mentions on a post",
+          "value": "chatter_mention"
+        },
+        {
+          "active": true,
+          "label": "Approval requests",
+          "value": "approval_request"
+        },
+        {
+          "active": true,
+          "label": "Task assignments",
+          "value": "task_delegated_to"
+        },
+        {
+          "active": true,
+          "label": "Transaction security alerts",
+          "value": "transaction_security"
+        },
+        {
+          "active": true,
+          "label": "Salesforce Classic report updates",
+          "value": "personal_analytic"
+        },
+        {
+          "active": true,
+          "label": "Posts to a group",
+          "value": "group_post"
+        },
+        {
+          "active": true,
+          "label": "New Activity Team members",
+          "value": "activity_team_member"
+        },
+        {
+          "active": true,
+          "label": "Field Service object activity",
+          "value": "feed_on_field_service"
+        },
+        {
+          "active": true,
+          "label": "Missed calls",
+          "value": "missed_call"
+        },
+        {
+          "active": true,
+          "label": "Analytics dashboard updates",
+          "value": "wave_condition"
+        },
+        {
+          "active": true,
+          "label": "Requests to view emails or events",
+          "value": "view_all_emails"
+        },
+        {
+          "active": true,
+          "label": "Requests to view all emails or events",
+          "value": "view_siq_object"
+        },
+        {
+          "active": true,
+          "label": "Group manager announcements",
+          "value": "group_announce"
+        },
+        {
+          "active": true,
+          "label": "New voicemail",
+          "value": "voicemail"
+        },
+        {
+          "active": true,
+          "label": "Einstein Lead Scoring readiness",
+          "value": "leadscore_enablement"
+        },
+        {
+          "active": true,
+          "label": "Data Assessment results",
+          "value": "data_preview_alert"
+        },
+        {
+          "active": true,
+          "label": "Mail client integration issues",
+          "value": "mailapp_alert"
+        },
+        {
+          "active": true,
+          "label": "Lightning Data package installation",
+          "value": "dj_package_email_alert"
+        },
+        {
+          "active": true,
+          "label": "Lightning Data package installation, with info about rules included in the package",
+          "value": "dj_package_inapp_alert"
+        },
+        {
+          "active": true,
+          "label": "Posts to a stream",
+          "value": "stream_post"
+        },
+        {
+          "active": true,
+          "label": "Task reminders",
+          "value": "task_reminder"
+        },
+        {
+          "active": true,
+          "label": "Einstein contact data updates",
+          "value": "automated_data_capture"
+        },
+        {
+          "active": true,
+          "label": "New messages",
+          "value": "direct_message"
+        },
+        {
+          "active": true,
+          "label": "Microsoft Exchange™ account connections",
+          "value": "siq_connect_exchange"
+        },
+        {
+          "active": true,
+          "label": "Event reminders",
+          "value": "event_reminder"
+        },
+        {
+          "active": true,
+          "label": "Activity Metrics readiness",
+          "value": "activity_metrics_enablement"
+        },
+        {
+          "active": true,
+          "label": "Group mentions on a post",
+          "value": "chatter_group_mention"
+        },
+        {
+          "active": true,
+          "label": "Shared forecasts",
+          "value": "forecasting_jump_to"
+        },
+        {
+          "active": true,
+          "label": "Einstein Prediction Builder status changes",
+          "value": "einstein_builder_state_change"
+        },
+        {
+          "active": true,
+          "label": "Mass operations job completion",
+          "value": "mass_operations_state_change"
+        },
+        {
+          "active": true,
+          "label": "Sales Agreements",
+          "value": "manufacturing_job_result"
+        },
+        {
+          "active": true,
+          "label": "Einstein Activity Capture inbox conflict resolution",
+          "value": "ase_inbox_conflict_resolution"
+        },
+        {
+          "active": true,
+          "label": "Account Forecasts",
+          "value": "mfg_forecast_job"
+        },
+        {
+          "active": true,
+          "label": "Pardot asset publish result",
+          "value": "pardot_asset_publication"
+        },
+        {
+          "active": true,
+          "label": "Order Management updates",
+          "value": "order_management_alert"
+        },
+        {
+          "active": true,
+          "label": "Optimizer scan results",
+          "value": "optimizer_scan_results"
+        },
+        {
+          "active": true,
+          "label": "Account Manager Targets",
+          "value": "mfg_acctmgrtarget_assignment"
+        },
+        {
+          "active": true,
+          "label": "Rebates",
+          "value": "mfg_rebates_job"
+        },
+        {
+          "active": true,
+          "label": "Voice Call sharing",
+          "value": "voice_call_share"
+        },
+        {
+          "active": true,
+          "label": "Einstein Discovery Model Performance",
+          "value": "discovery_model_metrics"
+        },
+        {
+          "active": true,
+          "label": "Record Collection Sharing",
+          "value": "record_collection_share"
+        },
+        {
+          "active": true,
+          "label": "Reply recommendations",
+          "value": "reply_recommendation_notify"
+        },
+        {
+          "active": true,
+          "label": "Classification Apps",
+          "value": "einstein_agent_notify"
+        },
+        {
+          "active": true,
+          "label": "New Guidance Center Scenario",
+          "value": "new_guidance_center_scenario"
+        },
+        {
+          "active": true,
+          "label": "Next Steps Not Updated",
+          "value": "next_steps_not_updated"
+        },
+        {
+          "active": true,
+          "label": "Close Date Upcoming",
+          "value": "close_date_upcoming"
+        },
+        {
+          "active": true,
+          "label": "Stage Not Updated",
+          "value": "stage_not_updated"
+        },
+        {
+          "active": true,
+          "label": "Deal Change Alert",
+          "value": "deal_change_alert"
+        },
+        {
+          "active": true,
+          "label": "Security Center Alerts",
+          "value": "security_center_alert"
+        },
+        {
+          "active": true,
+          "label": "Sustainability",
+          "value": "sustainability"
+        },
+        {
+          "active": true,
+          "label": "Service Document Generation",
+          "value": "document_generation"
+        },
+        {
+          "active": true,
+          "label": "ERI Alert",
+          "value": "eri_alert"
+        },
+        {
+          "active": true,
+          "label": "Data imports",
+          "value": "task_easy_importer"
+        },
+        {
+          "active": true,
+          "label": "Intraday Management updates",
+          "value": "intraday"
+        },
+        {
+          "active": true,
+          "label": "Amount Updated",
+          "value": "amount_updated"
+        },
+        {
+          "active": true,
+          "label": "Stage Updated",
+          "value": "stage_updated"
+        },
+        {
+          "active": true,
+          "label": "Close Date Updated",
+          "value": "close_date_updated"
+        },
+        {
+          "active": true,
+          "label": "High Priority Case",
+          "value": "high_priority_case"
+        },
+        {
+          "active": true,
+          "label": "New Child Opportunity",
+          "value": "new_child_opportunity"
+        },
+        {
+          "active": true,
+          "label": "Deal Won",
+          "value": "deal_won"
+        },
+        {
+          "active": true,
+          "label": "Deals to Watch",
+          "value": "deals_to_watch"
+        },
+        {
+          "active": true,
+          "label": "Next Step Reminder",
+          "value": "next_step_reminder"
+        },
+        {
+          "active": true,
+          "label": "Stage Reminder",
+          "value": "stage_reminder"
+        },
+        {
+          "active": true,
+          "label": "Close Date Reminder",
+          "value": "close_date_reminder"
+        },
+        {
+          "active": true,
+          "label": "MFG Common Notifications",
+          "value": "mfg_common_notification_job"
+        },
+        {
+          "active": true,
+          "label": "Follow Up Process Notifications",
+          "value": "followup_process_notification"
+        },
+        {
+          "active": true,
+          "label": "Contact and event sync updates",
+          "value": "easy_fts_syncx_notify"
+        },
+        {
+          "active": true,
+          "label": "New Outcome-Based Enablement Assignment",
+          "value": "enablement_assignment"
+        },
+        {
+          "active": true,
+          "label": "New action plan created",
+          "value": "new_action_plan_created"
+        },
+        {
+          "active": true,
+          "label": "Action plan item assigned",
+          "value": "action_plan_item_assigned"
+        },
+        {
+          "active": true,
+          "label": "Action plan item completed",
+          "value": "action_plan_item_completed"
+        },
+        {
+          "active": true,
+          "label": "Your Account contract renewal reminder",
+          "value": "ya_contract_renewal_notify"
+        },
+        {
+          "active": true,
+          "label": "Incident Alert",
+          "value": "Incident_Alert"
+        },
+        {
+          "active": true,
+          "label": "Product Import Completion Notification",
+          "value": "cc_product_import_success"
+        },
+        {
+          "active": true,
+          "label": "Program Mgmt In App Notify",
+          "value": "program_mgmt_in_app_notify"
+        },
+        {
+          "active": true,
+          "label": "Actionable List Async Save",
+          "value": "actionablelist_async_save"
+        },
+        {
+          "active": true,
+          "label": "Commerce Export Completion Notification",
+          "value": "cc_export_success"
+        },
+        {
+          "active": true,
+          "label": "Marketing sync notifications",
+          "value": "uma_unification"
+        },
+        {
+          "active": true,
+          "label": "Slack User Provisioned",
+          "value": "slack_user_provisioned"
+        },
+        {
+          "active": true,
+          "label": "Notifications for Marketing Provisioning",
+          "value": "unified_marketing_alert"
+        },
+        {
+          "active": true,
+          "label": "Conversation Mining",
+          "value": "conversation_mining_notify"
+        },
+        {
+          "active": true,
+          "label": "Commerce Generate Fields Notification",
+          "value": "cc_generate_fields_success"
+        },
+        {
+          "active": true,
+          "label": "Commerce Composite Variants",
+          "value": "cc_composite_variants"
+        },
+        {
+          "active": true,
+          "label": "Group Benefits",
+          "value": "group_benefits"
+        },
+        {
+          "active": true,
+          "label": "Materiality Assessment",
+          "value": "materiality_assessment"
+        },
+        {
+          "active": true,
+          "label": "Health Insights Notification",
+          "value": "health_insights_notify"
+        },
+        {
+          "active": true,
+          "label": "EAAS Ready Not Enabled",
+          "value": "eaas_ready_not_enabled"
+        },
+        {
+          "active": true,
+          "label": "Engagement Messaging Notification",
+          "value": "engagement_messaging_notify"
+        },
+        {
+          "active": true,
+          "label": "PRM Report/Dashboard Creation Notifications",
+          "value": "prm_reporting_notifications"
+        },
+        {
+          "active": true,
+          "label": "Industries File Import Notification",
+          "value": "industries_file_import"
+        },
+        {
+          "active": true,
+          "label": "Scale Testing Service",
+          "value": "scale_testing_service"
+        },
+        {
+          "active": true,
+          "label": "EAC for FSC Async Notify",
+          "value": "eacforfsc_async_notify"
+        },
+        {
+          "active": true,
+          "label": "AI Accelerator Break Notification",
+          "value": "ai_accelerator_alert"
+        },
+        {
+          "active": true,
+          "label": "Product Service Campaign",
+          "value": "psc_job_result"
+        },
+        {
+          "active": true,
+          "label": "Bulk Action Plan Save",
+          "value": "bulk_action_plan_save"
+        },
+        {
+          "active": true,
+          "label": "Quote To Order Notification",
+          "value": "quote_to_order"
+        },
+        {
+          "active": true,
+          "label": "CMS Delink Channel Notification",
+          "value": "cms_delink_channel"
+        },
+        {
+          "active": true,
+          "label": "Commerce Search Index Status Notification",
+          "value": "commerce_search_index_status"
+        },
+        {
+          "active": true,
+          "label": "Insurance In-App Notification",
+          "value": "insurance_inapp_alert"
+        },
+        {
+          "active": true,
+          "label": "Claim Generated",
+          "value": "priceprotect_gen_claim_notify"
+        },
+        {
+          "active": true,
+          "label": "Payable Amount Calculated",
+          "value": "priceprotect_calc_amt_notify"
+        },
+        {
+          "active": true,
+          "label": "Create Work Orders",
+          "value": "workorders_job_result"
+        },
+        {
+          "active": true,
+          "label": "Inventory Transfer Notifications",
+          "value": "inventory_transfer"
+        },
+        {
+          "active": true,
+          "label": "DPE CRMA limit notification.",
+          "value": "dpe_crma_limit_notify"
+        },
+        {
+          "active": true,
+          "label": "Scale Center",
+          "value": "scale_center"
+        },
+        {
+          "active": true,
+          "label": "Einstein Knowledge Creation",
+          "value": "async_egpt_kb_creation"
+        },
+        {
+          "active": true,
+          "label": "Invoice Generation",
+          "value": "invoice_generation"
+        },
+        {
+          "active": true,
+          "label": "MetaData Record Status Update Notification",
+          "value": "ls_metadata_record_update"
+        },
+        {
+          "active": true,
+          "label": "Product Import Status Notification",
+          "value": "cc_product_import_v2_job"
+        },
+        {
+          "active": true,
+          "label": "Inventory Count Schedules",
+          "value": "inventory_cnt_sch_result"
+        },
+        {
+          "active": true,
+          "label": "[T] Inventory Allocation/Deallocation Results Notifications",
+          "value": "inventory_allocation"
+        },
+        {
+          "active": true,
+          "label": "Actionable Notification Test Type",
+          "value": "actionable_notif_test_type"
+        },
+        {
+          "active": true,
+          "label": "Notifications for Unified Marketing Standalone Enablement",
+          "value": "uma_standalone_alert"
+        },
+        {
+          "active": true,
+          "label": "Mfg Program In-App Notification",
+          "value": "mfg_program_in_app_notify"
+        },
+        {
+          "active": true,
+          "label": "Media Notification",
+          "value": "media_notification"
+        },
+        {
+          "active": true,
+          "label": "Media Inventory Notification",
+          "value": "media_inventory_notification"
+        },
+        {
+          "active": true,
+          "label": "Metric has been followed/unfollowed notification",
+          "value": "metric_follow"
+        },
+        {
+          "active": true,
+          "label": "Data Share Setup Notification Type",
+          "value": "cdp_data_share_notif_type"
+        },
+        {
+          "active": true,
+          "label": "Credit Memo Generation",
+          "value": "credit_memo_generation"
+        },
+        {
+          "active": true,
+          "label": "Einstein Knowledge Translation",
+          "value": "async_kb_translation"
+        },
+        {
+          "active": true,
+          "label": "Data alert notification",
+          "value": "data_alert"
+        },
+        {
+          "active": true,
+          "label": "Mobile Publisher Notification",
+          "value": "mobile_publisher"
+        },
+        {
+          "active": true,
+          "label": "Tableau Next Metadata Movement Notification",
+          "value": "tua_admin_metadata_movement"
+        },
+        {
+          "active": true,
+          "label": "Deterministic Encryption Key",
+          "value": "new_deterministic_key"
+        },
+        {
+          "active": true,
+          "label": "Record Research Notification",
+          "value": "record_research_notify"
+        },
+        {
+          "active": true,
+          "label": "Tableau Next Asset Governance Notification",
+          "value": "tua_admin_asset_governance"
+        },
+        {
+          "active": true,
+          "label": "Advanced Quote To Order Notification",
+          "value": "quote_to_order_async"
+        },
+        {
+          "active": true,
+          "label": "Personal Org Creation",
+          "value": "personal_org_creation"
+        },
+        {
+          "active": true,
+          "label": "Personal Org Transfer",
+          "value": "personal_org_transfer"
+        },
+        {
+          "active": true,
+          "label": "Release Details",
+          "value": "itsm_release_create"
+        },
+        {
+          "active": true,
+          "label": "Release Attribute Change",
+          "value": "itsm_release_update"
+        },
+        {
+          "active": true,
+          "label": "Performance priming notification",
+          "value": "ads_notification"
+        },
+        {
+          "active": true,
+          "label": "DPE Debug Notification",
+          "value": "dpe_recalculate_notify"
+        },
+        {
+          "active": true,
+          "label": "Industries Go Accelerate Notification",
+          "value": "go_accelerate_notify"
+        },
+        {
+          "active": true,
+          "label": "Invoice Payment Status",
+          "value": "invoice_payment_status"
+        },
+        {
+          "active": true,
+          "label": "ITSM InApp",
+          "value": "itsm_inapp"
+        },
+        {
+          "active": true,
+          "label": "ITSM MS Teams",
+          "value": "itsm_ms_teams"
+        },
+        {
+          "active": true,
+          "label": "Slack LEX",
+          "value": "slack_lex"
+        },
+        {
+          "active": true,
+          "label": "Energy and Utilities Multisite Notification",
+          "value": "multi_site_notification"
+        },
+        {
+          "active": true,
+          "label": "Templatized data alert notification",
+          "value": "templatized_data_alert"
+        },
+        {
+          "active": true,
+          "label": "Graph API Migration Notification",
+          "value": "admin_graph_api_migration"
+        },
+        {
+          "active": true,
+          "label": "Graph API Migration User Notification",
+          "value": "user_graph_api_migration"
+        },
+        {
+          "active": true,
+          "label": "Inventory Inbound Transfers",
+          "value": "inventory_inbound_transfer"
+        },
+        {
+          "active": true,
+          "label": "Stock Rotation Generate Claim Notification",
+          "value": "stock_rotation_gen_claim"
+        },
+        {
+          "active": true,
+          "label": "Stock Rotation Simulate Notification",
+          "value": "stock_rotation_simulate"
+        },
+        {
+          "active": true,
+          "label": "Flow Path Experiment Results",
+          "value": "flow_experiment_result"
+        },
+        {
+          "active": true,
+          "label": "Commerce Agent Setup Notification",
+          "value": "cc_commerce_agent_setup"
+        },
+        {
+          "active": true,
+          "label": "Deal recap generated",
+          "value": "deal_recap_notify"
+        },
+        {
+          "active": true,
+          "label": "Payment Status",
+          "value": "rtf_payment_status"
+        },
+        {
+          "active": true,
+          "label": "Suites Agent Enablement",
+          "value": "suites_agent_enablement"
+        },
+        {
+          "active": true,
+          "label": "AgentExchange Go-To-Market App Partner Notification",
+          "value": "tm_notify_partner"
+        },
+        {
+          "active": true,
+          "label": "AgentExchange Go-To-Market App Subscriber Notification",
+          "value": "tm_notify_subscriber"
+        },
+        {
+          "active": true,
+          "label": "Einstein Conversational Meeting Reminder",
+          "value": "eci_meeting_reminder"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Push By Default",
+      "name": "IsPushByDefault",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    }
+  ],
+  "childRelationships": []
+}

@@ -1,0 +1,593 @@
+{
+  "name": "AuthSession",
+  "label": "Auth Session",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Auth Session ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "User ID",
+      "name": "UsersId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "Users",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Updated",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Valid For",
+      "name": "NumSecondsValid",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "User Type",
+      "name": "UserType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Standard",
+          "value": "Standard"
+        },
+        {
+          "active": true,
+          "label": "Partner",
+          "value": "PowerPartner"
+        },
+        {
+          "active": true,
+          "label": "Customer Portal Manager",
+          "value": "PowerCustomerSuccess"
+        },
+        {
+          "active": true,
+          "label": "Customer Portal User",
+          "value": "CustomerSuccess"
+        },
+        {
+          "active": true,
+          "label": "Guest",
+          "value": "Guest"
+        },
+        {
+          "active": true,
+          "label": "High Volume Portal",
+          "value": "CspLitePortal"
+        },
+        {
+          "active": true,
+          "label": "CSN Only",
+          "value": "CsnOnly"
+        },
+        {
+          "active": true,
+          "label": "Self Service",
+          "value": "SelfService"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Source IP",
+      "name": "SourceIp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Login",
+      "name": "LoginType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Application",
+          "value": "Application"
+        },
+        {
+          "active": true,
+          "label": "Offline Client",
+          "value": "Offline Client"
+        },
+        {
+          "active": true,
+          "label": "DataJunction",
+          "value": "DataJunction"
+        },
+        {
+          "active": true,
+          "label": "Self-Service",
+          "value": "Self-Service"
+        },
+        {
+          "active": true,
+          "label": "Order Center",
+          "value": "Order Center"
+        },
+        {
+          "active": true,
+          "label": "Outlook Integration",
+          "value": "Outlook Integration"
+        },
+        {
+          "active": true,
+          "label": "Other Apex API",
+          "value": "Other Apex API"
+        },
+        {
+          "active": true,
+          "label": "DB Replication",
+          "value": "DB Replication"
+        },
+        {
+          "active": true,
+          "label": "Sales Anywhere",
+          "value": "Sales Anywhere"
+        },
+        {
+          "active": true,
+          "label": "Partner Product",
+          "value": "Partner Product"
+        },
+        {
+          "active": true,
+          "label": "Sync",
+          "value": "Sync"
+        },
+        {
+          "active": true,
+          "label": "Validate",
+          "value": "Validate"
+        },
+        {
+          "active": true,
+          "label": "SysAdmin Switch",
+          "value": "SysAdmin Switch"
+        },
+        {
+          "active": true,
+          "label": "Excel Integration",
+          "value": "Excel Integration"
+        },
+        {
+          "active": true,
+          "label": "Apex Office Toolkit",
+          "value": "Apex Office Toolkit"
+        },
+        {
+          "active": true,
+          "label": "AJAX Toolkit",
+          "value": "AJAX Toolkit"
+        },
+        {
+          "active": true,
+          "label": "Customer Service Portal",
+          "value": "Customer Service Portal"
+        },
+        {
+          "active": true,
+          "label": "Salesforce.com Website",
+          "value": "Salesforce.com Website"
+        },
+        {
+          "active": true,
+          "label": "SAML Idp Initiated SSO",
+          "value": "SAML Idp Initiated SSO"
+        },
+        {
+          "active": true,
+          "label": "Remote Access Client",
+          "value": "Remote Access Client"
+        },
+        {
+          "active": true,
+          "label": "AppExchange",
+          "value": "AppExchange"
+        },
+        {
+          "active": true,
+          "label": "SAML Sfdc Initiated SSO",
+          "value": "SAML Sfdc Initiated SSO"
+        },
+        {
+          "active": true,
+          "label": "Partner Portal",
+          "value": "Partner Portal"
+        },
+        {
+          "active": true,
+          "label": "SAML Customer Service Portal SSO",
+          "value": "SAML Customer Service Portal SSO"
+        },
+        {
+          "active": true,
+          "label": "SAML Partner Portal SSO",
+          "value": "SAML Partner Portal SSO"
+        },
+        {
+          "active": true,
+          "label": "Signup",
+          "value": "Signup"
+        },
+        {
+          "active": true,
+          "label": "AppStore",
+          "value": "AppStore"
+        },
+        {
+          "active": true,
+          "label": "Help And Training",
+          "value": "Help And Training"
+        },
+        {
+          "active": true,
+          "label": "Community",
+          "value": "Community"
+        },
+        {
+          "active": true,
+          "label": "SAML Site SSO",
+          "value": "SAML Site SSO"
+        },
+        {
+          "active": true,
+          "label": "Remote Access 2.0",
+          "value": "Remote Access 2.0"
+        },
+        {
+          "active": true,
+          "label": "Third Party SSO",
+          "value": "Third Party SSO"
+        },
+        {
+          "active": true,
+          "label": "Chatter Communities External User",
+          "value": "Chatter Communities External User"
+        },
+        {
+          "active": true,
+          "label": "Networks Portal API Only",
+          "value": "Networks Portal API Only"
+        },
+        {
+          "active": true,
+          "label": "SAML Chatter Communities External User SSO",
+          "value": "SAML Chatter Communities External User SSO"
+        },
+        {
+          "active": true,
+          "label": "Chatter Communities External User Third Party SSO",
+          "value": "Chatter Communities External User Third Party SSO"
+        },
+        {
+          "active": true,
+          "label": "Salesforce Outlook Integration",
+          "value": "Salesforce Outlook Integration"
+        },
+        {
+          "active": true,
+          "label": "Customer Service Portal Third-Party SSO",
+          "value": "Customer Service Portal Third-Party SSO"
+        },
+        {
+          "active": true,
+          "label": "Partner Portal Third-Party SSO",
+          "value": "Partner Portal Third-Party SSO"
+        },
+        {
+          "active": true,
+          "label": "Employee Login to Community",
+          "value": "Employee Login to Community"
+        },
+        {
+          "active": true,
+          "label": "Certificate-based login",
+          "value": "Certificate-based login"
+        },
+        {
+          "active": true,
+          "label": "Passwordless Login via Passkeys",
+          "value": "Passwordless Login via Passkeys"
+        },
+        {
+          "active": true,
+          "label": "Passwordless Login",
+          "value": "Passwordless Login"
+        },
+        {
+          "active": true,
+          "label": "HOTP YubiKey",
+          "value": "HOTP YubiKey"
+        },
+        {
+          "active": true,
+          "label": "Lightning Login",
+          "value": "Lightning Login"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Session Type",
+      "name": "SessionType",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Session Security Level",
+      "name": "SessionSecurityLevel",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": null,
+          "value": "LOW"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "STANDARD"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "HIGH_ASSURANCE"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Logout URL",
+      "name": "LogoutUrl",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Auth Session ID",
+      "name": "ParentId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "AuthSession"
+      ],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Login History ID",
+      "name": "LoginHistoryId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "LoginHistory"
+      ],
+      "relationshipName": "LoginHistory",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Login Geo Data ID",
+      "name": "LoginGeoId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "LoginGeo"
+      ],
+      "relationshipName": "LoginGeo",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Current Session",
+      "name": "IsCurrent",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Associated With Jwt",
+      "name": "IsAssociatedWithJwtAccessToken",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    }
+  ],
+  "childRelationships": [
+    {
+      "childSObject": "AuthSession",
+      "field": "ParentId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "IdentityProviderEventStore",
+      "field": "AuthSessionId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "IdpEventLog",
+      "field": "AuthSessionId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "SessionPermSetActivation",
+      "field": "AuthSessionId",
+      "relationshipName": "SessionPermSetActivations"
+    }
+  ]
+}

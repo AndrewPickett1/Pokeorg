@@ -1,0 +1,89 @@
+<template>
+    <!-- Battle Window -->
+    <lightning-card>
+        
+        <div class="slds-var-m-around_medium slds-border_bottom">
+            <!-- PKMN 2 -->
+            <div class="slds-grid slds-gutters">
+                <!-- health bar -->
+                <div class="slds-col slds-align_absolute-center slds-size_1-of-2">
+                    <!-- smalled box in which the health bar window is contained -->
+                    <div class="slds-box slds-size_3-of-4">
+                        <!-- pkmn name plate -->
+                        <c-pkmn-health-bar
+                        pkmn-id = {pkmn2Id}
+                        ></c-pkmn-health-bar>
+                    </div>
+                </div>
+                <!-- sprite -->
+                <!-- animate__animated animate__backInRight animate__faster  -->
+                <div class="slds-col slds-align_absolute-center slds-size_1-of-2">
+                    <img src={pkmn2SpriteURL} alt="image" height="100px" width="200px"/>
+                </div>
+            </div>
+
+            <!-- PKMN 1 -->
+            <div class="slds-grid slds-gutters"> 
+                <!-- sprite -->
+                <!-- animate__animated animate__backInLeft -->
+                <div class="slds-col slds-align_absolute-center slds-size_1-of-2">
+                    <img src={pkmn1SpriteURL} alt="image" height="100px" width="200px"/>
+                </div>
+
+                <!-- health bar -->
+                <div class="slds-col slds-align_absolute-center slds-size_1-of-2">
+                    <!-- smaller box in which the health bar window is contained -->
+                    <div class="slds-box slds-size_3-of-4">
+                        <!-- pkmn name plate -->
+                        <c-pkmn-health-bar
+                        pkmn-id = {pkmn1Id}
+                        ></c-pkmn-health-bar>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </lightning-card> 
+
+    <!-- Moves -->
+    <lightning-card>
+        <div class="slds-var-m-top_small slds-var-m-bottom_medium">
+            
+            <div class="slds-grid slds-gutters">
+                <!-- pkmn 1 moves -->
+                <div class="slds-col slds-size_1-of-2 slds-box">
+                    <div class="slds-text-heading_medium">{pkmn1NameField} Moves:</div> 
+                    <template for:each={pkmn1MoveSet} for:item="move">
+                        <div key={move.Id} class="slds-var-p-around_medium">
+                            <lightning-button 
+                            label={move.Move__c} 
+                            variant="brand" 
+                            onclick={handlePkmn1MoveSelection}
+                            value={move.Id}></lightning-button>
+                        </div>
+                    </template>
+                </div>
+                <!-- pkmn 2 moves -->
+                <div class="slds-col slds-size_1-of-2 slds-box">
+                    
+                    <!-- title -->
+                    <div class="slds-text-heading_medium">{pkmn2NameField} Moves:</div> 
+                    <template for:each={pkmn2MoveSet} for:item="move">
+                        <div key={move.Id} class="slds-var-p-around_medium">
+                            <lightning-button 
+                            label={move.Move__c} 
+                            variant="brand" 
+                            onclick={handlePkmn2MoveSelection}
+                            value={move.Id}></lightning-button>
+                        </div>
+                    </template>
+
+                </div>
+            </div>
+            
+            <div class="slds-align_absolute-center slds-var-p-top_medium">
+                <lightning-button variant="brand" label="Submit" onclick={handleTurnSubmission}></lightning-button>
+            </div>
+        </div>  
+    </lightning-card>   
+    
+</template>

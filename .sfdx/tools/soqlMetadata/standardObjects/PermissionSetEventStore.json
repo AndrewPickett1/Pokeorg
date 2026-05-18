@@ -1,0 +1,626 @@
+{
+  "name": "PermissionSetEventStore",
+  "label": "Permission Set Event Store ",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Permission Set Event Store ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Event Identifier",
+      "name": "EventIdentifier",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "User ID",
+      "name": "UserId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "User",
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Username",
+      "name": "Username",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Event Date",
+      "name": "EventDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Related Event Identifier",
+      "name": "RelatedEventIdentifier",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Transaction Security Policy ID",
+      "name": "PolicyId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "TransactionSecurityPolicy"
+      ],
+      "relationshipName": "Policy",
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Policy Outcome",
+      "name": "PolicyOutcome",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Block",
+          "value": "Block"
+        },
+        {
+          "active": true,
+          "label": "FreezeUser",
+          "value": "FreezeUser"
+        },
+        {
+          "active": true,
+          "label": "EndSession",
+          "value": "EndSession"
+        },
+        {
+          "active": true,
+          "label": "Notified",
+          "value": "Notified"
+        },
+        {
+          "active": true,
+          "label": "NoAction",
+          "value": "NoAction"
+        },
+        {
+          "active": true,
+          "label": "TwoFAInitiated",
+          "value": "TwoFAInitiated"
+        },
+        {
+          "active": true,
+          "label": "TwoFASucceeded",
+          "value": "TwoFASucceeded"
+        },
+        {
+          "active": true,
+          "label": "TwoFADenied",
+          "value": "TwoFADenied"
+        },
+        {
+          "active": true,
+          "label": "Error",
+          "value": "Error"
+        },
+        {
+          "active": true,
+          "label": "TwoFAInProgress",
+          "value": "TwoFAInProgress"
+        },
+        {
+          "active": true,
+          "label": "TwoFARecoverableError",
+          "value": "TwoFARecoverableError"
+        },
+        {
+          "active": true,
+          "label": "TwoFAFailedGeneralError",
+          "value": "TwoFAFailedGeneralError"
+        },
+        {
+          "active": true,
+          "label": "TwoFAFailedInvalidCode",
+          "value": "TwoFAFailedInvalidCode"
+        },
+        {
+          "active": true,
+          "label": "TwoFAFailedTooManyAttempts",
+          "value": "TwoFAFailedTooManyAttempts"
+        },
+        {
+          "active": true,
+          "label": "TwoFAAutomatedSuccess",
+          "value": "TwoFAAutomatedSuccess"
+        },
+        {
+          "active": true,
+          "label": "TwoFAReportedDenied",
+          "value": "TwoFAReportedDenied"
+        },
+        {
+          "active": true,
+          "label": "TwoFANoAction",
+          "value": "TwoFANoAction"
+        },
+        {
+          "active": true,
+          "label": "FailedPasswordLockout",
+          "value": "FailedPasswordLockout"
+        },
+        {
+          "active": true,
+          "label": "FailedInvalidPassword",
+          "value": "FailedInvalidPassword"
+        },
+        {
+          "active": true,
+          "label": "ExemptNoAction",
+          "value": "ExemptNoAction"
+        },
+        {
+          "active": true,
+          "label": "MeteringNoAction",
+          "value": "MeteringNoAction"
+        },
+        {
+          "active": true,
+          "label": "MeteringBlock",
+          "value": "MeteringBlock"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Evaluation Time",
+      "name": "EvaluationTime",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "double"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Session Key",
+      "name": "SessionKey",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Login Key",
+      "name": "LoginKey",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Session Level",
+      "name": "SessionLevel",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": null,
+          "value": "LOW"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "STANDARD"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "HIGH_ASSURANCE"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Source IP",
+      "name": "SourceIp",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Login History ID",
+      "name": "LoginHistoryId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "LoginHistory"
+      ],
+      "relationshipName": "LoginHistory",
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Event Source",
+      "name": "EventSource",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Classic",
+          "value": "Classic"
+        },
+        {
+          "active": true,
+          "label": "API",
+          "value": "API"
+        },
+        {
+          "active": true,
+          "label": "Lightning",
+          "value": "Lightning"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Operation",
+      "name": "Operation",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "PermsEnabled",
+          "value": "PermsEnabled"
+        },
+        {
+          "active": true,
+          "label": "PermsDisabled",
+          "value": "PermsDisabled"
+        },
+        {
+          "active": true,
+          "label": "AssignedToUsers",
+          "value": "AssignedToUsers"
+        },
+        {
+          "active": true,
+          "label": "UnassignedFromUsers",
+          "value": "UnassignedFromUsers"
+        },
+        {
+          "active": true,
+          "label": "CriticalPerms",
+          "value": "CriticalPerms"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Parent Id List",
+      "name": "ParentIdList",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "json"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Parent Name List",
+      "name": "ParentNameList",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "json"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Permission Type",
+      "name": "PermissionType",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Permission List",
+      "name": "PermissionList",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "json"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Has External Users",
+      "name": "HasExternalUsers",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Impacted User Ids",
+      "name": "ImpactedUserIds",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "json"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "User Count",
+      "name": "UserCount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Permission Expiration",
+      "name": "PermissionExpiration",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Permission Expiration List",
+      "name": "PermissionExpirationList",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "json"
+    }
+  ],
+  "childRelationships": []
+}

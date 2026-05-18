@@ -1,0 +1,1071 @@
+{
+  "name": "RecentlyViewed",
+  "label": "Recently Viewed",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Recently Viewed ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "switchablepersonname",
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Name",
+      "name": "Name",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "switchablepersonname",
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Name",
+      "name": "LastName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "switchablepersonname",
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "First Name",
+      "name": "FirstName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Type",
+      "name": "Type",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": null,
+          "value": "Account"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AlternativePaymentMethod"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ApiAnomalyEventStore"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AppAnalyticsQueryRequest"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Asset"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AssetRelationship"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AssociatedLocation"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AsyncOperationLog"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AuthorizationForm"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AuthorizationFormConsent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AuthorizationFormDataUse"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AuthorizationFormText"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BatchJob"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Battle__c"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BusinessBrand"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BusinessHours"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Campaign"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CardPaymentMethod"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Case"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ChangeRequest"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CollaborationGroup"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CommSubscription"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CommSubscriptionChannelType"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CommSubscriptionConsent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CommSubscriptionTiming"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ConsumptionSchedule"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Contact"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointAddress"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointConsent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointEmail"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointPhone"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointTypeConsent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactRequest"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContentDocument"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Contract"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContractLineItem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CredentialStuffingEventStore"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CreditMemo"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Customer"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DandBCompany"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Dashboard"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DataMaskCustomValueLibrary"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DataUseLegalBasis"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DataUsePurpose"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DevopsActivityLog"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DevopsEnvironment"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DevopsRequestInfo"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DigitalWallet"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Document"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DuplicateRecordSet"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EngagementChannelType"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EnhancedLetterhead"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Entitlement"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Event"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FinanceBalanceSnapshot"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FinanceTransaction"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowOrchestration"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowOrchestrationInstance"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowOrchestrationVersion"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowOrchestrationWorkItem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowRecord"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowRecordElement"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowRecordVersion"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowRecordVersionOccurrence"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "GuestUserAnomalyEventStore"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Idea"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Image"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Incident"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Individual"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Invoice"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Lead"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "LegalEntity"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ListEmail"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ListView"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Location"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "LocationGroup"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "LocationGroupAssignment"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "LoginAnomalyEventStore"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Macro"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ManagedContentSpace"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MessagingEndUser"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MessagingSession"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Move__c"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Opportunity"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "OpportunityLineItem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Order"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PartyConsent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Payment"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PaymentAuthAdjustment"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PaymentAuthorization"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PaymentGateway"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PaymentGatewayLog"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PaymentLineInvoice"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Pokedex_Entry__c"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Pokemon__c"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Pricebook2"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PricebookEntry"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PrivacyPolicy"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PrivacyRTBFRequest"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Problem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ProcessException"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Product2"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Profile"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "QuickText"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Recommendation"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Refund"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Report"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ReportAnomalyEventStore"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Scorecard"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ScorecardAssociation"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Seller"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ServiceContract"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "SessionHijackingEventStore"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "SfdcPartnerSbscrOffer"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "SfdcPartnerSbscrOfferItem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Solution"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "StreamingChannel"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Task"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ThreatDetectionFeedback"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "TM__c"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Topic"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UniversalAnomalyEventStore"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UnstructuredStorageSpace"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "User"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UserAppMenuItem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UserDefinedLabel"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkBadge"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkBadgeDefinition"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkOrder"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkOrderLineItem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkPlan"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkPlanTemplate"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkPlanTemplateEntry"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkStep"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkStepTemplate"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Alias",
+      "name": "Alias",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Role ID",
+      "name": "UserRoleId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "UserRole"
+      ],
+      "relationshipName": "UserRole",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Record Type ID",
+      "name": "RecordTypeId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "RecordType"
+      ],
+      "relationshipName": "RecordType",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Active",
+      "name": "IsActive",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Profile ID",
+      "name": "ProfileId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Profile"
+      ],
+      "relationshipName": "Profile",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Title",
+      "name": "Title",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Email",
+      "name": "Email",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "email"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Phone",
+      "name": "Phone",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "phone"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Name or Alias",
+      "name": "NameOrAlias",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Viewed Date",
+      "name": "LastViewedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Referenced Date",
+      "name": "LastReferencedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Language",
+      "name": "Language",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "English",
+          "value": "en_US"
+        },
+        {
+          "active": true,
+          "label": "German",
+          "value": "de"
+        },
+        {
+          "active": true,
+          "label": "Spanish",
+          "value": "es"
+        },
+        {
+          "active": true,
+          "label": "French",
+          "value": "fr"
+        },
+        {
+          "active": true,
+          "label": "Italian",
+          "value": "it"
+        },
+        {
+          "active": true,
+          "label": "Japanese",
+          "value": "ja"
+        },
+        {
+          "active": true,
+          "label": "Swedish",
+          "value": "sv"
+        },
+        {
+          "active": true,
+          "label": "Korean",
+          "value": "ko"
+        },
+        {
+          "active": true,
+          "label": "Chinese (Traditional)",
+          "value": "zh_TW"
+        },
+        {
+          "active": true,
+          "label": "Chinese (Simplified)",
+          "value": "zh_CN"
+        },
+        {
+          "active": true,
+          "label": "Portuguese (Brazil)",
+          "value": "pt_BR"
+        },
+        {
+          "active": true,
+          "label": "Dutch",
+          "value": "nl_NL"
+        },
+        {
+          "active": true,
+          "label": "Danish",
+          "value": "da"
+        },
+        {
+          "active": true,
+          "label": "Thai",
+          "value": "th"
+        },
+        {
+          "active": true,
+          "label": "Finnish",
+          "value": "fi"
+        },
+        {
+          "active": true,
+          "label": "Russian",
+          "value": "ru"
+        },
+        {
+          "active": true,
+          "label": "Spanish (Mexico)",
+          "value": "es_MX"
+        },
+        {
+          "active": true,
+          "label": "Norwegian",
+          "value": "no"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    }
+  ],
+  "childRelationships": []
+}

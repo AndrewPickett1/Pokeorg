@@ -1,0 +1,429 @@
+{
+  "name": "QueueSobject",
+  "label": "Queue sObject",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Queue sObject ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Group ID",
+      "name": "QueueId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "Group"
+      ],
+      "relationshipName": "Queue",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "sObject Type",
+      "name": "SobjectType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": null,
+          "value": "AlternativePaymentMethod"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ApprovalSubmission"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AuthorizationForm"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AuthorizationFormConsent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AuthorizationFormDataUse"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Battle__c"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BusinessBrand"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Case"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ChangeRequest"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CommSubscription"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CommSubscriptionChannelType"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CommSubscriptionConsent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ConsumptionSchedule"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointAddress"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointConsent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointEmail"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointPhone"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactPointTypeConsent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ContactRequest"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ConvEntryRelatedRecordCopy"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ConversationEntryCopy"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CreditMemo"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Customer"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DataMaskCustomValueLibrary"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DataUseLegalBasis"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DataUsePurpose"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DevopsActivityLog"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EngagementChannelType"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FinanceBalanceSnapshot"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FinanceTransaction"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowOrchestrationInstance"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowOrchestrationStageInstance"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowOrchestrationStepInstance"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FlowOrchestrationWorkItem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Image"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Incident"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Invoice"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Lead"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "LegalEntity"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Location"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "LocationGroup"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Macro"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MessagingEndUser"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MessagingSession"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Order"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PartyConsent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Pokedex_Entry__c"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PrivacyRTBFRequest"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Problem"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ProcessException"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "QuickText"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "RebatePayoutSnapshot"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Scorecard"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Seller"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ServiceContract"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Task"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "TM__c"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UnstructuredStorageSpace"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UserProvisioningRequest"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WebCartDocument"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkBadgeDefinition"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkOrder"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkPlan"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkPlanTemplate"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkStepTemplate"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "WorkThanks"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    }
+  ],
+  "childRelationships": []
+}

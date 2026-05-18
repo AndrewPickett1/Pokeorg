@@ -1,0 +1,22 @@
+<template>
+    <div class="slds-text-heading_small slds-var-p-bottom_xx-small">
+        <strong>{pkmnNameField}</strong>
+        <!-- displays badge if pokemon is fainted -->
+        <template if:true={isFainted}>
+            <span class="slds-var-p-around_xx-small">
+                <lightning-badge label="Fainted" class="slds-theme_error"></lightning-badge>
+            </span>
+        </template>
+        <!-- Status indicator badge -->
+        <template if:true={status}>
+            <span class="slds-var-p-around_xx-small">
+                <lightning-badge label={status} class={statusBadgeClass}></lightning-badge>
+            </span>
+        </template>
+    </div> 
+
+    <!-- health bar -->
+    <lightning-progress-bar value={pkmnHpPercent} size="medium" variant="circular"></lightning-progress-bar> 
+
+    <p>HP: {pkmnCurrHp} / {pkmnMaxHp}</p>
+</template>

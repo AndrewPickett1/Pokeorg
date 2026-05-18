@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Paralyzed</fullName>
+        <default>false</default>
+        <label>Paralyzed</label>
+    </customValue>
+    <customValue>
+        <fullName>Burn</fullName>
+        <default>false</default>
+        <label>Burn</label>
+    </customValue>
+    <customValue>
+        <fullName>Sleep</fullName>
+        <default>false</default>
+        <label>Sleep</label>
+    </customValue>
+    <customValue>
+        <fullName>Frozen</fullName>
+        <default>false</default>
+        <label>Frozen</label>
+    </customValue>
+    <customValue>
+        <fullName>Poison</fullName>
+        <default>false</default>
+        <label>Poison</label>
+    </customValue>
+    <customValue>
+        <fullName>Confused</fullName>
+        <default>false</default>
+        <label>Confused</label>
+    </customValue>
+    <masterLabel>Status Modifiers</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,20 @@
+<template>
+    <lightning-card>
+        <div class="slds-var-p-around_small">
+            <div class="slds-grid slds-gutters slds-align_absolute-center">
+                <!-- Sprite picture -->
+                <div class="slds-col slds-size_1-of-2">
+                    <img src={spriteUrl} alt="image" height="100px" width="200px"/>
+                </div>
+                <!-- Nameplate -->
+                <div class="slds-col slds-align_absolute-center slds-size_1-of-2">
+                    <div class="slds-box slds-size_11-of-12">
+                        <c-pkmn-health-bar
+                        pkmn-id = {pkmnId}
+                        ></c-pkmn-health-bar>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

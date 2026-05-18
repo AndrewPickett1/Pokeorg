@@ -1,0 +1,752 @@
+{
+  "name": "TransactionSecurityPolicy",
+  "label": "Transaction Security Policy",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Transaction Security Policy ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Name",
+      "name": "DeveloperName",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Master Language",
+      "name": "Language",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "English",
+          "value": "en_US"
+        },
+        {
+          "active": true,
+          "label": "German",
+          "value": "de"
+        },
+        {
+          "active": true,
+          "label": "Spanish",
+          "value": "es"
+        },
+        {
+          "active": true,
+          "label": "French",
+          "value": "fr"
+        },
+        {
+          "active": true,
+          "label": "Italian",
+          "value": "it"
+        },
+        {
+          "active": true,
+          "label": "Japanese",
+          "value": "ja"
+        },
+        {
+          "active": true,
+          "label": "Swedish",
+          "value": "sv"
+        },
+        {
+          "active": true,
+          "label": "Korean",
+          "value": "ko"
+        },
+        {
+          "active": true,
+          "label": "Chinese (Traditional)",
+          "value": "zh_TW"
+        },
+        {
+          "active": true,
+          "label": "Chinese (Simplified)",
+          "value": "zh_CN"
+        },
+        {
+          "active": true,
+          "label": "Portuguese (Brazil)",
+          "value": "pt_BR"
+        },
+        {
+          "active": true,
+          "label": "Dutch",
+          "value": "nl_NL"
+        },
+        {
+          "active": true,
+          "label": "Danish",
+          "value": "da"
+        },
+        {
+          "active": true,
+          "label": "Thai",
+          "value": "th"
+        },
+        {
+          "active": true,
+          "label": "Finnish",
+          "value": "fi"
+        },
+        {
+          "active": true,
+          "label": "Russian",
+          "value": "ru"
+        },
+        {
+          "active": true,
+          "label": "Spanish (Mexico)",
+          "value": "es_MX"
+        },
+        {
+          "active": true,
+          "label": "Norwegian",
+          "value": "no"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Name",
+      "name": "MasterLabel",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Namespace Prefix",
+      "name": "NamespacePrefix",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Policy Type",
+      "name": "Type",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": null,
+          "value": "CustomApexPolicy"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CustomConditionBuilderPolicy"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "State",
+      "name": "State",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": null,
+          "value": "Disabled"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Enabled"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Action Configuration",
+      "name": "ActionConfig",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Class ID",
+      "name": "ApexPolicyId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "ApexClass"
+      ],
+      "relationshipName": "ApexPolicy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Event Type",
+      "name": "EventType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": null,
+          "value": "AuditTrail"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Login"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Entity"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DataExport"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AccessResource"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Resource Name",
+      "name": "ResourceName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "User ID",
+      "name": "ExecutionUserId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "ExecutionUser",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Description",
+      "name": "Description",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Event Name",
+      "name": "EventName",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": null,
+          "value": "ReportEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ApiEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AdminSetupEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "LoginEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ListViewEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "CredentialStuffingEventStore"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ReportAnomalyEventStore"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "SessionHijackingEventStore"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ApiAnomalyEventStore"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BulkApiResultEventStore"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PermissionSetEventStore"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "FileEventStore"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "GuestUserAnomalyEventStore"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "LoginAsEvent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "LoginAnomalyEventStore"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "UniversalAnomalyEventStore"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Block Message",
+      "name": "BlockMessage",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Custom Email Content",
+      "name": "CustomEmailContent",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    }
+  ],
+  "childRelationships": [
+    {
+      "childSObject": "ApiAnomalyEvent",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ApiAnomalyEventStore",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ApiEvent",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ApiEventStream",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "BulkApiResultEvent",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "BulkApiResultEventStore",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "CredentialStuffingEvent",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "CredentialStuffingEventStore",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "FileEvent",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "FileEventStore",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "GuestUserAnomalyEvent",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "GuestUserAnomalyEventStore",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ListViewEvent",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ListViewEventStream",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "LoginAnomalyEvent",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "LoginAnomalyEventStore",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "LoginEvent",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "LoginEventStream",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "PermissionSetEvent",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "PermissionSetEventStore",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ReportAnomalyEvent",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ReportAnomalyEventStore",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ReportEvent",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ReportEventStream",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "SessionHijackingEvent",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "SessionHijackingEventStore",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "UniversalAnomalyEvent",
+      "field": "PolicyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "UniversalAnomalyEventStore",
+      "field": "PolicyId",
+      "relationshipName": null
+    }
+  ]
+}

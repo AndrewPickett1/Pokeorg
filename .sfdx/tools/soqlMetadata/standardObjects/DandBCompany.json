@@ -1,0 +1,6553 @@
+{
+  "name": "DandBCompany",
+  "label": "D&B Company",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "D&B Company ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Primary Business Name",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Viewed Date",
+      "name": "LastViewedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Referenced Date",
+      "name": "LastReferencedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "D-U-N-S Number",
+      "name": "DunsNumber",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Street Address",
+      "name": "Street",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "City",
+      "name": "City",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "State",
+      "name": "State",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Postal Code",
+      "name": "PostalCode",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Country",
+      "name": "Country",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Geocode Accuracy",
+      "name": "GeocodeAccuracyStandard",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Address",
+          "value": "Address"
+        },
+        {
+          "active": true,
+          "label": "Near Address",
+          "value": "NearAddress"
+        },
+        {
+          "active": true,
+          "label": "Block",
+          "value": "Block"
+        },
+        {
+          "active": true,
+          "label": "Street",
+          "value": "Street"
+        },
+        {
+          "active": true,
+          "label": "Extended Zip",
+          "value": "ExtendedZip"
+        },
+        {
+          "active": true,
+          "label": "Zip",
+          "value": "Zip"
+        },
+        {
+          "active": true,
+          "label": "Neighborhood",
+          "value": "Neighborhood"
+        },
+        {
+          "active": true,
+          "label": "City",
+          "value": "City"
+        },
+        {
+          "active": true,
+          "label": "County",
+          "value": "County"
+        },
+        {
+          "active": true,
+          "label": "State",
+          "value": "State"
+        },
+        {
+          "active": true,
+          "label": "Unknown",
+          "value": "Unknown"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Primary Address",
+      "name": "Address",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "address"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Telephone Number",
+      "name": "Phone",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "phone"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Facsimile Number",
+      "name": "Fax",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "phone"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "International Dialing Code",
+      "name": "CountryAccessCode",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Ownership Type Indicator",
+      "name": "PublicIndicator",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Public",
+          "value": "Y"
+        },
+        {
+          "active": true,
+          "label": "Private",
+          "value": "N"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Ticker Symbol",
+      "name": "StockSymbol",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Stock Exchange",
+      "name": "StockExchange",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Annual Sales Volume",
+      "name": "SalesVolume",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "URL",
+      "name": "URL",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "url"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Out Of Business Indicator",
+      "name": "OutOfBusiness",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Out of Business",
+          "value": "Y"
+        },
+        {
+          "active": true,
+          "label": "Not Out of Business",
+          "value": "N"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Number of Employees - Total",
+      "name": "EmployeesTotal",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "FIPS MSA Code",
+      "name": "FipsMsaCode",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "FIPS MSA Code Description",
+      "name": "FipsMsaDesc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Primary Tradestyle",
+      "name": "TradeStyle1",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Year Started",
+      "name": "YearStarted",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Mailing Street Address",
+      "name": "MailingStreet",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Mailing City",
+      "name": "MailingCity",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Mailing State",
+      "name": "MailingState",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Mailing Postal Code",
+      "name": "MailingPostalCode",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Mailing Country",
+      "name": "MailingCountry",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Mailing Geocode Accuracy",
+      "name": "MailingGeocodeAccuracy",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Address",
+          "value": "Address"
+        },
+        {
+          "active": true,
+          "label": "Near Address",
+          "value": "NearAddress"
+        },
+        {
+          "active": true,
+          "label": "Block",
+          "value": "Block"
+        },
+        {
+          "active": true,
+          "label": "Street",
+          "value": "Street"
+        },
+        {
+          "active": true,
+          "label": "Extended Zip",
+          "value": "ExtendedZip"
+        },
+        {
+          "active": true,
+          "label": "Zip",
+          "value": "Zip"
+        },
+        {
+          "active": true,
+          "label": "Neighborhood",
+          "value": "Neighborhood"
+        },
+        {
+          "active": true,
+          "label": "City",
+          "value": "City"
+        },
+        {
+          "active": true,
+          "label": "County",
+          "value": "County"
+        },
+        {
+          "active": true,
+          "label": "State",
+          "value": "State"
+        },
+        {
+          "active": true,
+          "label": "Unknown",
+          "value": "Unknown"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Mailing Address",
+      "name": "MailingAddress",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "address"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Latitude",
+      "name": "Latitude",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Longitude",
+      "name": "Longitude",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Primary SIC Code",
+      "name": "PrimarySic",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Primary SIC Description",
+      "name": "PrimarySicDesc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Second SIC Code",
+      "name": "SecondSic",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Second SIC Description",
+      "name": "SecondSicDesc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Third SIC Code",
+      "name": "ThirdSic",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Third SIC Description",
+      "name": "ThirdSicDesc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fourth SIC Code",
+      "name": "FourthSic",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fourth SIC Description",
+      "name": "FourthSicDesc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fifth SIC Code",
+      "name": "FifthSic",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fifth SIC Description",
+      "name": "FifthSicDesc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Sixth SIC Code",
+      "name": "SixthSic",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Sixth SIC Description",
+      "name": "SixthSicDesc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Primary NAICS Code",
+      "name": "PrimaryNaics",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Primary NAICS Description",
+      "name": "PrimaryNaicsDesc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Second NAICS Code",
+      "name": "SecondNaics",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Second NAICS Description",
+      "name": "SecondNaicsDesc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Third NAICS Code",
+      "name": "ThirdNaics",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Third NAICS Description",
+      "name": "ThirdNaicsDesc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fourth NAICS Code",
+      "name": "FourthNaics",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fourth NAICS Description",
+      "name": "FourthNaicsDesc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fifth NAICS Code",
+      "name": "FifthNaics",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fifth NAICS Description",
+      "name": "FifthNaicsDesc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Sixth NAICS Code",
+      "name": "SixthNaics",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Sixth NAICS Description",
+      "name": "SixthNaicsDesc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Location Ownership Indicator",
+      "name": "OwnOrRent",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Unknown or Not Applicable",
+          "value": "0"
+        },
+        {
+          "active": true,
+          "label": "Owns",
+          "value": "1"
+        },
+        {
+          "active": true,
+          "label": "Rents",
+          "value": "2"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Number of Employees - Location",
+      "name": "EmployeesHere",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Number of Employees - Location Indicator",
+      "name": "EmployeesHereReliability",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Actual number",
+          "value": "0"
+        },
+        {
+          "active": true,
+          "label": "Low",
+          "value": "1"
+        },
+        {
+          "active": true,
+          "label": "Estimated (for all records)",
+          "value": "2"
+        },
+        {
+          "active": true,
+          "label": "Modeled (for non-US records)",
+          "value": "3"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Annual Sales Volume Indicator",
+      "name": "SalesVolumeReliability",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Actual number",
+          "value": "0"
+        },
+        {
+          "active": true,
+          "label": "Low",
+          "value": "1"
+        },
+        {
+          "active": true,
+          "label": "Estimated (for all records)",
+          "value": "2"
+        },
+        {
+          "active": true,
+          "label": "Modeled (for non-US records)",
+          "value": "3"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Local Currency Code",
+      "name": "CurrencyCode",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Canadian Dollar",
+          "value": "0010"
+        },
+        {
+          "active": true,
+          "label": "U.S. Dollar",
+          "value": "0020"
+        },
+        {
+          "active": true,
+          "label": "Argentine Peso",
+          "value": "0030"
+        },
+        {
+          "active": true,
+          "label": "Aruban Florin",
+          "value": "0040"
+        },
+        {
+          "active": true,
+          "label": "Australian Dollar",
+          "value": "0050"
+        },
+        {
+          "active": true,
+          "label": "Barbados Dollar",
+          "value": "0070"
+        },
+        {
+          "active": true,
+          "label": "St Helena Pound",
+          "value": "0075"
+        },
+        {
+          "active": true,
+          "label": "Bermudian Dollar",
+          "value": "0090"
+        },
+        {
+          "active": true,
+          "label": "Denar",
+          "value": "0095"
+        },
+        {
+          "active": true,
+          "label": "Bosnia-Herzegovina Convertible Mark",
+          "value": "0105"
+        },
+        {
+          "active": true,
+          "label": "Chinese Yuan Renminbi",
+          "value": "0110"
+        },
+        {
+          "active": true,
+          "label": "Danish Krone",
+          "value": "0120"
+        },
+        {
+          "active": true,
+          "label": "Eastern Caribbean Dollar",
+          "value": "0140"
+        },
+        {
+          "active": true,
+          "label": "Egyptian Pound",
+          "value": "0150"
+        },
+        {
+          "active": true,
+          "label": "Eritrean Nakfa",
+          "value": "0155"
+        },
+        {
+          "active": true,
+          "label": "Pound Sterling",
+          "value": "0160"
+        },
+        {
+          "active": true,
+          "label": "CFP Franc",
+          "value": "0190"
+        },
+        {
+          "active": true,
+          "label": "Hong Kong Dollar",
+          "value": "0220"
+        },
+        {
+          "active": true,
+          "label": "Indian Rupee",
+          "value": "0230"
+        },
+        {
+          "active": true,
+          "label": "Israeli Sheqel (new)",
+          "value": "0250"
+        },
+        {
+          "active": true,
+          "label": "Jamaican Dollar",
+          "value": "0270"
+        },
+        {
+          "active": true,
+          "label": "Yen",
+          "value": "0280"
+        },
+        {
+          "active": true,
+          "label": "Kenyan Shilling",
+          "value": "0290"
+        },
+        {
+          "active": true,
+          "label": "Mongolian Tugrik",
+          "value": "0305"
+        },
+        {
+          "active": true,
+          "label": "Moroccan Dirham",
+          "value": "0310"
+        },
+        {
+          "active": true,
+          "label": "New Zealand Dollar",
+          "value": "0320"
+        },
+        {
+          "active": true,
+          "label": "Norwegian Krone",
+          "value": "0330"
+        },
+        {
+          "active": true,
+          "label": "Swedish Krona",
+          "value": "0370"
+        },
+        {
+          "active": true,
+          "label": "Swiss Franc",
+          "value": "0380"
+        },
+        {
+          "active": true,
+          "label": "New Taiwanese Dollar",
+          "value": "0390"
+        },
+        {
+          "active": true,
+          "label": "Thai Baht",
+          "value": "0400"
+        },
+        {
+          "active": true,
+          "label": "Afghani",
+          "value": "0410"
+        },
+        {
+          "active": true,
+          "label": "Algerian Dinar",
+          "value": "0420"
+        },
+        {
+          "active": true,
+          "label": "Bangladeshi Taka",
+          "value": "0430"
+        },
+        {
+          "active": true,
+          "label": "Bahraini Dinar",
+          "value": "0440"
+        },
+        {
+          "active": true,
+          "label": "Bahamian Dollar",
+          "value": "0450"
+        },
+        {
+          "active": true,
+          "label": "Belize Dollar",
+          "value": "0460"
+        },
+        {
+          "active": true,
+          "label": "Bolivian Boliviano",
+          "value": "0470"
+        },
+        {
+          "active": true,
+          "label": "Botswani Pula",
+          "value": "0480"
+        },
+        {
+          "active": true,
+          "label": "Brunei Dollar",
+          "value": "0490"
+        },
+        {
+          "active": true,
+          "label": "Bulgarian Lev",
+          "value": "0500"
+        },
+        {
+          "active": true,
+          "label": "Burundi Franc",
+          "value": "0520"
+        },
+        {
+          "active": true,
+          "label": "Cape Verde Escudo",
+          "value": "0530"
+        },
+        {
+          "active": true,
+          "label": "Cayman Islands Dollar",
+          "value": "0540"
+        },
+        {
+          "active": true,
+          "label": "CFA Franc BCEAO",
+          "value": "0550"
+        },
+        {
+          "active": true,
+          "label": "CFA Franc (BEAC)",
+          "value": "0552"
+        },
+        {
+          "active": true,
+          "label": "Chilean Peso",
+          "value": "0560"
+        },
+        {
+          "active": true,
+          "label": "Colombian Peso",
+          "value": "0580"
+        },
+        {
+          "active": true,
+          "label": "Comoro Franc",
+          "value": "0585"
+        },
+        {
+          "active": true,
+          "label": "Costa Rican Colon",
+          "value": "0590"
+        },
+        {
+          "active": true,
+          "label": "Czech Koruna",
+          "value": "0620"
+        },
+        {
+          "active": true,
+          "label": "Djibouti Franc",
+          "value": "0630"
+        },
+        {
+          "active": true,
+          "label": "Dominican Peso",
+          "value": "0640"
+        },
+        {
+          "active": true,
+          "label": "Netherlands Antillean Guilder",
+          "value": "0650"
+        },
+        {
+          "active": true,
+          "label": "Ethiopian Bir",
+          "value": "0690"
+        },
+        {
+          "active": true,
+          "label": "Fiji Dollar",
+          "value": "0700"
+        },
+        {
+          "active": true,
+          "label": "Dalasi",
+          "value": "0710"
+        },
+        {
+          "active": true,
+          "label": "Ghana Cedi",
+          "value": "0720"
+        },
+        {
+          "active": true,
+          "label": "Gibraltar Pound",
+          "value": "0730"
+        },
+        {
+          "active": true,
+          "label": "Guinean Franc",
+          "value": "0750"
+        },
+        {
+          "active": true,
+          "label": "Guyana Dollar",
+          "value": "0760"
+        },
+        {
+          "active": true,
+          "label": "Gourde",
+          "value": "0770"
+        },
+        {
+          "active": true,
+          "label": "Lempira",
+          "value": "0780"
+        },
+        {
+          "active": true,
+          "label": "Forint",
+          "value": "0790"
+        },
+        {
+          "active": true,
+          "label": "Icelandic Krona",
+          "value": "0800"
+        },
+        {
+          "active": true,
+          "label": "Rupiah",
+          "value": "0820"
+        },
+        {
+          "active": true,
+          "label": "Iraqi Dinar",
+          "value": "0830"
+        },
+        {
+          "active": true,
+          "label": "Jordanian Dinar",
+          "value": "0860"
+        },
+        {
+          "active": true,
+          "label": "Kuwaiti Dinar",
+          "value": "0870"
+        },
+        {
+          "active": true,
+          "label": "Kip",
+          "value": "0880"
+        },
+        {
+          "active": true,
+          "label": "Lebanese Pound",
+          "value": "0890"
+        },
+        {
+          "active": true,
+          "label": "Loti",
+          "value": "0900"
+        },
+        {
+          "active": true,
+          "label": "Liberian Dollar",
+          "value": "0910"
+        },
+        {
+          "active": true,
+          "label": "Libyan Dinar",
+          "value": "0920"
+        },
+        {
+          "active": true,
+          "label": "Malagasy Ariary",
+          "value": "0940"
+        },
+        {
+          "active": true,
+          "label": "Kwacha",
+          "value": "0960"
+        },
+        {
+          "active": true,
+          "label": "Malaysian Ringgit",
+          "value": "0970"
+        },
+        {
+          "active": true,
+          "label": "Ouguiya",
+          "value": "1000"
+        },
+        {
+          "active": true,
+          "label": "Mauritius Rupee",
+          "value": "1010"
+        },
+        {
+          "active": true,
+          "label": "Mozambique Metical",
+          "value": "1020"
+        },
+        {
+          "active": true,
+          "label": "Nepalese Rupee",
+          "value": "1030"
+        },
+        {
+          "active": true,
+          "label": "Cordoba Oro",
+          "value": "1040"
+        },
+        {
+          "active": true,
+          "label": "Rial Omani",
+          "value": "1060"
+        },
+        {
+          "active": true,
+          "label": "Pakistan Rupee",
+          "value": "1070"
+        },
+        {
+          "active": true,
+          "label": "Balboa",
+          "value": "1080"
+        },
+        {
+          "active": true,
+          "label": "Kina",
+          "value": "1090"
+        },
+        {
+          "active": true,
+          "label": "Guarani",
+          "value": "2000"
+        },
+        {
+          "active": true,
+          "label": "Neuvo Sol",
+          "value": "2010"
+        },
+        {
+          "active": true,
+          "label": "Philippine Peso",
+          "value": "2020"
+        },
+        {
+          "active": true,
+          "label": "Qatari Riyal",
+          "value": "2040"
+        },
+        {
+          "active": true,
+          "label": "Rwanda Franc",
+          "value": "2060"
+        },
+        {
+          "active": true,
+          "label": "Dobra",
+          "value": "2070"
+        },
+        {
+          "active": true,
+          "label": "Saudi Riyal",
+          "value": "2080"
+        },
+        {
+          "active": true,
+          "label": "Seychelles Rupee",
+          "value": "2090"
+        },
+        {
+          "active": true,
+          "label": "Singapore Dollar",
+          "value": "3000"
+        },
+        {
+          "active": true,
+          "label": "Solomon Islands Dollar",
+          "value": "3010"
+        },
+        {
+          "active": true,
+          "label": "Somali Shilling",
+          "value": "3020"
+        },
+        {
+          "active": true,
+          "label": "Rand",
+          "value": "3030"
+        },
+        {
+          "active": true,
+          "label": "Won",
+          "value": "3040"
+        },
+        {
+          "active": true,
+          "label": "Sri Lanka Rupee",
+          "value": "3060"
+        },
+        {
+          "active": true,
+          "label": "Sudanese Pound",
+          "value": "3070"
+        },
+        {
+          "active": true,
+          "label": "South Sudanese Pound",
+          "value": "3075"
+        },
+        {
+          "active": true,
+          "label": "Surinam Dollar",
+          "value": "3085"
+        },
+        {
+          "active": true,
+          "label": "Lilangeni",
+          "value": "3090"
+        },
+        {
+          "active": true,
+          "label": "Tanzanian Shilling",
+          "value": "4010"
+        },
+        {
+          "active": true,
+          "label": "Pa'anga",
+          "value": "4020"
+        },
+        {
+          "active": true,
+          "label": "Trinidad & Tobago Dollar",
+          "value": "4030"
+        },
+        {
+          "active": true,
+          "label": "Tunisian Dinar",
+          "value": "4040"
+        },
+        {
+          "active": true,
+          "label": "UAE Dirham",
+          "value": "4060"
+        },
+        {
+          "active": true,
+          "label": "Uganda Shilling",
+          "value": "4070"
+        },
+        {
+          "active": true,
+          "label": "Vatu",
+          "value": "4090"
+        },
+        {
+          "active": true,
+          "label": "Bolivar Fuerte",
+          "value": "5005"
+        },
+        {
+          "active": true,
+          "label": "Dong",
+          "value": "5010"
+        },
+        {
+          "active": true,
+          "label": "Yemenese Rial",
+          "value": "5020"
+        },
+        {
+          "active": true,
+          "label": "Tala",
+          "value": "5030"
+        },
+        {
+          "active": true,
+          "label": "Serbian Dinar",
+          "value": "5040"
+        },
+        {
+          "active": true,
+          "label": "Euro",
+          "value": "5080"
+        },
+        {
+          "active": true,
+          "label": "Angolan Kwanza",
+          "value": "5090"
+        },
+        {
+          "active": true,
+          "label": "Leone",
+          "value": "6000"
+        },
+        {
+          "active": true,
+          "label": "Congolese Franc",
+          "value": "6030"
+        },
+        {
+          "active": true,
+          "label": "Peso Uruguayo",
+          "value": "6040"
+        },
+        {
+          "active": true,
+          "label": "Lari",
+          "value": "6050"
+        },
+        {
+          "active": true,
+          "label": "Hryvnia",
+          "value": "6060"
+        },
+        {
+          "active": true,
+          "label": "Bhutan Ngultrum",
+          "value": "6100"
+        },
+        {
+          "active": true,
+          "label": "Quetzal",
+          "value": "6200"
+        },
+        {
+          "active": true,
+          "label": "Cambodian Riel",
+          "value": "6300"
+        },
+        {
+          "active": true,
+          "label": "Rufiyaa",
+          "value": "6500"
+        },
+        {
+          "active": true,
+          "label": "Naira",
+          "value": "6600"
+        },
+        {
+          "active": true,
+          "label": "Croatian Kuna",
+          "value": "6800"
+        },
+        {
+          "active": true,
+          "label": "Falkland Islands Pound",
+          "value": "6900"
+        },
+        {
+          "active": true,
+          "label": "Pataca",
+          "value": "7200"
+        },
+        {
+          "active": true,
+          "label": "Mexican Peso (new)",
+          "value": "7500"
+        },
+        {
+          "active": true,
+          "label": "Albanian Lek",
+          "value": "7600"
+        },
+        {
+          "active": true,
+          "label": "Estonian Kroon",
+          "value": "8000"
+        },
+        {
+          "active": true,
+          "label": "Belarussian Ruble",
+          "value": "8100"
+        },
+        {
+          "active": true,
+          "label": "Moldovan Leu",
+          "value": "8300"
+        },
+        {
+          "active": true,
+          "label": "Armenian Dram",
+          "value": "8500"
+        },
+        {
+          "active": true,
+          "label": "Tenge",
+          "value": "8700"
+        },
+        {
+          "active": true,
+          "label": "Turkmenistan Manat",
+          "value": "8800"
+        },
+        {
+          "active": true,
+          "label": "Som",
+          "value": "8900"
+        },
+        {
+          "active": true,
+          "label": "Uzbekistan Sum",
+          "value": "9000"
+        },
+        {
+          "active": true,
+          "label": "Russian Ruble",
+          "value": "9100"
+        },
+        {
+          "active": true,
+          "label": "Brazilian Real",
+          "value": "9300"
+        },
+        {
+          "active": true,
+          "label": "Polish New Zloty",
+          "value": "9410"
+        },
+        {
+          "active": true,
+          "label": "Myanmar Kyat",
+          "value": "9430"
+        },
+        {
+          "active": true,
+          "label": "Turkish Lira (new)",
+          "value": "9440"
+        },
+        {
+          "active": true,
+          "label": "Romanian Leu (new)",
+          "value": "9450"
+        },
+        {
+          "active": true,
+          "label": "Azerbaijanian Manat (new)",
+          "value": "9460"
+        },
+        {
+          "active": true,
+          "label": "Namibia Dollar",
+          "value": "9470"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Legal Structure",
+      "name": "LegalStatus",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Cooperative",
+          "value": "100"
+        },
+        {
+          "active": true,
+          "label": "Nonprofit organization",
+          "value": "101"
+        },
+        {
+          "active": true,
+          "label": "Local government body",
+          "value": "118"
+        },
+        {
+          "active": true,
+          "label": "Partnership of unknown type",
+          "value": "012"
+        },
+        {
+          "active": true,
+          "label": "Foreign company",
+          "value": "120"
+        },
+        {
+          "active": true,
+          "label": "Proprietorship",
+          "value": "013"
+        },
+        {
+          "active": true,
+          "label": "Corporation",
+          "value": "003"
+        },
+        {
+          "active": true,
+          "label": "Government body",
+          "value": "050"
+        },
+        {
+          "active": true,
+          "label": "Joint venture",
+          "value": "008"
+        },
+        {
+          "active": true,
+          "label": "Not available",
+          "value": "000"
+        },
+        {
+          "active": true,
+          "label": "Master limited partnership",
+          "value": "009"
+        },
+        {
+          "active": true,
+          "label": "General partnership",
+          "value": "010"
+        },
+        {
+          "active": true,
+          "label": "Limited partnership",
+          "value": "011"
+        },
+        {
+          "active": true,
+          "label": "Limited liability",
+          "value": "014"
+        },
+        {
+          "active": true,
+          "label": "Friendly society",
+          "value": "015"
+        },
+        {
+          "active": true,
+          "label": "Trust",
+          "value": "030"
+        },
+        {
+          "active": true,
+          "label": "Crown corporation",
+          "value": "070"
+        },
+        {
+          "active": true,
+          "label": "Institution",
+          "value": "080"
+        },
+        {
+          "active": true,
+          "label": "Estate",
+          "value": "090"
+        },
+        {
+          "active": true,
+          "label": "Industry cooperative",
+          "value": "099"
+        },
+        {
+          "active": true,
+          "label": "Private limited company",
+          "value": "102"
+        },
+        {
+          "active": true,
+          "label": "Partnership partially limited by shares",
+          "value": "103"
+        },
+        {
+          "active": true,
+          "label": "Temporary association",
+          "value": "104"
+        },
+        {
+          "active": true,
+          "label": "Registered proprietorship",
+          "value": "105"
+        },
+        {
+          "active": true,
+          "label": "Limited partnership with shares",
+          "value": "106"
+        },
+        {
+          "active": true,
+          "label": "Unregistered proprietorship",
+          "value": "107"
+        },
+        {
+          "active": true,
+          "label": "Community of goods",
+          "value": "108"
+        },
+        {
+          "active": true,
+          "label": "Reciprocal guarantee company",
+          "value": "109"
+        },
+        {
+          "active": true,
+          "label": "Cooperative society with limited liability",
+          "value": "110"
+        },
+        {
+          "active": true,
+          "label": "Civil company",
+          "value": "111"
+        },
+        {
+          "active": true,
+          "label": "De facto partnership",
+          "value": "112"
+        },
+        {
+          "active": true,
+          "label": "Foundation",
+          "value": "113"
+        },
+        {
+          "active": true,
+          "label": "Association",
+          "value": "114"
+        },
+        {
+          "active": true,
+          "label": "Public company",
+          "value": "115"
+        },
+        {
+          "active": true,
+          "label": "Civil law partnership",
+          "value": "116"
+        },
+        {
+          "active": true,
+          "label": "Incorporated by act of Parliament",
+          "value": "117"
+        },
+        {
+          "active": true,
+          "label": "Private unlimited company",
+          "value": "119"
+        },
+        {
+          "active": true,
+          "label": "Private company limited by guarantee",
+          "value": "121"
+        },
+        {
+          "active": true,
+          "label": "Civil partnership",
+          "value": "122"
+        },
+        {
+          "active": true,
+          "label": "Public limited company",
+          "value": "125"
+        },
+        {
+          "active": true,
+          "label": "Registered partnership",
+          "value": "126"
+        },
+        {
+          "active": true,
+          "label": "Society",
+          "value": "127"
+        },
+        {
+          "active": true,
+          "label": "Government-owned company",
+          "value": "128"
+        },
+        {
+          "active": true,
+          "label": "Government institute",
+          "value": "129"
+        },
+        {
+          "active": true,
+          "label": "Public institute",
+          "value": "130"
+        },
+        {
+          "active": true,
+          "label": "Plant",
+          "value": "131"
+        },
+        {
+          "active": true,
+          "label": "Hotel",
+          "value": "132"
+        },
+        {
+          "active": true,
+          "label": "Division",
+          "value": "133"
+        },
+        {
+          "active": true,
+          "label": "Joint shipping company",
+          "value": "140"
+        },
+        {
+          "active": true,
+          "label": "Limited-liability corporation",
+          "value": "142"
+        },
+        {
+          "active": true,
+          "label": "Branch",
+          "value": "143"
+        },
+        {
+          "active": true,
+          "label": "Concern address",
+          "value": "144"
+        },
+        {
+          "active": true,
+          "label": "Insurance company",
+          "value": "145"
+        },
+        {
+          "active": true,
+          "label": "Private foundation",
+          "value": "146"
+        },
+        {
+          "active": true,
+          "label": "County institution",
+          "value": "147"
+        },
+        {
+          "active": true,
+          "label": "Municipal institution",
+          "value": "148"
+        },
+        {
+          "active": true,
+          "label": "Vestry",
+          "value": "149"
+        },
+        {
+          "active": true,
+          "label": "Public undertaking",
+          "value": "150"
+        },
+        {
+          "active": true,
+          "label": "Faeroese company",
+          "value": "151"
+        },
+        {
+          "active": true,
+          "label": "Greenland limited",
+          "value": "152"
+        },
+        {
+          "active": true,
+          "label": "Greenland private limited",
+          "value": "153"
+        },
+        {
+          "active": true,
+          "label": "Sole proprietorship",
+          "value": "154"
+        },
+        {
+          "active": true,
+          "label": "Sole proprietorship or partnership",
+          "value": "155"
+        },
+        {
+          "active": true,
+          "label": "Unregistered partnership",
+          "value": "160"
+        },
+        {
+          "active": true,
+          "label": "Civil association",
+          "value": "161"
+        },
+        {
+          "active": true,
+          "label": "Association in participation",
+          "value": "162"
+        },
+        {
+          "active": true,
+          "label": "Mutual insurance association",
+          "value": "163"
+        },
+        {
+          "active": true,
+          "label": "Stock company with variable capital",
+          "value": "164"
+        },
+        {
+          "active": true,
+          "label": "Cooperative production society",
+          "value": "166"
+        },
+        {
+          "active": true,
+          "label": "Joint stock company",
+          "value": "167"
+        },
+        {
+          "active": true,
+          "label": "Limited responsibility cooperative society",
+          "value": "168"
+        },
+        {
+          "active": true,
+          "label": "National credit society",
+          "value": "169"
+        },
+        {
+          "active": true,
+          "label": "Offene erwerbsgesellschaft",
+          "value": "170"
+        },
+        {
+          "active": true,
+          "label": "Limited liability company with variable cap",
+          "value": "171"
+        },
+        {
+          "active": true,
+          "label": "Kommandit erwerbsgesellschaft",
+          "value": "180"
+        },
+        {
+          "active": true,
+          "label": "Public credit institution",
+          "value": "185"
+        },
+        {
+          "active": true,
+          "label": "Working group",
+          "value": "186"
+        },
+        {
+          "active": true,
+          "label": "Union",
+          "value": "190"
+        },
+        {
+          "active": true,
+          "label": "Personal partnership",
+          "value": "200"
+        },
+        {
+          "active": true,
+          "label": "Unlimited liability rural production company",
+          "value": "202"
+        },
+        {
+          "active": true,
+          "label": "Named collective company with variable capital",
+          "value": "204"
+        },
+        {
+          "active": true,
+          "label": "Individual with business activity",
+          "value": "206"
+        },
+        {
+          "active": true,
+          "label": "Association with shares in the stock market",
+          "value": "208"
+        },
+        {
+          "active": true,
+          "label": "Real estate partnership",
+          "value": "210"
+        },
+        {
+          "active": true,
+          "label": "Association with shares in the stock market with variable capital",
+          "value": "212"
+        },
+        {
+          "active": true,
+          "label": "Association with shares with variable capital (investment company)",
+          "value": "214"
+        },
+        {
+          "active": true,
+          "label": "Association with shares with variable capital (investment company with debt instruments)",
+          "value": "216"
+        },
+        {
+          "active": true,
+          "label": "Association with shares with variable capital investment company with variable rent)",
+          "value": "218"
+        },
+        {
+          "active": true,
+          "label": "Agricultural collective interest company",
+          "value": "220"
+        },
+        {
+          "active": true,
+          "label": "Association with shares with variable capital (financial company with limited object)",
+          "value": "222"
+        },
+        {
+          "active": true,
+          "label": "Association with shares with variable capital (financial company with multiple objects non-regulated entity)",
+          "value": "224"
+        },
+        {
+          "active": true,
+          "label": "Association with shares with variable capital (financial company with multiple objects regulated entity)",
+          "value": "226"
+        },
+        {
+          "active": true,
+          "label": "Association with shares investment promotor",
+          "value": "228"
+        },
+        {
+          "active": true,
+          "label": "Defacto business organization",
+          "value": "230"
+        },
+        {
+          "active": true,
+          "label": "Association with shares in the stock market (investment promotor)",
+          "value": "232"
+        },
+        {
+          "active": true,
+          "label": "Association with shares in the stock market (investment promotor with variable capital)",
+          "value": "234"
+        },
+        {
+          "active": true,
+          "label": "Association with shares with variable capital (investment promotor) ",
+          "value": "236"
+        },
+        {
+          "active": true,
+          "label": "Association with shares (capital investment company)",
+          "value": "238"
+        },
+        {
+          "active": true,
+          "label": "Government/municipal establishment",
+          "value": "240"
+        },
+        {
+          "active": true,
+          "label": "Association with shares (investment company with debt instruments)",
+          "value": "242"
+        },
+        {
+          "active": true,
+          "label": "Association with shares (investment company with variable rent)",
+          "value": "244"
+        },
+        {
+          "active": true,
+          "label": "Association with shares (financial company with limited object)",
+          "value": "246"
+        },
+        {
+          "active": true,
+          "label": "Association with shares (financial company with multiple objects non-regulated entity)",
+          "value": "248"
+        },
+        {
+          "active": true,
+          "label": "Housing company",
+          "value": "250"
+        },
+        {
+          "active": true,
+          "label": "Association with shares (financial company with multiple objects regulated entity)",
+          "value": "252"
+        },
+        {
+          "active": true,
+          "label": "Cooperative production society of variable capital of limited Responsibility",
+          "value": "254"
+        },
+        {
+          "active": true,
+          "label": "Limited liability rural production company",
+          "value": "256"
+        },
+        {
+          "active": true,
+          "label": "Voluntary association",
+          "value": "260"
+        },
+        {
+          "active": true,
+          "label": "Mortgage association",
+          "value": "270"
+        },
+        {
+          "active": true,
+          "label": "Cooperative society",
+          "value": "280"
+        },
+        {
+          "active": true,
+          "label": "Cooperative bank",
+          "value": "290"
+        },
+        {
+          "active": true,
+          "label": "Savings bank",
+          "value": "300"
+        },
+        {
+          "active": true,
+          "label": "Small individual business",
+          "value": "301"
+        },
+        {
+          "active": true,
+          "label": "Private company",
+          "value": "302"
+        },
+        {
+          "active": true,
+          "label": "Unregistered",
+          "value": "304"
+        },
+        {
+          "active": true,
+          "label": "Government department/city council",
+          "value": "306"
+        },
+        {
+          "active": true,
+          "label": "State government",
+          "value": "308"
+        },
+        {
+          "active": true,
+          "label": "Economic association",
+          "value": "310"
+        },
+        {
+          "active": true,
+          "label": "Class order",
+          "value": "312"
+        },
+        {
+          "active": true,
+          "label": "Business name",
+          "value": "314"
+        },
+        {
+          "active": true,
+          "label": "Sole trader",
+          "value": "316"
+        },
+        {
+          "active": true,
+          "label": "Trustee company",
+          "value": "318"
+        },
+        {
+          "active": true,
+          "label": "Insurance limited company",
+          "value": "320"
+        },
+        {
+          "active": true,
+          "label": "Listed public company (limited)",
+          "value": "322"
+        },
+        {
+          "active": true,
+          "label": "Unlisted public company",
+          "value": "324"
+        },
+        {
+          "active": true,
+          "label": "limited by guarantee",
+          "value": "326"
+        },
+        {
+          "active": true,
+          "label": "Listed public company (no liability) ",
+          "value": "328"
+        },
+        {
+          "active": true,
+          "label": "Government authority",
+          "value": "330"
+        },
+        {
+          "active": true,
+          "label": "Professional organization/association",
+          "value": "332"
+        },
+        {
+          "active": true,
+          "label": "Registered Australian body",
+          "value": "334"
+        },
+        {
+          "active": true,
+          "label": "Corporate partnership",
+          "value": "336"
+        },
+        {
+          "active": true,
+          "label": "Industrial and provident societies",
+          "value": "338"
+        },
+        {
+          "active": true,
+          "label": "Group",
+          "value": "340"
+        },
+        {
+          "active": true,
+          "label": "Charitable trust",
+          "value": "342"
+        },
+        {
+          "active": true,
+          "label": "Overseas company",
+          "value": "344"
+        },
+        {
+          "active": true,
+          "label": "Proprietary company",
+          "value": "346"
+        },
+        {
+          "active": true,
+          "label": "Housing cooperative society",
+          "value": "350"
+        },
+        {
+          "active": true,
+          "label": "Mutual assistance business organization",
+          "value": "360"
+        },
+        {
+          "active": true,
+          "label": "Provident business organization",
+          "value": "370"
+        },
+        {
+          "active": true,
+          "label": "Limited company",
+          "value": "380"
+        },
+        {
+          "active": true,
+          "label": "Simple partnership",
+          "value": "390"
+        },
+        {
+          "active": true,
+          "label": "Commercial collective company",
+          "value": "410"
+        },
+        {
+          "active": true,
+          "label": "Commercial company",
+          "value": "420"
+        },
+        {
+          "active": true,
+          "label": "Representative office",
+          "value": "430"
+        },
+        {
+          "active": true,
+          "label": "Bank",
+          "value": "440"
+        },
+        {
+          "active": true,
+          "label": "Industry and equity company",
+          "value": "450"
+        },
+        {
+          "active": true,
+          "label": "Trading society",
+          "value": "451"
+        },
+        {
+          "active": true,
+          "label": "Government institution",
+          "value": "452"
+        },
+        {
+          "active": true,
+          "label": "Open stock corporation",
+          "value": "460"
+        },
+        {
+          "active": true,
+          "label": "Trusteeship",
+          "value": "470"
+        },
+        {
+          "active": true,
+          "label": "Private business",
+          "value": "480"
+        },
+        {
+          "active": true,
+          "label": "Decentralized public organization",
+          "value": "490"
+        },
+        {
+          "active": true,
+          "label": "Stock company",
+          "value": "500"
+        },
+        {
+          "active": true,
+          "label": "Tenant owner's society",
+          "value": "502"
+        },
+        {
+          "active": true,
+          "label": "Civil society",
+          "value": "510"
+        },
+        {
+          "active": true,
+          "label": "Society for capitalization of savings",
+          "value": "520"
+        },
+        {
+          "active": true,
+          "label": "Limited cooperative company",
+          "value": "530"
+        },
+        {
+          "active": true,
+          "label": "Mutual insurance society",
+          "value": "540"
+        },
+        {
+          "active": true,
+          "label": "Simple limited partnership",
+          "value": "550"
+        },
+        {
+          "active": true,
+          "label": "Named collective company",
+          "value": "560"
+        },
+        {
+          "active": true,
+          "label": "Non-profit association",
+          "value": "570"
+        },
+        {
+          "active": true,
+          "label": "Corporation with variable capital",
+          "value": "580"
+        },
+        {
+          "active": true,
+          "label": "Joint corporation",
+          "value": "590"
+        },
+        {
+          "active": true,
+          "label": "Consortium",
+          "value": "600"
+        },
+        {
+          "active": true,
+          "label": "Personal firm",
+          "value": "610"
+        },
+        {
+          "active": true,
+          "label": "Corporation with authorized capital",
+          "value": "620"
+        },
+        {
+          "active": true,
+          "label": "Corporation with open capital",
+          "value": "630"
+        },
+        {
+          "active": true,
+          "label": "Bank for capitalization of savings",
+          "value": "640"
+        },
+        {
+          "active": true,
+          "label": "Closed stock corporation",
+          "value": "650"
+        },
+        {
+          "active": true,
+          "label": "Commercial and industrial corporation",
+          "value": "660"
+        },
+        {
+          "active": true,
+          "label": "Commercial corporation",
+          "value": "670"
+        },
+        {
+          "active": true,
+          "label": "Industrial corporation",
+          "value": "680"
+        },
+        {
+          "active": true,
+          "label": "Financial institution",
+          "value": "690"
+        },
+        {
+          "active": true,
+          "label": "Contract mining company",
+          "value": "700"
+        },
+        {
+          "active": true,
+          "label": "Contracting company",
+          "value": "710"
+        },
+        {
+          "active": true,
+          "label": "Non-profit international organization",
+          "value": "720"
+        },
+        {
+          "active": true,
+          "label": "International organization",
+          "value": "730"
+        },
+        {
+          "active": true,
+          "label": "Limited co auth capital-regd co open cap",
+          "value": "740"
+        },
+        {
+          "active": true,
+          "label": "Organization",
+          "value": "750"
+        },
+        {
+          "active": true,
+          "label": "Unlimited company",
+          "value": "755"
+        },
+        {
+          "active": true,
+          "label": "Farmer's association",
+          "value": "760"
+        },
+        {
+          "active": true,
+          "label": "Economic assoc/tenant owners' society",
+          "value": "770"
+        },
+        {
+          "active": true,
+          "label": "Mining company",
+          "value": "780"
+        },
+        {
+          "active": true,
+          "label": "Shipping company",
+          "value": "790"
+        },
+        {
+          "active": true,
+          "label": "Simple company",
+          "value": "800"
+        },
+        {
+          "active": true,
+          "label": "Private firm",
+          "value": "810"
+        },
+        {
+          "active": true,
+          "label": "Family foundation",
+          "value": "820"
+        },
+        {
+          "active": true,
+          "label": "County",
+          "value": "830"
+        },
+        {
+          "active": true,
+          "label": "County association",
+          "value": "840"
+        },
+        {
+          "active": true,
+          "label": "County council",
+          "value": "850"
+        },
+        {
+          "active": true,
+          "label": "Regional social insurance office",
+          "value": "860"
+        },
+        {
+          "active": true,
+          "label": "Unit within the Swedish church",
+          "value": "870"
+        },
+        {
+          "active": true,
+          "label": "Public corporation/institution",
+          "value": "880"
+        },
+        {
+          "active": true,
+          "label": "Statutory body",
+          "value": "881"
+        },
+        {
+          "active": true,
+          "label": "Mortgage/security association",
+          "value": "890"
+        },
+        {
+          "active": true,
+          "label": "Government agency",
+          "value": "891"
+        },
+        {
+          "active": true,
+          "label": "Mutual company",
+          "value": "892"
+        },
+        {
+          "active": true,
+          "label": "Special corporation",
+          "value": "893"
+        },
+        {
+          "active": true,
+          "label": "Central bank for agriculture & forestry",
+          "value": "894"
+        },
+        {
+          "active": true,
+          "label": "Austrian legal entity",
+          "value": "895"
+        },
+        {
+          "active": true,
+          "label": "Establishment",
+          "value": "896"
+        },
+        {
+          "active": true,
+          "label": "Supporting association",
+          "value": "900"
+        },
+        {
+          "active": true,
+          "label": "Administration",
+          "value": "905"
+        },
+        {
+          "active": true,
+          "label": "Unemployment office",
+          "value": "910"
+        },
+        {
+          "active": true,
+          "label": "Liaison office",
+          "value": "915"
+        },
+        {
+          "active": true,
+          "label": "Foreign legal person",
+          "value": "920"
+        },
+        {
+          "active": true,
+          "label": "Cooperative union with guaranteed liab",
+          "value": "925"
+        },
+        {
+          "active": true,
+          "label": "Swedish legal person",
+          "value": "930"
+        },
+        {
+          "active": true,
+          "label": "Cooperative union with limited liability",
+          "value": "935"
+        },
+        {
+          "active": true,
+          "label": "Unlimited partnership",
+          "value": "940"
+        },
+        {
+          "active": true,
+          "label": "Cooperative society with unlimited liability",
+          "value": "945"
+        },
+        {
+          "active": true,
+          "label": "Foreign branch",
+          "value": "950"
+        },
+        {
+          "active": true,
+          "label": "Cooperative society with guaranteed liability",
+          "value": "955"
+        },
+        {
+          "active": true,
+          "label": "Incorporated foundation",
+          "value": "960"
+        },
+        {
+          "active": true,
+          "label": "Business not formally registered",
+          "value": "965"
+        },
+        {
+          "active": true,
+          "label": "Incorporated non-profit association",
+          "value": "970"
+        },
+        {
+          "active": true,
+          "label": "State-owned enterprise",
+          "value": "971"
+        },
+        {
+          "active": true,
+          "label": "Free trade zone entp. proc. prvd. smpl.",
+          "value": "972"
+        },
+        {
+          "active": true,
+          "label": "Limited holding company",
+          "value": "973"
+        },
+        {
+          "active": true,
+          "label": "Government department or non-profit organization",
+          "value": "974"
+        },
+        {
+          "active": true,
+          "label": "Government department",
+          "value": "975"
+        },
+        {
+          "active": true,
+          "label": "Collectively owned enterprise",
+          "value": "976"
+        },
+        {
+          "active": true,
+          "label": "Domestic and foreign joint venture",
+          "value": "977"
+        },
+        {
+          "active": true,
+          "label": "Domestic and foreign cooperative venture",
+          "value": "978"
+        },
+        {
+          "active": true,
+          "label": "Educational foundation",
+          "value": "980"
+        },
+        {
+          "active": true,
+          "label": "Unlimited company ltd. liab. shareholder",
+          "value": "985"
+        },
+        {
+          "active": true,
+          "label": "Medical corporation",
+          "value": "990"
+        },
+        {
+          "active": true,
+          "label": "Private limited liability company",
+          "value": "991"
+        },
+        {
+          "active": true,
+          "label": "Public limited liability company",
+          "value": "992"
+        },
+        {
+          "active": true,
+          "label": "Exempt limited liability company",
+          "value": "993"
+        },
+        {
+          "active": true,
+          "label": "Deemed public limited company",
+          "value": "994"
+        },
+        {
+          "active": true,
+          "label": "Private company limited by shares",
+          "value": "995"
+        },
+        {
+          "active": true,
+          "label": "Securities fund",
+          "value": "999"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Number of Employees - Global",
+      "name": "GlobalUltimateTotalEmployees",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Number of Employees - Total Indicator",
+      "name": "EmployeesTotalReliability",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Actual number",
+          "value": "0"
+        },
+        {
+          "active": true,
+          "label": "Low",
+          "value": "1"
+        },
+        {
+          "active": true,
+          "label": "Estimated (for all records)",
+          "value": "2"
+        },
+        {
+          "active": true,
+          "label": "Modeled (for non-US records)",
+          "value": "3"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Minority-Owned Indicator",
+      "name": "MinorityOwned",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Minority-owned",
+          "value": "Y"
+        },
+        {
+          "active": true,
+          "label": "Not minority-owned",
+          "value": "N"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Woman-Owned Indicator",
+      "name": "WomenOwned",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Owned by a woman",
+          "value": "Y"
+        },
+        {
+          "active": true,
+          "label": "Not owned by a woman or unknown",
+          "value": "N"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Small Business Indicator",
+      "name": "SmallBusiness",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Small business site",
+          "value": "Y"
+        },
+        {
+          "active": true,
+          "label": "Not small business site",
+          "value": "N"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Marketing Segmentation Cluster",
+      "name": "MarketingSegmentationCluster",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "High-Tension Branches of Insurance/Utility Industries",
+          "value": "1"
+        },
+        {
+          "active": true,
+          "label": "Bustling Manufacturers & Business Services",
+          "value": "2"
+        },
+        {
+          "active": true,
+          "label": "The Withering Branch Company",
+          "value": "3"
+        },
+        {
+          "active": true,
+          "label": "Rapid-Growth Large Businesses",
+          "value": "4"
+        },
+        {
+          "active": true,
+          "label": "Sunny Branches of Insurance/Utility Industries",
+          "value": "5"
+        },
+        {
+          "active": true,
+          "label": "Labor-Intensive Giants",
+          "value": "6"
+        },
+        {
+          "active": true,
+          "label": "Entrepreneur & Co.",
+          "value": "7"
+        },
+        {
+          "active": true,
+          "label": "Frugal & Associates",
+          "value": "8"
+        },
+        {
+          "active": true,
+          "label": "Spartans",
+          "value": "9"
+        },
+        {
+          "active": true,
+          "label": "Struggling Startups",
+          "value": "10"
+        },
+        {
+          "active": true,
+          "label": "The Hectic Venture Company",
+          "value": "11"
+        },
+        {
+          "active": true,
+          "label": "The Established Shingle Company",
+          "value": "12"
+        },
+        {
+          "active": true,
+          "label": "Industry, Inc.",
+          "value": "13"
+        },
+        {
+          "active": true,
+          "label": "Landmark Business Services",
+          "value": "14"
+        },
+        {
+          "active": true,
+          "label": "The Test Of Time Company",
+          "value": "15"
+        },
+        {
+          "active": true,
+          "label": "Powerhouse 6000",
+          "value": "16"
+        },
+        {
+          "active": true,
+          "label": "In Good Hands",
+          "value": "17"
+        },
+        {
+          "active": true,
+          "label": "Sudden-Growth Giants",
+          "value": "18"
+        },
+        {
+          "active": true,
+          "label": "Active Traders",
+          "value": "19"
+        },
+        {
+          "active": true,
+          "label": "Old Core Proprietors",
+          "value": "20"
+        },
+        {
+          "active": true,
+          "label": "Solid & Sons",
+          "value": "21"
+        },
+        {
+          "active": true,
+          "label": "Main Street USA",
+          "value": "22"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Import/Export",
+      "name": "ImportExportAgent",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Importer/Exporter/Agent",
+          "value": "A"
+        },
+        {
+          "active": true,
+          "label": "Importer/Exporter",
+          "value": "B"
+        },
+        {
+          "active": true,
+          "label": "Importer",
+          "value": "C"
+        },
+        {
+          "active": true,
+          "label": "Importer/Agent",
+          "value": "D"
+        },
+        {
+          "active": true,
+          "label": "Exporter/Agent",
+          "value": "E"
+        },
+        {
+          "active": true,
+          "label": "Agent. Keeps no inventory and does not take title goods",
+          "value": "F"
+        },
+        {
+          "active": true,
+          "label": "None or Data Not Available",
+          "value": "G"
+        },
+        {
+          "active": true,
+          "label": "Exporter",
+          "value": "H"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Subsidiary Indicator",
+      "name": "Subsidiary",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Not subsidiary of another organization",
+          "value": "0"
+        },
+        {
+          "active": true,
+          "label": "Subsidiary of another organization",
+          "value": "3"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Second Tradestyle",
+      "name": "TradeStyle2",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Third Tradestyle",
+      "name": "TradeStyle3",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fourth Tradestyle",
+      "name": "TradeStyle4",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fifth Tradestyle",
+      "name": "TradeStyle5",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "National Identification Number",
+      "name": "NationalId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "National Identification System",
+      "name": "NationalIdType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Belgium Enterprise Number",
+          "value": "00010"
+        },
+        {
+          "active": true,
+          "label": "Belgium Branch Unit Number",
+          "value": "00011"
+        },
+        {
+          "active": true,
+          "label": "Tokyo Shoko Research Business Identifier",
+          "value": "00100"
+        },
+        {
+          "active": true,
+          "label": "Emc Entered Registration Number",
+          "value": "00102"
+        },
+        {
+          "active": true,
+          "label": "Emc Entered Tax Registration Number",
+          "value": "00103"
+        },
+        {
+          "active": true,
+          "label": "Emc Entered Chamber of Commerce Number",
+          "value": "00104"
+        },
+        {
+          "active": true,
+          "label": "Emc Government Gazette Number",
+          "value": "00105"
+        },
+        {
+          "active": true,
+          "label": "Sweden Registration Number",
+          "value": "00106"
+        },
+        {
+          "active": true,
+          "label": "Finnish Registration Number",
+          "value": "00107"
+        },
+        {
+          "active": true,
+          "label": "Costa Rican Judicial Number",
+          "value": "00108"
+        },
+        {
+          "active": true,
+          "label": "El Salvadoran Patron",
+          "value": "00109"
+        },
+        {
+          "active": true,
+          "label": "Hungarian Tax Identifier",
+          "value": "00110"
+        },
+        {
+          "active": true,
+          "label": "Sweden Branch Number",
+          "value": "00111"
+        },
+        {
+          "active": true,
+          "label": "Jamaican Tax Identification Number",
+          "value": "00112"
+        },
+        {
+          "active": true,
+          "label": "Trinidadian Tax Identification Number",
+          "value": "00113"
+        },
+        {
+          "active": true,
+          "label": "Dominican Republic National Commercial Registry Number",
+          "value": "00115"
+        },
+        {
+          "active": true,
+          "label": "Peruvian Sole Commercial Registry Number",
+          "value": "00119"
+        },
+        {
+          "active": true,
+          "label": "UK Cro Number",
+          "value": "00012"
+        },
+        {
+          "active": true,
+          "label": "Hungarian Registration Number",
+          "value": "00120"
+        },
+        {
+          "active": true,
+          "label": "Venezuelan National Tributary ID Number",
+          "value": "00125"
+        },
+        {
+          "active": true,
+          "label": "Nicaraguan Sole Commercial Registry Number",
+          "value": "00127"
+        },
+        {
+          "active": true,
+          "label": "Ireland Cro Number",
+          "value": "00013"
+        },
+        {
+          "active": true,
+          "label": "Polish Tax Identifier",
+          "value": "00130"
+        },
+        {
+          "active": true,
+          "label": "Costa Rican Tax Registration Number",
+          "value": "00135"
+        },
+        {
+          "active": true,
+          "label": "France Siren Number",
+          "value": "00014"
+        },
+        {
+          "active": true,
+          "label": "Polish Registration Number",
+          "value": "00140"
+        },
+        {
+          "active": true,
+          "label": "Colombian National Tributary ID Number",
+          "value": "00145"
+        },
+        {
+          "active": true,
+          "label": "El Salvadoran National Tributary ID Number",
+          "value": "00155"
+        },
+        {
+          "active": true,
+          "label": "Monte Carlo Siren Number",
+          "value": "00016"
+        },
+        {
+          "active": true,
+          "label": "Bolivian Sole Commercial Registry Number",
+          "value": "00165"
+        },
+        {
+          "active": true,
+          "label": "France Siret Number",
+          "value": "00017"
+        },
+        {
+          "active": true,
+          "label": "Ecuadorian Sole Commercial Registry Number",
+          "value": "00175"
+        },
+        {
+          "active": true,
+          "label": "Europe Standard VAT Number",
+          "value": "00018"
+        },
+        {
+          "active": true,
+          "label": "Sole Commercial Registry Nbr Unk Ctry",
+          "value": "00185"
+        },
+        {
+          "active": true,
+          "label": "Netherland Chamber Of Commerce Number",
+          "value": "00019"
+        },
+        {
+          "active": true,
+          "label": "National Tributary ID Number Unk Country",
+          "value": "00195"
+        },
+        {
+          "active": true,
+          "label": "Germany Registration Number",
+          "value": "00020"
+        },
+        {
+          "active": true,
+          "label": "Argentinian Unique Tax ID Key",
+          "value": "00200"
+        },
+        {
+          "active": true,
+          "label": "Italy Chamber of Commerce Number",
+          "value": "00021"
+        },
+        {
+          "active": true,
+          "label": "Paraguayan Unique Tax Registration",
+          "value": "00210"
+        },
+        {
+          "active": true,
+          "label": "Brazilian State Registry Number",
+          "value": "00211"
+        },
+        {
+          "active": true,
+          "label": "Brazilian Municipal Registry Number",
+          "value": "00212"
+        },
+        {
+          "active": true,
+          "label": "Taiwan Business Registration Number",
+          "value": "00022"
+        },
+        {
+          "active": true,
+          "label": "Uruguayan Unique Tax Registration",
+          "value": "00220"
+        },
+        {
+          "active": true,
+          "label": "Mexican Federal Tax Registration",
+          "value": "00230"
+        },
+        {
+          "active": true,
+          "label": "Spain Fiscal Code",
+          "value": "00024"
+        },
+        {
+          "active": true,
+          "label": "Chilean Unique Tax ID",
+          "value": "00240"
+        },
+        {
+          "active": true,
+          "label": "Andorra Fiscal Code",
+          "value": "00025"
+        },
+        {
+          "active": true,
+          "label": "Venezuelan Registry of Fiscal Info",
+          "value": "00250"
+        },
+        {
+          "active": true,
+          "label": "Portugal Fiscal Code",
+          "value": "00026"
+        },
+        {
+          "active": true,
+          "label": "Brazilian General Record of Taxpayers",
+          "value": "00260"
+        },
+        {
+          "active": true,
+          "label": "Norwegian Government Organization Number",
+          "value": "00270"
+        },
+        {
+          "active": true,
+          "label": "Hong Kong Business Registration Number",
+          "value": "00281"
+        },
+        {
+          "active": true,
+          "label": "Macao Cmcl Registry Company ID Number",
+          "value": "00282"
+        },
+        {
+          "active": true,
+          "label": "Macao Cmcl Registry Bus Regn Number",
+          "value": "00283"
+        },
+        {
+          "active": true,
+          "label": "So Korean St Cmcl Registry Bus Regn Number",
+          "value": "00284"
+        },
+        {
+          "active": true,
+          "label": "So Korean Trad Assn Expt/Impt Regn Number",
+          "value": "00285"
+        },
+        {
+          "active": true,
+          "label": "Czech Republic ICO",
+          "value": "00286"
+        },
+        {
+          "active": true,
+          "label": "Czech VAT Number",
+          "value": "00290"
+        },
+        {
+          "active": true,
+          "label": "CUSIP Number",
+          "value": "00030"
+        },
+        {
+          "active": true,
+          "label": "Bangladesh Company Incorporation Number",
+          "value": "00300"
+        },
+        {
+          "active": true,
+          "label": "Brunei Registration Number",
+          "value": "00301"
+        },
+        {
+          "active": true,
+          "label": "India Company Incorporation Number",
+          "value": "00302"
+        },
+        {
+          "active": true,
+          "label": "Indonesia Legalization Number",
+          "value": "00303"
+        },
+        {
+          "active": true,
+          "label": "Indonesia President Decree Number",
+          "value": "00304"
+        },
+        {
+          "active": true,
+          "label": "Malaysia Company Registration Number",
+          "value": "00305"
+        },
+        {
+          "active": true,
+          "label": "Malaysia Business Registration Number",
+          "value": "00306"
+        },
+        {
+          "active": true,
+          "label": "Nepal Company Incorporation Number",
+          "value": "00307"
+        },
+        {
+          "active": true,
+          "label": "Pakistan Company Incorporation Number",
+          "value": "00308"
+        },
+        {
+          "active": true,
+          "label": "Philippines Registration Number",
+          "value": "00309"
+        },
+        {
+          "active": true,
+          "label": "Australia Company Number",
+          "value": "00031"
+        },
+        {
+          "active": true,
+          "label": "Sri Lanka Company Incorporation Number",
+          "value": "00310"
+        },
+        {
+          "active": true,
+          "label": "Thailand Registration Number",
+          "value": "00311"
+        },
+        {
+          "active": true,
+          "label": "Vietnam Business Registration Number",
+          "value": "00312"
+        },
+        {
+          "active": true,
+          "label": "Vietnam Investment License Code",
+          "value": "00313"
+        },
+        {
+          "active": true,
+          "label": "Vietnam License for the Establishment",
+          "value": "00314"
+        },
+        {
+          "active": true,
+          "label": "Vietnam License Number",
+          "value": "00315"
+        },
+        {
+          "active": true,
+          "label": "Maldives Registration Number",
+          "value": "00316"
+        },
+        {
+          "active": true,
+          "label": "Bhutan Registration Number",
+          "value": "00317"
+        },
+        {
+          "active": true,
+          "label": "Myanmar Registration Number",
+          "value": "00318"
+        },
+        {
+          "active": true,
+          "label": "Singapore Registration File Number",
+          "value": "00032"
+        },
+        {
+          "active": true,
+          "label": "Hungarian VAT Number",
+          "value": "00320"
+        },
+        {
+          "active": true,
+          "label": "New Zealand National Company Number - Ncn",
+          "value": "00321"
+        },
+        {
+          "active": true,
+          "label": "Australia Business Registration Number",
+          "value": "00322"
+        },
+        {
+          "active": true,
+          "label": "Australian Business Number",
+          "value": "00323"
+        },
+        {
+          "active": true,
+          "label": "South African Registration Number",
+          "value": "00324"
+        },
+        {
+          "active": true,
+          "label": "Greek Business Registration Number",
+          "value": "00325"
+        },
+        {
+          "active": true,
+          "label": "Hong Kong Co Registry Company ID Number",
+          "value": "00033"
+        },
+        {
+          "active": true,
+          "label": "CINS Number",
+          "value": "00034"
+        },
+        {
+          "active": true,
+          "label": "Panamanian Sole Commercial Registry Number",
+          "value": "00035"
+        },
+        {
+          "active": true,
+          "label": "Portugal Chamber of Commerce Number",
+          "value": "00036"
+        },
+        {
+          "active": true,
+          "label": "Mexico Iva",
+          "value": "00040"
+        },
+        {
+          "active": true,
+          "label": "Israel Registration Number",
+          "value": "00045"
+        },
+        {
+          "active": true,
+          "label": "Israel VAT Number",
+          "value": "00050"
+        },
+        {
+          "active": true,
+          "label": "Denmark CVR Number",
+          "value": "00521"
+        },
+        {
+          "active": true,
+          "label": "United Arab Emirates Registration Number",
+          "value": "00522"
+        },
+        {
+          "active": true,
+          "label": "Bahrain Registration Number",
+          "value": "00523"
+        },
+        {
+          "active": true,
+          "label": "Iraq Registration Number",
+          "value": "00524"
+        },
+        {
+          "active": true,
+          "label": "Iran Registration Number",
+          "value": "00525"
+        },
+        {
+          "active": true,
+          "label": "Jordan Registration Number",
+          "value": "00526"
+        },
+        {
+          "active": true,
+          "label": "Kuwait Registration Number",
+          "value": "00527"
+        },
+        {
+          "active": true,
+          "label": "Lebanon Registration Number",
+          "value": "00528"
+        },
+        {
+          "active": true,
+          "label": "Oman Registration Number",
+          "value": "00529"
+        },
+        {
+          "active": true,
+          "label": "Qatar Registration Number",
+          "value": "00530"
+        },
+        {
+          "active": true,
+          "label": "Saudi Arabia Registration Number",
+          "value": "00531"
+        },
+        {
+          "active": true,
+          "label": "Syria Registration Number",
+          "value": "00532"
+        },
+        {
+          "active": true,
+          "label": "Yemen Registration Number",
+          "value": "00533"
+        },
+        {
+          "active": true,
+          "label": "United Arab Emirates Chamber of Commerce Number",
+          "value": "00534"
+        },
+        {
+          "active": true,
+          "label": "Bahrain Chamber of Commerce Number",
+          "value": "00535"
+        },
+        {
+          "active": true,
+          "label": "Iran Chamber of Commerce Number",
+          "value": "00536"
+        },
+        {
+          "active": true,
+          "label": "Jordan Chamber of Commerce Number",
+          "value": "00537"
+        },
+        {
+          "active": true,
+          "label": "Kuwait Chamber of Commerce Number",
+          "value": "00538"
+        },
+        {
+          "active": true,
+          "label": "Lebanon Chamber of Commerce Number",
+          "value": "00539"
+        },
+        {
+          "active": true,
+          "label": "Oman Chamber of Commerce Number",
+          "value": "00540"
+        },
+        {
+          "active": true,
+          "label": "Qatar Chamber of Commerce Number",
+          "value": "00541"
+        },
+        {
+          "active": true,
+          "label": "Saudi Arabia Chamber of Commerce Number",
+          "value": "00542"
+        },
+        {
+          "active": true,
+          "label": "Syria Chamber of Commerce Number",
+          "value": "00543"
+        },
+        {
+          "active": true,
+          "label": "Yemen Chamber of Commerce Number",
+          "value": "00544"
+        },
+        {
+          "active": true,
+          "label": "Angola Registration Number",
+          "value": "00545"
+        },
+        {
+          "active": true,
+          "label": "Burkina Faso Registration Number",
+          "value": "00546"
+        },
+        {
+          "active": true,
+          "label": "Burundi Registration Number",
+          "value": "00547"
+        },
+        {
+          "active": true,
+          "label": "Benin Registration Number",
+          "value": "00548"
+        },
+        {
+          "active": true,
+          "label": "Central African Republic Registration Number",
+          "value": "00549"
+        },
+        {
+          "active": true,
+          "label": "Liechtenstein Registration Number",
+          "value": "00055"
+        },
+        {
+          "active": true,
+          "label": "Congo Registration Number",
+          "value": "00550"
+        },
+        {
+          "active": true,
+          "label": "Ivory Coast Registration Number",
+          "value": "00551"
+        },
+        {
+          "active": true,
+          "label": "Cameroon Registration Number",
+          "value": "00552"
+        },
+        {
+          "active": true,
+          "label": "Cape Verde Registration Number",
+          "value": "00553"
+        },
+        {
+          "active": true,
+          "label": "Djibouti Registration Number",
+          "value": "00554"
+        },
+        {
+          "active": true,
+          "label": "Algeria Registration Number",
+          "value": "00555"
+        },
+        {
+          "active": true,
+          "label": "Egypt Registration Number",
+          "value": "00556"
+        },
+        {
+          "active": true,
+          "label": "Eritrea Registration Number",
+          "value": "00557"
+        },
+        {
+          "active": true,
+          "label": "Ethiopia Registration Number",
+          "value": "00558"
+        },
+        {
+          "active": true,
+          "label": "Falkland Islands Registration Number",
+          "value": "00559"
+        },
+        {
+          "active": true,
+          "label": "Gabon Registration Number",
+          "value": "00560"
+        },
+        {
+          "active": true,
+          "label": "Ghana Registration Number",
+          "value": "00561"
+        },
+        {
+          "active": true,
+          "label": "Gambia Registration Number",
+          "value": "00562"
+        },
+        {
+          "active": true,
+          "label": "Guinea Registration Number",
+          "value": "00563"
+        },
+        {
+          "active": true,
+          "label": "Equatorial Guinea Registration Number",
+          "value": "00564"
+        },
+        {
+          "active": true,
+          "label": "Guinea-Bissau Registration Number",
+          "value": "00565"
+        },
+        {
+          "active": true,
+          "label": "Kenya Registration Number",
+          "value": "00566"
+        },
+        {
+          "active": true,
+          "label": "Comoros Registration Number",
+          "value": "00567"
+        },
+        {
+          "active": true,
+          "label": "Liberia Registration Number",
+          "value": "00568"
+        },
+        {
+          "active": true,
+          "label": "Morocco Registration Number",
+          "value": "00569"
+        },
+        {
+          "active": true,
+          "label": "Madagascar Registration Number",
+          "value": "00570"
+        },
+        {
+          "active": true,
+          "label": "Mali Registration Number",
+          "value": "00571"
+        },
+        {
+          "active": true,
+          "label": "Mauritania Registration Number",
+          "value": "00572"
+        },
+        {
+          "active": true,
+          "label": "Mauritius Registration Number",
+          "value": "00573"
+        },
+        {
+          "active": true,
+          "label": "Malawi Registration Number",
+          "value": "00574"
+        },
+        {
+          "active": true,
+          "label": "Mozambique Registration Number",
+          "value": "00575"
+        },
+        {
+          "active": true,
+          "label": "Niger Registration Number",
+          "value": "00576"
+        },
+        {
+          "active": true,
+          "label": "Nigeria Registration Number",
+          "value": "00577"
+        },
+        {
+          "active": true,
+          "label": "Rwanda Registration Number",
+          "value": "00578"
+        },
+        {
+          "active": true,
+          "label": "Seychelles Registration Number",
+          "value": "00579"
+        },
+        {
+          "active": true,
+          "label": "Sudan Registration Number",
+          "value": "00580"
+        },
+        {
+          "active": true,
+          "label": "St Helena Registration Number",
+          "value": "00581"
+        },
+        {
+          "active": true,
+          "label": "Sierra Leone Registration Number",
+          "value": "00582"
+        },
+        {
+          "active": true,
+          "label": "Senegal Registration Number",
+          "value": "00583"
+        },
+        {
+          "active": true,
+          "label": "Somalia Registration Number",
+          "value": "00584"
+        },
+        {
+          "active": true,
+          "label": "Chad Registration Number",
+          "value": "00585"
+        },
+        {
+          "active": true,
+          "label": "Togo Registration Number",
+          "value": "00586"
+        },
+        {
+          "active": true,
+          "label": "Tanzania Registration Number",
+          "value": "00587"
+        },
+        {
+          "active": true,
+          "label": "Uganda Registration Number",
+          "value": "00588"
+        },
+        {
+          "active": true,
+          "label": "Zambia Registration Number",
+          "value": "00589"
+        },
+        {
+          "active": true,
+          "label": "Ivory Coast Chamber of Commerce Number",
+          "value": "00590"
+        },
+        {
+          "active": true,
+          "label": "Cameroon Chamber of Commerce Number",
+          "value": "00591"
+        },
+        {
+          "active": true,
+          "label": "Algeria Chamber of Commerce Number",
+          "value": "00592"
+        },
+        {
+          "active": true,
+          "label": "Egypt Chamber of Commerce Number",
+          "value": "00593"
+        },
+        {
+          "active": true,
+          "label": "Gabon Chamber of Commerce Number",
+          "value": "00594"
+        },
+        {
+          "active": true,
+          "label": "Morocco Chamber of Commerce Number",
+          "value": "00595"
+        },
+        {
+          "active": true,
+          "label": "Seychelles Chamber of Commerce Number",
+          "value": "00596"
+        },
+        {
+          "active": true,
+          "label": "Senegal Chamber of Commerce Number",
+          "value": "00597"
+        },
+        {
+          "active": true,
+          "label": "Ivory Coast Tax Registration Number",
+          "value": "00598"
+        },
+        {
+          "active": true,
+          "label": "Cameroon Tax Registration Number",
+          "value": "00599"
+        },
+        {
+          "active": true,
+          "label": "Italy Fiscal Code",
+          "value": "00060"
+        },
+        {
+          "active": true,
+          "label": "Egypt Tax Registration Number",
+          "value": "00600"
+        },
+        {
+          "active": true,
+          "label": "Gabon Tax Registration Number",
+          "value": "00601"
+        },
+        {
+          "active": true,
+          "label": "Ghana Tax Registration Number",
+          "value": "00602"
+        },
+        {
+          "active": true,
+          "label": "Morocco Tax Registration Number",
+          "value": "00603"
+        },
+        {
+          "active": true,
+          "label": "Mauritius Tax Registration Number",
+          "value": "00604"
+        },
+        {
+          "active": true,
+          "label": "Senegal Tax Registration Number",
+          "value": "00605"
+        },
+        {
+          "active": true,
+          "label": "Botswana Tax Registration Number",
+          "value": "00610"
+        },
+        {
+          "active": true,
+          "label": "Lesotho Tax Registration Number",
+          "value": "00620"
+        },
+        {
+          "active": true,
+          "label": "Namibia Tax Registration Number",
+          "value": "00630"
+        },
+        {
+          "active": true,
+          "label": "Swaziland Tax Registration Number",
+          "value": "00640"
+        },
+        {
+          "active": true,
+          "label": "Denmark Registration Number",
+          "value": "00065"
+        },
+        {
+          "active": true,
+          "label": "South Africa Value Added Tax Number",
+          "value": "00650"
+        },
+        {
+          "active": true,
+          "label": "South Africa Tax Registration Number",
+          "value": "00660"
+        },
+        {
+          "active": true,
+          "label": "South Africa Pay As You Earn Registration Number",
+          "value": "00670"
+        },
+        {
+          "active": true,
+          "label": "Austria Trade Register Number",
+          "value": "00070"
+        },
+        {
+          "active": true,
+          "label": "Switzerland Registration Number",
+          "value": "00702"
+        },
+        {
+          "active": true,
+          "label": "Zimbabwe Organization Registration Number",
+          "value": "00075"
+        },
+        {
+          "active": true,
+          "label": "Zimbabwe Individual Registration Number",
+          "value": "00080"
+        },
+        {
+          "active": true,
+          "label": "Guatemalan Sole Commercial Registry Number",
+          "value": "00090"
+        },
+        {
+          "active": true,
+          "label": "Colombian Registry of Fiscal Info",
+          "value": "00095"
+        },
+        {
+          "active": true,
+          "label": "Netherlands Branch Unit Number",
+          "value": "00042"
+        },
+        {
+          "active": true,
+          "label": "Netherlands Legal Entity And Partnership Information Number",
+          "value": "00043"
+        },
+        {
+          "active": true,
+          "label": "East Timor Tax Identification Number",
+          "value": "00122"
+        },
+        {
+          "active": true,
+          "label": "Philippines Securities & Exchange Commission Number",
+          "value": "00330"
+        },
+        {
+          "active": true,
+          "label": "India Society Registration Number",
+          "value": "00335"
+        },
+        {
+          "active": true,
+          "label": "India Trade Registration Number",
+          "value": "00340"
+        },
+        {
+          "active": true,
+          "label": "India Goods & Services (GST) ID",
+          "value": "00342"
+        },
+        {
+          "active": true,
+          "label": "Pakistan Securities & Exchange Commission Number",
+          "value": "00345"
+        },
+        {
+          "active": true,
+          "label": "Thailand Commercial Registration Number",
+          "value": "00350"
+        },
+        {
+          "active": true,
+          "label": "Thailand Securities & Exchange Commission Number",
+          "value": "00355"
+        },
+        {
+          "active": true,
+          "label": "Austria Association Registration Number",
+          "value": "00360"
+        },
+        {
+          "active": true,
+          "label": "Value Added Tax Number (IN)",
+          "value": "00400"
+        },
+        {
+          "active": true,
+          "label": "Value Added Tax Number (AE)",
+          "value": "00519"
+        },
+        {
+          "active": true,
+          "label": "Value Added Tax Number (SA)",
+          "value": "00520"
+        },
+        {
+          "active": true,
+          "label": "China National Organization Code",
+          "value": "00710"
+        },
+        {
+          "active": true,
+          "label": "United Social Credit Code",
+          "value": "00711"
+        },
+        {
+          "active": true,
+          "label": "Tax Identification Number (CN)",
+          "value": "00712"
+        },
+        {
+          "active": true,
+          "label": "China Business Registration Number",
+          "value": "00715"
+        },
+        {
+          "active": true,
+          "label": "Swiss Uniform Identification Number",
+          "value": "00720"
+        },
+        {
+          "active": true,
+          "label": "Slovakia ICO Number",
+          "value": "00740"
+        },
+        {
+          "active": true,
+          "label": "Tax Identification Number (IN)",
+          "value": "00753"
+        },
+        {
+          "active": true,
+          "label": "Monaco Trade & Industry Registration Number",
+          "value": "00362"
+        },
+        {
+          "active": true,
+          "label": "Polish National Court Council Number",
+          "value": "00142"
+        },
+        {
+          "active": true,
+          "label": "Polish License Number",
+          "value": "00143"
+        },
+        {
+          "active": true,
+          "label": "Czech Republic Tax Registration Number",
+          "value": "00293"
+        },
+        {
+          "active": true,
+          "label": "Slovakia Tax Registration Number",
+          "value": "00735"
+        },
+        {
+          "active": true,
+          "label": "Slovakia Court Number of Registration",
+          "value": "00730"
+        },
+        {
+          "active": true,
+          "label": "Japan Corporate Number",
+          "value": "00099"
+        },
+        {
+          "active": true,
+          "label": "Japan Stock Exchange Number",
+          "value": "00101"
+        },
+        {
+          "active": true,
+          "label": "State plan committee number (IN)",
+          "value": "00759"
+        },
+        {
+          "active": true,
+          "label": "Law society number (IN)",
+          "value": "00761"
+        },
+        {
+          "active": true,
+          "label": "Vietnam Tax Identification Number",
+          "value": "00762"
+        },
+        {
+          "active": true,
+          "label": "New Zealand Business Number",
+          "value": "00766"
+        },
+        {
+          "active": true,
+          "label": "Zimbabwe Business Registration Number",
+          "value": "00767"
+        },
+        {
+          "active": true,
+          "label": "Philippines Tax Identification Number",
+          "value": "00772"
+        },
+        {
+          "active": true,
+          "label": "Philippines Company Incorporation Number",
+          "value": "00773"
+        },
+        {
+          "active": true,
+          "label": "Luxembourg Rcs Registration Number",
+          "value": "00765"
+        },
+        {
+          "active": true,
+          "label": "Canada Federal Corporation Number",
+          "value": "00824"
+        },
+        {
+          "active": true,
+          "label": "Companies Commission of Malaysia Registration Number",
+          "value": "00832"
+        },
+        {
+          "active": true,
+          "label": "Office of Scottish Charity Regulator Charity Number ",
+          "value": "00833"
+        },
+        {
+          "active": true,
+          "label": "Charity Commission for England & Wales Charity Number",
+          "value": "00835"
+        },
+        {
+          "active": true,
+          "label": "UK Financial Conduct Authority Reference Number",
+          "value": "00836"
+        },
+        {
+          "active": true,
+          "label": "Honduras National Tax Registration Number",
+          "value": "00838"
+        },
+        {
+          "active": true,
+          "label": "Bermuda Business Registration Number",
+          "value": "00845"
+        },
+        {
+          "active": true,
+          "label": "Cayman Islands Business Registration Number",
+          "value": "00848"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "US Tax ID Number",
+      "name": "UsTaxId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Geocode Accuracy",
+      "name": "GeoCodeAccuracy",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Rooftop level. Precise physical address",
+          "value": "D"
+        },
+        {
+          "active": true,
+          "label": "Street level. Correct street and within a range of street numbers. Accuracy .1 to .2 miles",
+          "value": "S"
+        },
+        {
+          "active": true,
+          "label": "Block level. (ZIP+4 Centroid) Correct street and within a range of blocks. Accuracy .2 to .4 miles",
+          "value": "B"
+        },
+        {
+          "active": true,
+          "label": "Census tract level. (ZIP+2 Centroid) Correct street and within a range of census tracts. Accuracy .4 to .6 miles",
+          "value": "T"
+        },
+        {
+          "active": true,
+          "label": "Mailing address level. Physical address not valid or not present",
+          "value": "M"
+        },
+        {
+          "active": true,
+          "label": "ZIP code level. Correct 5-digit ZIP code",
+          "value": "Z"
+        },
+        {
+          "active": true,
+          "label": "Geocode could not be assigned",
+          "value": "0"
+        },
+        {
+          "active": true,
+          "label": "Places the address in the correct city",
+          "value": "C"
+        },
+        {
+          "active": true,
+          "label": "Not matched",
+          "value": "N"
+        },
+        {
+          "active": true,
+          "label": "Street intersection",
+          "value": "I"
+        },
+        {
+          "active": true,
+          "label": "PO Box location",
+          "value": "P"
+        },
+        {
+          "active": true,
+          "label": "Non-US rooftop accuracy",
+          "value": "A"
+        },
+        {
+          "active": true,
+          "label": "State or Province Centroid",
+          "value": "H"
+        },
+        {
+          "active": true,
+          "label": "County Centroid",
+          "value": "K"
+        },
+        {
+          "active": true,
+          "label": "Sub Locality-Street Level",
+          "value": "G"
+        },
+        {
+          "active": true,
+          "label": "Locality Centroid",
+          "value": "L"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Number of Business Family Members",
+      "name": "FamilyMembers",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Delinquency Risk",
+      "name": "MarketingPreScreen",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Low risk of delinquency",
+          "value": "L"
+        },
+        {
+          "active": true,
+          "label": "Moderate risk of delinquency",
+          "value": "M"
+        },
+        {
+          "active": true,
+          "label": "High risk of delinquency",
+          "value": "H"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Global Ultimate D-U-N-S Number",
+      "name": "GlobalUltimateDunsNumber",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Global Ultimate Business Name",
+      "name": "GlobalUltimateBusinessName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Parent Company D-U-N-S Number",
+      "name": "ParentOrHqDunsNumber",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Parent Company Business Name",
+      "name": "ParentOrHqBusinessName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Domestic Ultimate D-U-N-S Number",
+      "name": "DomesticUltimateDunsNumber",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Domestic Ultimate Business Name",
+      "name": "DomesticUltimateBusinessName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Location Type",
+      "name": "LocationStatus",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Single Location. No other entities report to the business",
+          "value": "0"
+        },
+        {
+          "active": true,
+          "label": "Headquarters/Parent. Branches and/or subsidiaries report to the business",
+          "value": "1"
+        },
+        {
+          "active": true,
+          "label": "Branch. Secondary location to a headquarters location",
+          "value": "2"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Local Currency ISO Code",
+      "name": "CompanyCurrencyIsoCode",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "AED - UAE Dirham",
+          "value": "AED"
+        },
+        {
+          "active": true,
+          "label": "AFN - Afghanistan Afghani (New)",
+          "value": "AFN"
+        },
+        {
+          "active": true,
+          "label": "ALL - Albanian Lek",
+          "value": "ALL"
+        },
+        {
+          "active": true,
+          "label": "AMD - Armenian Dram",
+          "value": "AMD"
+        },
+        {
+          "active": true,
+          "label": "ANG - Neth Antilles Guilder",
+          "value": "ANG"
+        },
+        {
+          "active": true,
+          "label": "AOA - Angola Kwanza",
+          "value": "AOA"
+        },
+        {
+          "active": true,
+          "label": "ARS - Argentine Peso",
+          "value": "ARS"
+        },
+        {
+          "active": true,
+          "label": "AUD - Australian Dollar",
+          "value": "AUD"
+        },
+        {
+          "active": true,
+          "label": "AWG - Aruba Florin",
+          "value": "AWG"
+        },
+        {
+          "active": true,
+          "label": "AZN - Azerbaijan Manat",
+          "value": "AZN"
+        },
+        {
+          "active": true,
+          "label": "BAM - Convertible Marks",
+          "value": "BAM"
+        },
+        {
+          "active": true,
+          "label": "BBD - Barbados Dollar",
+          "value": "BBD"
+        },
+        {
+          "active": true,
+          "label": "BDT - Bangladesh Taka",
+          "value": "BDT"
+        },
+        {
+          "active": true,
+          "label": "BGN - Bulgarian Lev",
+          "value": "BGN"
+        },
+        {
+          "active": true,
+          "label": "BHD - Bahraini Dinar",
+          "value": "BHD"
+        },
+        {
+          "active": true,
+          "label": "BIF - Burundi Franc",
+          "value": "BIF"
+        },
+        {
+          "active": true,
+          "label": "BMD - Bermuda Dollar",
+          "value": "BMD"
+        },
+        {
+          "active": true,
+          "label": "BND - Brunei Dollar",
+          "value": "BND"
+        },
+        {
+          "active": true,
+          "label": "BOB - Bolivian Boliviano",
+          "value": "BOB"
+        },
+        {
+          "active": true,
+          "label": "BOV - Bolivia Mvdol",
+          "value": "BOV"
+        },
+        {
+          "active": true,
+          "label": "BRL - Brazilian Real",
+          "value": "BRL"
+        },
+        {
+          "active": true,
+          "label": "BSD - Bahamian Dollar",
+          "value": "BSD"
+        },
+        {
+          "active": true,
+          "label": "BTN - Bhutan Ngultrum",
+          "value": "BTN"
+        },
+        {
+          "active": true,
+          "label": "BWP - Botswana Pula",
+          "value": "BWP"
+        },
+        {
+          "active": true,
+          "label": "BYN - Belarusian Ruble",
+          "value": "BYN"
+        },
+        {
+          "active": true,
+          "label": "BYR - Belarusian Ruble",
+          "value": "BYR"
+        },
+        {
+          "active": true,
+          "label": "BZD - Belize Dollar",
+          "value": "BZD"
+        },
+        {
+          "active": true,
+          "label": "CAD - Canadian Dollar",
+          "value": "CAD"
+        },
+        {
+          "active": true,
+          "label": "CDF - Franc Congolais",
+          "value": "CDF"
+        },
+        {
+          "active": true,
+          "label": "CHF - Swiss Franc",
+          "value": "CHF"
+        },
+        {
+          "active": true,
+          "label": "CLF - Unidades de fomento",
+          "value": "CLF"
+        },
+        {
+          "active": true,
+          "label": "CLP - Chilean Peso",
+          "value": "CLP"
+        },
+        {
+          "active": true,
+          "label": "CNH - Chinese Yuan (Offshore)",
+          "value": "CNH"
+        },
+        {
+          "active": true,
+          "label": "CNY - Chinese Yuan",
+          "value": "CNY"
+        },
+        {
+          "active": true,
+          "label": "COP - Colombian Peso",
+          "value": "COP"
+        },
+        {
+          "active": true,
+          "label": "CRC - Costa Rica Colon",
+          "value": "CRC"
+        },
+        {
+          "active": true,
+          "label": "CVE - Cape Verde Escudo",
+          "value": "CVE"
+        },
+        {
+          "active": true,
+          "label": "CZK - Czech Koruna",
+          "value": "CZK"
+        },
+        {
+          "active": true,
+          "label": "DJF - Dijibouti Franc",
+          "value": "DJF"
+        },
+        {
+          "active": true,
+          "label": "DKK - Danish Krone",
+          "value": "DKK"
+        },
+        {
+          "active": true,
+          "label": "DOP - Dominican Peso",
+          "value": "DOP"
+        },
+        {
+          "active": true,
+          "label": "DZD - Algerian Dinar",
+          "value": "DZD"
+        },
+        {
+          "active": true,
+          "label": "EEK - Estonian Kroon",
+          "value": "EEK"
+        },
+        {
+          "active": true,
+          "label": "EGP - Egyptian Pound",
+          "value": "EGP"
+        },
+        {
+          "active": true,
+          "label": "ERN - Eritrea Nakfa",
+          "value": "ERN"
+        },
+        {
+          "active": true,
+          "label": "ETB - Ethiopian Birr",
+          "value": "ETB"
+        },
+        {
+          "active": true,
+          "label": "EUR - Euro",
+          "value": "EUR"
+        },
+        {
+          "active": true,
+          "label": "FJD - Fiji Dollar",
+          "value": "FJD"
+        },
+        {
+          "active": true,
+          "label": "FKP - Falkland Islands Pound",
+          "value": "FKP"
+        },
+        {
+          "active": true,
+          "label": "GBP - British Pound",
+          "value": "GBP"
+        },
+        {
+          "active": true,
+          "label": "GBT - Zimbabwe Gold Back Digital Token",
+          "value": "GBT"
+        },
+        {
+          "active": true,
+          "label": "GEL - Georgia Lari",
+          "value": "GEL"
+        },
+        {
+          "active": true,
+          "label": "GHS - Ghanaian Cedi",
+          "value": "GHS"
+        },
+        {
+          "active": true,
+          "label": "GIP - Gibraltar Pound",
+          "value": "GIP"
+        },
+        {
+          "active": true,
+          "label": "GMD - Gambian Dalasi",
+          "value": "GMD"
+        },
+        {
+          "active": true,
+          "label": "GNF - Guinean Franc",
+          "value": "GNF"
+        },
+        {
+          "active": true,
+          "label": "GTQ - Guatemala Quetzal",
+          "value": "GTQ"
+        },
+        {
+          "active": true,
+          "label": "GYD - Guyana Dollar",
+          "value": "GYD"
+        },
+        {
+          "active": true,
+          "label": "HKD - Hong Kong Dollar",
+          "value": "HKD"
+        },
+        {
+          "active": true,
+          "label": "HNL - Honduras Lempira",
+          "value": "HNL"
+        },
+        {
+          "active": true,
+          "label": "HRK - Kuna",
+          "value": "HRK"
+        },
+        {
+          "active": true,
+          "label": "HTG - Haiti Gourde",
+          "value": "HTG"
+        },
+        {
+          "active": true,
+          "label": "HUF - Hungarian Forint",
+          "value": "HUF"
+        },
+        {
+          "active": true,
+          "label": "IDR - Indonesian Rupiah",
+          "value": "IDR"
+        },
+        {
+          "active": true,
+          "label": "ILS - Israeli Shekel",
+          "value": "ILS"
+        },
+        {
+          "active": true,
+          "label": "INR - Indian Rupee",
+          "value": "INR"
+        },
+        {
+          "active": true,
+          "label": "IQD - Iraqi Dinar",
+          "value": "IQD"
+        },
+        {
+          "active": true,
+          "label": "ISK - Iceland Krona",
+          "value": "ISK"
+        },
+        {
+          "active": true,
+          "label": "JMD - Jamaican Dollar",
+          "value": "JMD"
+        },
+        {
+          "active": true,
+          "label": "JOD - Jordanian Dinar",
+          "value": "JOD"
+        },
+        {
+          "active": true,
+          "label": "JPY - Japanese Yen",
+          "value": "JPY"
+        },
+        {
+          "active": true,
+          "label": "KES - Kenyan Shilling",
+          "value": "KES"
+        },
+        {
+          "active": true,
+          "label": "KGS - Kyrgyzstan Som",
+          "value": "KGS"
+        },
+        {
+          "active": true,
+          "label": "KHR - Cambodia Riel",
+          "value": "KHR"
+        },
+        {
+          "active": true,
+          "label": "KMF - Comorian Franc",
+          "value": "KMF"
+        },
+        {
+          "active": true,
+          "label": "KRW - Korean Won",
+          "value": "KRW"
+        },
+        {
+          "active": true,
+          "label": "KWD - Kuwaiti Dinar",
+          "value": "KWD"
+        },
+        {
+          "active": true,
+          "label": "KYD - Cayman Islands Dollar",
+          "value": "KYD"
+        },
+        {
+          "active": true,
+          "label": "KZT - Kazakhstan Tenge",
+          "value": "KZT"
+        },
+        {
+          "active": true,
+          "label": "LAK - Lao Kip",
+          "value": "LAK"
+        },
+        {
+          "active": true,
+          "label": "LBP - Lebanese Pound",
+          "value": "LBP"
+        },
+        {
+          "active": true,
+          "label": "LKR - Sri Lanka Rupee",
+          "value": "LKR"
+        },
+        {
+          "active": true,
+          "label": "LRD - Liberian Dollar",
+          "value": "LRD"
+        },
+        {
+          "active": true,
+          "label": "LSL - Lesotho Loti",
+          "value": "LSL"
+        },
+        {
+          "active": true,
+          "label": "LYD - Libyan Dinar",
+          "value": "LYD"
+        },
+        {
+          "active": true,
+          "label": "MAD - Moroccan Dirham",
+          "value": "MAD"
+        },
+        {
+          "active": true,
+          "label": "MDL - Moldovan Leu",
+          "value": "MDL"
+        },
+        {
+          "active": true,
+          "label": "MGA - Malagasy Ariary",
+          "value": "MGA"
+        },
+        {
+          "active": true,
+          "label": "MKD - Macedonian Denar",
+          "value": "MKD"
+        },
+        {
+          "active": true,
+          "label": "MMK - Myanmar Kyat",
+          "value": "MMK"
+        },
+        {
+          "active": true,
+          "label": "MNT - Mongolian Tugrik",
+          "value": "MNT"
+        },
+        {
+          "active": true,
+          "label": "MOP - Macau Pataca",
+          "value": "MOP"
+        },
+        {
+          "active": true,
+          "label": "MRO - Mauritanian Ougulya",
+          "value": "MRO"
+        },
+        {
+          "active": true,
+          "label": "MRU - Mauritanian Ougulya",
+          "value": "MRU"
+        },
+        {
+          "active": true,
+          "label": "MUR - Mauritius Rupee",
+          "value": "MUR"
+        },
+        {
+          "active": true,
+          "label": "MVR - Maldives Rufiyaa",
+          "value": "MVR"
+        },
+        {
+          "active": true,
+          "label": "MWK - Malawi Kwacha",
+          "value": "MWK"
+        },
+        {
+          "active": true,
+          "label": "MXN - Mexican Peso",
+          "value": "MXN"
+        },
+        {
+          "active": true,
+          "label": "MXV - Mexican Unidad de Inversion (UDI)",
+          "value": "MXV"
+        },
+        {
+          "active": true,
+          "label": "MYR - Malaysian Ringgit",
+          "value": "MYR"
+        },
+        {
+          "active": true,
+          "label": "MZN - Mozambique New Metical",
+          "value": "MZN"
+        },
+        {
+          "active": true,
+          "label": "NAD - Namibian Dollar",
+          "value": "NAD"
+        },
+        {
+          "active": true,
+          "label": "NGN - Nigerian Naira",
+          "value": "NGN"
+        },
+        {
+          "active": true,
+          "label": "NIO - Nicaragua Cordoba",
+          "value": "NIO"
+        },
+        {
+          "active": true,
+          "label": "NOK - Norwegian Krone",
+          "value": "NOK"
+        },
+        {
+          "active": true,
+          "label": "NPR - Nepalese Rupee",
+          "value": "NPR"
+        },
+        {
+          "active": true,
+          "label": "NZD - New Zealand Dollar",
+          "value": "NZD"
+        },
+        {
+          "active": true,
+          "label": "OMR - Omani Rial",
+          "value": "OMR"
+        },
+        {
+          "active": true,
+          "label": "PAB - Panama Balboa",
+          "value": "PAB"
+        },
+        {
+          "active": true,
+          "label": "PEN - Peruvian Sol",
+          "value": "PEN"
+        },
+        {
+          "active": true,
+          "label": "PGK - Papua New Guinea Kina",
+          "value": "PGK"
+        },
+        {
+          "active": true,
+          "label": "PHP - Philippine Peso",
+          "value": "PHP"
+        },
+        {
+          "active": true,
+          "label": "PKR - Pakistani Rupee",
+          "value": "PKR"
+        },
+        {
+          "active": true,
+          "label": "PLN - Polish Zloty",
+          "value": "PLN"
+        },
+        {
+          "active": true,
+          "label": "PYG - Paraguayan Guarani",
+          "value": "PYG"
+        },
+        {
+          "active": true,
+          "label": "QAR - Qatar Rial",
+          "value": "QAR"
+        },
+        {
+          "active": true,
+          "label": "RON - Romanian Leu",
+          "value": "RON"
+        },
+        {
+          "active": true,
+          "label": "RSD - Serbian Dinar",
+          "value": "RSD"
+        },
+        {
+          "active": true,
+          "label": "RUB - Russian Rouble",
+          "value": "RUB"
+        },
+        {
+          "active": true,
+          "label": "RWF - Rwanda Franc",
+          "value": "RWF"
+        },
+        {
+          "active": true,
+          "label": "SAR - Saudi Arabian Riyal",
+          "value": "SAR"
+        },
+        {
+          "active": true,
+          "label": "SBD - Solomon Islands Dollar",
+          "value": "SBD"
+        },
+        {
+          "active": true,
+          "label": "SCR - Seychelles Rupee",
+          "value": "SCR"
+        },
+        {
+          "active": true,
+          "label": "SDG - Sudanese Pound",
+          "value": "SDG"
+        },
+        {
+          "active": true,
+          "label": "SEK - Swedish Krona",
+          "value": "SEK"
+        },
+        {
+          "active": true,
+          "label": "SGD - Singapore Dollar",
+          "value": "SGD"
+        },
+        {
+          "active": true,
+          "label": "SHP - St Helena Pound",
+          "value": "SHP"
+        },
+        {
+          "active": true,
+          "label": "SLE - Sierra Leone Leone",
+          "value": "SLE"
+        },
+        {
+          "active": true,
+          "label": "SLL - Sierra Leone Leone",
+          "value": "SLL"
+        },
+        {
+          "active": true,
+          "label": "SOS - Somali Shilling",
+          "value": "SOS"
+        },
+        {
+          "active": true,
+          "label": "SRD - Surinam Dollar",
+          "value": "SRD"
+        },
+        {
+          "active": true,
+          "label": "SSP - South Sudan Pound",
+          "value": "SSP"
+        },
+        {
+          "active": true,
+          "label": "STD - São Tomé and Príncipe Dobra",
+          "value": "STD"
+        },
+        {
+          "active": true,
+          "label": "STN - São Tomé and Príncipe Dobra",
+          "value": "STN"
+        },
+        {
+          "active": true,
+          "label": "SZL - Eswatini Lilageni",
+          "value": "SZL"
+        },
+        {
+          "active": true,
+          "label": "THB - Thai Baht",
+          "value": "THB"
+        },
+        {
+          "active": true,
+          "label": "TJS - Tajik Somoni",
+          "value": "TJS"
+        },
+        {
+          "active": true,
+          "label": "TMT - Turkmenistan New Manat",
+          "value": "TMT"
+        },
+        {
+          "active": true,
+          "label": "TND - Tunisian Dinar",
+          "value": "TND"
+        },
+        {
+          "active": true,
+          "label": "TOP - Tonga Pa'anga",
+          "value": "TOP"
+        },
+        {
+          "active": true,
+          "label": "TRY - Turkish Lira (New)",
+          "value": "TRY"
+        },
+        {
+          "active": true,
+          "label": "TTD - Trinidad&Tobago Dollar",
+          "value": "TTD"
+        },
+        {
+          "active": true,
+          "label": "TWD - Taiwan Dollar",
+          "value": "TWD"
+        },
+        {
+          "active": true,
+          "label": "TZS - Tanzanian Shilling",
+          "value": "TZS"
+        },
+        {
+          "active": true,
+          "label": "UAH - Ukraine Hryvnia",
+          "value": "UAH"
+        },
+        {
+          "active": true,
+          "label": "UGX - Ugandan Shilling",
+          "value": "UGX"
+        },
+        {
+          "active": true,
+          "label": "USD - U.S. Dollar",
+          "value": "USD"
+        },
+        {
+          "active": true,
+          "label": "UYU - Uruguayan Peso",
+          "value": "UYU"
+        },
+        {
+          "active": true,
+          "label": "UZS - Uzbekistan Sum",
+          "value": "UZS"
+        },
+        {
+          "active": true,
+          "label": "VEF - Venezuelan Bolivar Fuerte",
+          "value": "VEF"
+        },
+        {
+          "active": true,
+          "label": "VES - Venezuelan Bolívar Soberano",
+          "value": "VES"
+        },
+        {
+          "active": true,
+          "label": "VND - Vietnam Dong",
+          "value": "VND"
+        },
+        {
+          "active": true,
+          "label": "VUV - Vanuatu Vatu",
+          "value": "VUV"
+        },
+        {
+          "active": true,
+          "label": "WST - Samoa Tala",
+          "value": "WST"
+        },
+        {
+          "active": true,
+          "label": "XAF - CFA Franc (BEAC)",
+          "value": "XAF"
+        },
+        {
+          "active": true,
+          "label": "XCD - East Caribbean Dollar",
+          "value": "XCD"
+        },
+        {
+          "active": true,
+          "label": "XCG - Caribbean Guilder",
+          "value": "XCG"
+        },
+        {
+          "active": true,
+          "label": "XOF - CFA Franc (BCEAO)",
+          "value": "XOF"
+        },
+        {
+          "active": true,
+          "label": "XPF - Pacific Franc",
+          "value": "XPF"
+        },
+        {
+          "active": true,
+          "label": "YER - Yemen Riyal",
+          "value": "YER"
+        },
+        {
+          "active": true,
+          "label": "ZAR - South African Rand",
+          "value": "ZAR"
+        },
+        {
+          "active": true,
+          "label": "ZMW - Zambian Kwacha (New)",
+          "value": "ZMW"
+        },
+        {
+          "active": true,
+          "label": "ZWG - Zimbabwe Gold",
+          "value": "ZWG"
+        },
+        {
+          "active": true,
+          "label": "ZWL - Zimbabwe Dollar",
+          "value": "ZWL"
+        },
+        {
+          "active": true,
+          "label": "ZiG - Zimbabwe Gold",
+          "value": "ZIG"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Company Description",
+      "name": "Description",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fortune 1000 Rank",
+      "name": "FortuneRank",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "S&P 500",
+      "name": "IncludedInSnP500",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Location Size",
+      "name": "PremisesMeasure",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Location Size Accuracy",
+      "name": "PremisesMeasureReliability",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Location Size Unit of Measure",
+      "name": "PremisesMeasureUnit",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Employee Growth",
+      "name": "EmployeeQuantityGrowthRate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Annual Revenue Growth",
+      "name": "SalesTurnoverGrowthRate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Primary SIC8 Code",
+      "name": "PrimarySic8",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Primary SIC8 Description",
+      "name": "PrimarySic8Desc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Second SIC8 Code",
+      "name": "SecondSic8",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Second SIC8 Description ",
+      "name": "SecondSic8Desc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Third SIC8 Code",
+      "name": "ThirdSic8",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Third SIC8 Description",
+      "name": "ThirdSic8Desc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fourth SIC8 Code",
+      "name": "FourthSic8",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fourth SIC8 Description",
+      "name": "FourthSic8Desc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fifth SIC8 Code",
+      "name": "FifthSic8",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Fifth SIC8 Description",
+      "name": "FifthSic8Desc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Sixth SIC8 Code",
+      "name": "SixthSic8",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Sixth SIC8 Description",
+      "name": "SixthSic8Desc",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Prior Year Number of Employees - Total",
+      "name": "PriorYearEmployees",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Prior Year Revenue",
+      "name": "PriorYearRevenue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "double"
+    }
+  ],
+  "childRelationships": [
+    {
+      "childSObject": "AIInsightValue",
+      "field": "SobjectLookupValueId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "AIRecordInsight",
+      "field": "TargetId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "Account",
+      "field": "DandbCompanyId",
+      "relationshipName": "Accounts"
+    },
+    {
+      "childSObject": "AccountChangeEvent",
+      "field": "DandbCompanyId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ApprovalSubmission",
+      "field": "RelatedRecordId",
+      "relationshipName": "ApprovalSubmissions"
+    },
+    {
+      "childSObject": "ApprovalWorkItem",
+      "field": "RelatedRecordId",
+      "relationshipName": "ApprovalWorkItems"
+    },
+    {
+      "childSObject": "FlowExecutionErrorEvent",
+      "field": "ContextRecordId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "FlowOrchestrationWorkItem",
+      "field": "RelatedRecordId",
+      "relationshipName": "FlowOrchestrationWorkItems"
+    },
+    {
+      "childSObject": "FlowRecordRelation",
+      "field": "RelatedRecordId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "Lead",
+      "field": "DandbCompanyId",
+      "relationshipName": "Leads"
+    },
+    {
+      "childSObject": "LeadChangeEvent",
+      "field": "DandbCompanyId",
+      "relationshipName": null
+    }
+  ]
+}

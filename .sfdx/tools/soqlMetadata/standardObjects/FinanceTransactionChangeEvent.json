@@ -1,0 +1,1403 @@
+{
+  "name": "FinanceTransactionChangeEvent",
+  "label": "Finance Transaction Change Event",
+  "custom": false,
+  "queryable": false,
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Change Event ID",
+      "name": "Id",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Replay ID",
+      "name": "ReplayId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Change Event Header",
+      "name": "ChangeEventHeader",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "complexvalue"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Owner ID",
+      "name": "OwnerId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Name",
+      "name": "FinanceTransactionNumber",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The financial object that was created or updated as a result of a customer action",
+      "label": "ReferenceEntity ID",
+      "name": "ReferenceEntityId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Battle__c",
+        "CreditMemo",
+        "CreditMemoInvApplication",
+        "CreditMemoLine",
+        "Invoice",
+        "InvoiceLine",
+        "Move__c",
+        "Payment",
+        "PaymentLineInvoice",
+        "Pokedex_Entry__c",
+        "Pokemon__c",
+        "Refund",
+        "RefundLinePayment",
+        "TM__c"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Reference Entity Type",
+      "name": "ReferenceEntityType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Invoice",
+          "value": "Invoice"
+        },
+        {
+          "active": true,
+          "label": "Invoice line",
+          "value": "Invoice line"
+        },
+        {
+          "active": true,
+          "label": "Invoice line tax",
+          "value": "Invoice line tax"
+        },
+        {
+          "active": true,
+          "label": "Sub invoice line",
+          "value": "Sub invoice line"
+        },
+        {
+          "active": true,
+          "label": "Sub invoice line tax",
+          "value": "Sub invoice line tax"
+        },
+        {
+          "active": true,
+          "label": "Credit memo",
+          "value": "Credit memo"
+        },
+        {
+          "active": true,
+          "label": "Credit memo line",
+          "value": "Credit memo line"
+        },
+        {
+          "active": true,
+          "label": "Credit memo line tax",
+          "value": "Credit memo line tax"
+        },
+        {
+          "active": true,
+          "label": "Credit memo line invoice application",
+          "value": "Credit memo line invoice application"
+        },
+        {
+          "active": true,
+          "label": "Credit memo line invoice line application",
+          "value": "Credit memo line invoice line application"
+        },
+        {
+          "active": true,
+          "label": "Debit memo",
+          "value": "Debit memo"
+        },
+        {
+          "active": true,
+          "label": "Debit memo line",
+          "value": "Debit memo line"
+        },
+        {
+          "active": true,
+          "label": "Debit memo line tax",
+          "value": "Debit memo line tax"
+        },
+        {
+          "active": true,
+          "label": "Debit memo line credit memo application",
+          "value": "Debit memo line credit memo application"
+        },
+        {
+          "active": true,
+          "label": "Debit memo line credit memo line application",
+          "value": "Debit memo line credit memo line application"
+        },
+        {
+          "active": true,
+          "label": "Debit memo line invoice application",
+          "value": "Debit memo line invoice application"
+        },
+        {
+          "active": true,
+          "label": "Debit memo line invoice line application",
+          "value": "Debit memo line invoice line application"
+        },
+        {
+          "active": true,
+          "label": "Payment",
+          "value": "Payment"
+        },
+        {
+          "active": true,
+          "label": "Payment debit memo application",
+          "value": "Payment debit memo application"
+        },
+        {
+          "active": true,
+          "label": "Payment debit memo line application",
+          "value": "Payment debit memo line application"
+        },
+        {
+          "active": true,
+          "label": "Payment invoice application",
+          "value": "Payment invoice application"
+        },
+        {
+          "active": true,
+          "label": "Payment invoice line application",
+          "value": "Payment invoice line application"
+        },
+        {
+          "active": true,
+          "label": "Refund",
+          "value": "Refund"
+        },
+        {
+          "active": true,
+          "label": "Refund credit memo application",
+          "value": "Refund credit memo application"
+        },
+        {
+          "active": true,
+          "label": "Refund credit memo line application",
+          "value": "Refund credit memo line application"
+        },
+        {
+          "active": true,
+          "label": "Refund payment application",
+          "value": "Refund payment application"
+        },
+        {
+          "active": true,
+          "label": "Other",
+          "value": "Other"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The financial action that caused the finance transaction",
+      "label": "Event Action",
+      "name": "EventAction",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Post an invoice",
+          "value": "Post an invoice"
+        },
+        {
+          "active": true,
+          "label": "Void an invoice",
+          "value": "Void an invoice"
+        },
+        {
+          "active": true,
+          "label": "Cancel & rebill",
+          "value": "Cancel & rebill"
+        },
+        {
+          "active": true,
+          "label": "Convert negative invoice lines",
+          "value": "Convert negative invoice lines"
+        },
+        {
+          "active": true,
+          "label": "Subtotal change on sub invoice line",
+          "value": "Subtotal change on sub invoice line"
+        },
+        {
+          "active": true,
+          "label": "Tax change on sub invoice line",
+          "value": "Tax change on sub invoice line"
+        },
+        {
+          "active": true,
+          "label": "Invoice line reference changed on sub invoice line",
+          "value": "Invoice line reference changed on sub invoice line"
+        },
+        {
+          "active": true,
+          "label": "Currency change on sub invoice line",
+          "value": "Currency change on sub invoice line"
+        },
+        {
+          "active": true,
+          "label": "Credit invoice header",
+          "value": "Credit invoice header"
+        },
+        {
+          "active": true,
+          "label": "Unallocate credit from invoice header",
+          "value": "Unallocate credit from invoice header"
+        },
+        {
+          "active": true,
+          "label": "Credit invoice line",
+          "value": "Credit invoice line"
+        },
+        {
+          "active": true,
+          "label": "Unallocate credit from invoice line",
+          "value": "Unallocate credit from invoice line"
+        },
+        {
+          "active": true,
+          "label": "Pay invoice header",
+          "value": "Pay invoice header"
+        },
+        {
+          "active": true,
+          "label": "Unallocate payment from invoice header",
+          "value": "Unallocate payment from invoice header"
+        },
+        {
+          "active": true,
+          "label": "Pay invoice line",
+          "value": "Pay invoice line"
+        },
+        {
+          "active": true,
+          "label": "Unallocate payment from invoice line",
+          "value": "Unallocate payment from invoice line"
+        },
+        {
+          "active": true,
+          "label": "Debit invoice header",
+          "value": "Debit invoice header"
+        },
+        {
+          "active": true,
+          "label": "Unallocate debit from invoice header",
+          "value": "Unallocate debit from invoice header"
+        },
+        {
+          "active": true,
+          "label": "Debit invoice line",
+          "value": "Debit invoice line"
+        },
+        {
+          "active": true,
+          "label": "Unallocate debit from invoice line",
+          "value": "Unallocate debit from invoice line"
+        },
+        {
+          "active": true,
+          "label": "Issue a standalone credit",
+          "value": "Issue a standalone credit"
+        },
+        {
+          "active": true,
+          "label": "Void a standalone credit",
+          "value": "Void a standalone credit"
+        },
+        {
+          "active": true,
+          "label": "Refund a credit memo header",
+          "value": "Refund a credit memo header"
+        },
+        {
+          "active": true,
+          "label": "Unallocate refund from credit memo header",
+          "value": "Unallocate refund from credit memo header"
+        },
+        {
+          "active": true,
+          "label": "Refund a credit memo line",
+          "value": "Refund a credit memo line"
+        },
+        {
+          "active": true,
+          "label": "Unallocate refund from credit memo line",
+          "value": "Unallocate refund from credit memo line"
+        },
+        {
+          "active": true,
+          "label": "Debit credit memo header",
+          "value": "Debit credit memo header"
+        },
+        {
+          "active": true,
+          "label": "Unallocate debit from credit memo header",
+          "value": "Unallocate debit from credit memo header"
+        },
+        {
+          "active": true,
+          "label": "Debit credit memo line",
+          "value": "Debit credit memo line"
+        },
+        {
+          "active": true,
+          "label": "Unallocate debit from credit memo line",
+          "value": "Unallocate debit from credit memo line"
+        },
+        {
+          "active": true,
+          "label": "Post a standalone payment",
+          "value": "Post a standalone payment"
+        },
+        {
+          "active": true,
+          "label": "Void a standalone payment",
+          "value": "Void a standalone payment"
+        },
+        {
+          "active": true,
+          "label": "Refund a payment",
+          "value": "Refund a payment"
+        },
+        {
+          "active": true,
+          "label": "Unallocate refund from payment",
+          "value": "Unallocate refund from payment"
+        },
+        {
+          "active": true,
+          "label": "Issue a standalone refund",
+          "value": "Issue a standalone refund"
+        },
+        {
+          "active": true,
+          "label": "Void a standalone refund",
+          "value": "Void a standalone refund"
+        },
+        {
+          "active": true,
+          "label": "Issue a standalone debit",
+          "value": "Issue a standalone debit"
+        },
+        {
+          "active": true,
+          "label": "Void a standalone debit",
+          "value": "Void a standalone debit"
+        },
+        {
+          "active": true,
+          "label": "Pay debit memo header",
+          "value": "Pay debit memo header"
+        },
+        {
+          "active": true,
+          "label": "Unallocate payment from debit memo header",
+          "value": "Unallocate payment from debit memo header"
+        },
+        {
+          "active": true,
+          "label": "Pay debit memo line",
+          "value": "Pay debit memo line"
+        },
+        {
+          "active": true,
+          "label": "Unallocate payment from debit line",
+          "value": "Unallocate payment from debit line"
+        },
+        {
+          "active": true,
+          "label": "Other",
+          "value": "Other"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Event Type",
+      "name": "EventType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Allocated",
+          "value": "Allocated"
+        },
+        {
+          "active": true,
+          "label": "Unallocated",
+          "value": "Unallocated"
+        },
+        {
+          "active": true,
+          "label": "Posted",
+          "value": "Posted"
+        },
+        {
+          "active": true,
+          "label": "Canceled",
+          "value": "Canceled"
+        },
+        {
+          "active": true,
+          "label": "Changed",
+          "value": "Changed"
+        },
+        {
+          "active": true,
+          "label": "Void",
+          "value": "Void"
+        },
+        {
+          "active": true,
+          "label": "Other",
+          "value": "Other"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The charge contributing to the transaction's subtotal",
+      "label": "Charge Amount",
+      "name": "ChargeAmount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "currency"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The adjustment contributing to the transaction's subtotal",
+      "label": "Adjustment Amount",
+      "name": "AdjustmentAmount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "currency"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Total of the charge amount and adjustment. Doesn't include the tax amount.",
+      "label": "Subtotal",
+      "name": "Subtotal",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "currency"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The total amount of tax for the change made to your reference entity as a result of the event action",
+      "label": "Tax Amount",
+      "name": "TaxAmount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "currency"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The subtotal plus the tax amount",
+      "label": "Total Amount With Tax",
+      "name": "TotalAmountWithTax",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "currency"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The finance transaction's impact on the customer's finances",
+      "label": "Impact Amount",
+      "name": "ImpactAmount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "currency"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The balance of your reference entity as a result of the event action",
+      "label": "Resulting Balance",
+      "name": "ResultingBalance",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "currency"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Parent account of the reference entity",
+      "label": "Account ID",
+      "name": "AccountId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Account"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Source entity for reference entities that have made allocations",
+      "label": "SourceEntity ID",
+      "name": "SourceEntityId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Battle__c",
+        "CreditMemo",
+        "CreditMemoInvApplication",
+        "CreditMemoLine",
+        "Invoice",
+        "InvoiceLine",
+        "Move__c",
+        "Payment",
+        "PaymentLineInvoice",
+        "Pokedex_Entry__c",
+        "Pokemon__c",
+        "Refund",
+        "RefundLinePayment",
+        "TM__c"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Target entity for reference entities that have made allocations",
+      "label": "DestinationEntity ID",
+      "name": "DestinationEntityId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Battle__c",
+        "CreditMemo",
+        "CreditMemoInvApplication",
+        "CreditMemoLine",
+        "Invoice",
+        "InvoiceLine",
+        "Move__c",
+        "Payment",
+        "PaymentLineInvoice",
+        "Pokedex_Entry__c",
+        "Pokemon__c",
+        "Refund",
+        "RefundLinePayment",
+        "TM__c"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The date when the finance transaction occurred",
+      "label": "Transaction Date",
+      "name": "TransactionDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The date when the financial transaction takes effect",
+      "label": "Effective Date",
+      "name": "EffectiveDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Date when the invoice is due",
+      "label": "Due Date",
+      "name": "DueDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Currency of the country defined for this account. Define this value to use later when you calculate currency conversions.",
+      "label": "Base Currency ISO Code",
+      "name": "BaseCurrencyIsoCode",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Rate of exchange according to the Base Currency FX Date. Define this value to use later when you calculate currency conversions.",
+      "label": "Base Currency FX Rate",
+      "name": "BaseCurrencyFxRate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "double"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Date used to determine the foreign exchange rate. Define this value to use later when you calculate currency conversions.",
+      "label": "Base Currency FX Date",
+      "name": "BaseCurrencyFxDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "date"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Define this value based on any currency conversion needed for the total amount with tax.",
+      "label": "Base Currency Amount",
+      "name": "BaseCurrencyAmount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "currency"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Define this value based on any currency conversion needed for the resulting balance.",
+      "label": "Base Currency Balance",
+      "name": "BaseCurrencyBalance",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "currency"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "Legal entity associated with the finance transaction. This is an optional lookup that you can add to associate the finance transaction to GL rules for external ledger processing.",
+      "label": "Legal Entity ID",
+      "name": "LegalEntityId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Battle__c",
+        "LegalEntity",
+        "Move__c",
+        "Pokedex_Entry__c",
+        "Pokemon__c",
+        "TM__c"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The process used to create the finance transactions",
+      "label": "Creation Mode",
+      "name": "CreationMode",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Salesforce",
+          "value": "Salesforce"
+        },
+        {
+          "active": true,
+          "label": "External",
+          "value": "External"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The parent object of the reference entity",
+      "label": "ParentReferenceEntity ID",
+      "name": "ParentReferenceEntityId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Battle__c",
+        "CreditMemo",
+        "CreditMemoInvApplication",
+        "CreditMemoLine",
+        "Invoice",
+        "InvoiceLine",
+        "Move__c",
+        "Payment",
+        "PaymentLineInvoice",
+        "Pokedex_Entry__c",
+        "Pokemon__c",
+        "Refund",
+        "RefundLinePayment",
+        "TM__c"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The finance transaction's reference entity type when the finance transaction was created.",
+      "label": "Original Reference Entity Type",
+      "name": "OriginalReferenceEntityType",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The finance transaction's event type when the finance transaction was created.",
+      "label": "Original Event Type",
+      "name": "OriginalEventType",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The finance transaction's event action when the finance transaction was created.",
+      "label": "Original Event Action",
+      "name": "OriginalEventAction",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The finance transaction's credit GL account name when the finance transaction was created.",
+      "label": "Original Credit GL Account Name",
+      "name": "OriginalCreditGlAccountName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The finance transaction's credit GL account number when the finance transaction was created.",
+      "label": "Original Credit GL Account Number",
+      "name": "OriginalCreditGlAccountNumber",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The finance transaction's debit GL account name when the finance transaction was created.",
+      "label": "Original Debit GL Account Name",
+      "name": "OriginalDebitGlAccountName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The finance transaction's debit GL account number when the finance transaction was created.",
+      "label": "Original Debit GL Account Number",
+      "name": "OriginalDebitGlAccountNumber",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The finance transaction's finance period name when the finance transaction was created.",
+      "label": "Original Finance Period Name",
+      "name": "OriginalFinancePeriodName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The finance transaction's finance period start date when the finance transaction was created.",
+      "label": "Original Finance Period Start Date",
+      "name": "OriginalFinancePeriodStartDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The finance transaction's finance period end date when the finance transaction was created.",
+      "label": "Original Finance Period End Date",
+      "name": "OriginalFinancePeriodEndDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The finance transaction's finance period status when the finance transaction was created.",
+      "label": "Original Finance Period Status",
+      "name": "OriginalFinancePeriodStatus",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The finance transaction's GL rule name when the finance transaction was created.",
+      "label": "Original GL Rule Name",
+      "name": "OriginalGlRuleName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The finance transaction's GL treatment name when the finance transaction was created.",
+      "label": "Original GL Treatment Name",
+      "name": "OriginalGlTreatmentName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The finance transaction's finance book name when the finance transaction was created.",
+      "label": "Original Finance Book Name",
+      "name": "OriginalFinanceBookName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Finance System Transaction Number",
+      "name": "FinanceSystemTransactionNumber",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The name of the external financial system used to recognize the finance transaction.",
+      "label": "Finance System Name",
+      "name": "FinanceSystemName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": "The type of the external financial system used to recognize the finance transaction.",
+      "label": "Finance System Integration Mode",
+      "name": "FinanceSystemIntegrationMode",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Finance System Integration Status",
+      "name": "FinanceSystemIntegrationStatus",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Not Selected",
+          "value": "Not Selected"
+        },
+        {
+          "active": true,
+          "label": "Pending",
+          "value": "Pending"
+        },
+        {
+          "active": true,
+          "label": "In Process",
+          "value": "In Process"
+        },
+        {
+          "active": true,
+          "label": "Retry In Process",
+          "value": "Retry In Process"
+        },
+        {
+          "active": true,
+          "label": "Success",
+          "value": "Success"
+        },
+        {
+          "active": true,
+          "label": "Error",
+          "value": "Error"
+        },
+        {
+          "active": true,
+          "label": "Failed",
+          "value": "Failed"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    }
+  ],
+  "childRelationships": []
+}

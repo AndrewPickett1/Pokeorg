@@ -1,0 +1,84 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card title="Move Trainer" class="slds-var-p-around_medium">
+        <div class="slds-grid slds-var-p-around_medium">
+
+            <!-- left column -->
+            <div class="slds-col slds-size_1-of-3 slds-align_absolute-center">
+                <div class="slds-grid slds-grid_vertical">
+                    <!-- disc and sprite -->
+                    <div class="slds-grid">
+                        <!-- disc img -->
+                        <div class="slds-col slds-size_1-of-2 slds-align_absolute-center">
+                            <img src={TMDiscImg}>
+                        </div>
+                        <!-- pokemon sprite -->
+                        <template if:true={pkmnId}>
+                            <div class="slds-col slds-size_1-of-2 slds-align_absolute-center">
+                                <c-pkmn-sprite pkmn-id={pkmnId} height=240 width=240></c-pkmn-sprite>
+                            </div>
+                        </template>
+                    </div>
+
+                    <!-- pokemon lookup -->
+                    <div class="slds-box">
+                        <lightning-record-picker label="Pokemon" placeholder="search Pokemon"
+                            object-api-name="Pokemon__c" display-info={displayInfo} matching-info={matchingInfo}
+                            onchange={handleLookupChange}>
+                        </lightning-record-picker>
+                    </div>
+
+                    <!-- Current Moves -->
+                    <div class="slds-var-p-top_medium">
+                        <div class="slds-box">
+                            <div class="slds-text-heading_medium slds-var-p-bottom_small">Current Moves:
+                                <lightning-button-icon icon-name="utility:delete" alternative-text="delete"
+                                    class="slds-var-p-left_medium slds-float_right slds-align_absolute-center"
+                                    onclick={handleMoveDelete}></lightning-button-icon>
+                            </div>
+                            <!-- sldsValidatorIgnoreNextLine -->
+                            <div class="slds-var-p-above_medium">
+                                <lightning-datatable key-field="id" data={currentMoves} class="currentMoves"
+                                    columns={currentMoveTableColumns} max-column-width="150"
+                                    onrowselection={handleCurrentMoveSelection}
+                                    is-loading={isLoading}
+                                    ></lightning-datatable>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Move selection box -->
+            <div class="slds-col slds-size_2-of-3">
+                <div class="slds-box">
+                    <div class="slds-text-heading_medium slds-var-p-bottom_small">Available Moves:
+                        <span class="slds-float_right">
+                            <!-- Add button -->
+                            <lightning-button-icon icon-name="utility:add" alternative-text="add"
+                                class="slds-var-p-left_medium" onclick={handleMoveCreate}></lightning-button-icon>
+                            <!-- Nav Left -->
+                            <lightning-button-icon icon-name="utility:chevronleft" alternative-text="left"
+                                class="slds-var-p-left_medium" onclick={handlePageDown}></lightning-button-icon>
+                            <!-- page indicator -->
+                            <span class="slds-var-p-left_medium">{currentPage}</span>
+                            <!-- Nav Right -->
+                            <lightning-button-icon icon-name="utility:chevronright" alternative-text="right"
+                                class="slds-var-p-left_medium" onclick={handlePageUp}></lightning-button-icon>
+                        </span>
+                    </div>
+
+                    <lightning-datatable class="availableMoves" key-field="id" data={availableMovesToDisplay}
+                        columns={availableMoveTableColumns}
+                        onrowselection={handleAvailableMoveSelection}
+                        is-loading={isLoading}
+                    ></lightning-datatable>
+                </div>
+            </div>
+        </div>
+
+
+
+    </lightning-card>
+</template>

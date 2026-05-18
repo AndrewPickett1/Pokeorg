@@ -1,0 +1,288 @@
+{
+  "name": "AuraDefinitionInfo",
+  "label": "Aura Definition Info",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Lightning Component Definition ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Durable ID",
+      "name": "DurableId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Aura Component Bundle ID",
+      "name": "AuraDefinitionBundleInfoId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "AuraDefinitionBundleInfo"
+      ],
+      "relationshipName": "AuraDefinitionBundleInfo",
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Lightning Component Definition ID",
+      "name": "AuraDefinitionId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Definition Type",
+      "name": "DefType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "0",
+          "value": "APPLICATION"
+        },
+        {
+          "active": true,
+          "label": "1",
+          "value": "CONTROLLER"
+        },
+        {
+          "active": true,
+          "label": "2",
+          "value": "COMPONENT"
+        },
+        {
+          "active": true,
+          "label": "3",
+          "value": "EVENT"
+        },
+        {
+          "active": true,
+          "label": "4",
+          "value": "HELPER"
+        },
+        {
+          "active": true,
+          "label": "5",
+          "value": "INTERFACE"
+        },
+        {
+          "active": true,
+          "label": "7",
+          "value": "RENDERER"
+        },
+        {
+          "active": true,
+          "label": "8",
+          "value": "STYLE"
+        },
+        {
+          "active": true,
+          "label": "9",
+          "value": "PROVIDER"
+        },
+        {
+          "active": true,
+          "label": "10",
+          "value": "MODEL"
+        },
+        {
+          "active": true,
+          "label": "11",
+          "value": "TESTSUITE"
+        },
+        {
+          "active": true,
+          "label": "12",
+          "value": "DOCUMENTATION"
+        },
+        {
+          "active": true,
+          "label": "13",
+          "value": "TOKENS"
+        },
+        {
+          "active": true,
+          "label": "14",
+          "value": "DESIGN"
+        },
+        {
+          "active": true,
+          "label": "15",
+          "value": "SVG"
+        },
+        {
+          "active": true,
+          "label": "16",
+          "value": "MODULE"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Format",
+      "name": "Format",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "XML",
+          "value": "XML"
+        },
+        {
+          "active": true,
+          "label": "JS",
+          "value": "JS"
+        },
+        {
+          "active": true,
+          "label": "CSS",
+          "value": "CSS"
+        },
+        {
+          "active": true,
+          "label": "TEMPLATE_CSS",
+          "value": "TEMPLATE_CSS"
+        },
+        {
+          "active": true,
+          "label": "SVG",
+          "value": "SVG"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Source",
+      "name": "Source",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Bundle Name",
+      "name": "DeveloperName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Namespace Prefix",
+      "name": "NamespacePrefix",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    }
+  ],
+  "childRelationships": []
+}

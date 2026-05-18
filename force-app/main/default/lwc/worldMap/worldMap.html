@@ -1,0 +1,22 @@
+<template>
+    <lightning-card>
+        <div class="slds-grid">
+            <!-- biome buttons -->
+            <div class="slds-col slds-size_1-of-6">
+                <template for:each={biomeList} for:item="biome">
+                    <div key={biome}>
+                        <div class="slds-var-p-around_medium">
+                            <lightning-button variant="brand" label={biome} value={biome} onclick={handleClick}></lightning-button>
+                        </div>
+                    </div>
+                </template>
+            </div>
+
+            <!-- world map -->
+            <div class="slds-col slds-size_5-of-6">
+                <img src={background}>
+            </div>
+        </div>
+        
+    </lightning-card>
+</template>

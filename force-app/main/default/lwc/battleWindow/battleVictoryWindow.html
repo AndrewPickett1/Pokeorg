@@ -1,0 +1,23 @@
+<template>
+    <lightning-card>
+        <!-- winning pokemon -->
+        <div class="slds-align_absolute-center slds-text-heading_large"><strong> {victor} Wins! </strong></div>
+
+        <div class="slds-var-m-around_medium slds-border_bottom">
+            <div class="slds-grid slds-gutters">
+
+                <!-- pkmn 1 -->
+                <div class="slds-col slds-align_absolute-center slds-size_1-of-2">
+                    <!-- <img src={pkmn2SpriteURL} alt="image" height="100px" width="200px"/> -->
+                    <c-pkmn-sprite pkmn-id={pkmn1Id} height=100 width=200></c-pkmn-sprite>
+                </div>
+
+                <!-- pkmn 2 -->
+                <div class="slds-col slds-align_absolute-center slds-size_1-of-2">
+                    <!-- <img src={pkmn1SpriteURL} alt="image" height="100px" width="200px"/> -->
+                    <c-pkmn-sprite pkmn-id={pkmn2Id} height=100 width=200></c-pkmn-sprite>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

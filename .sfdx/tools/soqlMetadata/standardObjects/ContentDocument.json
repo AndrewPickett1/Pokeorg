@@ -1,0 +1,736 @@
+{
+  "name": "ContentDocument",
+  "label": "Content Document",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Content Document ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Is Archived",
+      "name": "IsArchived",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "User ID",
+      "name": "ArchivedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Archived Date",
+      "name": "ArchivedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "date"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Is Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Owner ID",
+      "name": "OwnerId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "Owner",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Title",
+      "name": "Title",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "U",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Publish Status",
+      "name": "PublishStatus",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Upload Interrupted",
+          "value": "U"
+        },
+        {
+          "active": true,
+          "label": "Public",
+          "value": "P"
+        },
+        {
+          "active": true,
+          "label": "Private Library",
+          "value": "R"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Latest Published Version ID",
+      "name": "LatestPublishedVersionId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "ContentVersion"
+      ],
+      "relationshipName": "LatestPublishedVersion",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Parent ID",
+      "name": "ParentId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "ContentWorkspace"
+      ],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Viewed Date",
+      "name": "LastViewedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Referenced Date",
+      "name": "LastReferencedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": "plaintextarea",
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Description",
+      "name": "Description",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "textarea"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Size",
+      "name": "ContentSize",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Size",
+      "name": "ContentSizeLong",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "long"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "File Type",
+      "name": "FileType",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "File Extension",
+      "name": "FileExtension",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "A",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Prevent others from sharing and unsharing",
+      "name": "SharingOption",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Freeze Sharing Off",
+          "value": "A"
+        },
+        {
+          "active": true,
+          "label": "Freeze Sharing On",
+          "value": "R"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "N",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "File Privacy on Records",
+      "name": "SharingPrivacy",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Visible to Anyone With Record Access",
+          "value": "N"
+        },
+        {
+          "active": true,
+          "label": "Private on Records",
+          "value": "P"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Content Modified Date",
+      "name": "ContentModifiedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Asset File ID",
+      "name": "ContentAssetId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "ContentAsset"
+      ],
+      "relationshipName": "ContentAsset",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Is Internal Only",
+      "name": "IsInternalOnly",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Malware Scan Status",
+      "name": "MalwareScanStatus",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Not Scanned",
+          "value": "NotScanned"
+        },
+        {
+          "active": true,
+          "label": "Scheduled",
+          "value": "Scheduled"
+        },
+        {
+          "active": true,
+          "label": "Clean",
+          "value": "Clean"
+        },
+        {
+          "active": true,
+          "label": "Malicious",
+          "value": "Malicious"
+        },
+        {
+          "active": true,
+          "label": "Skipped",
+          "value": "Skipped"
+        },
+        {
+          "active": true,
+          "label": "Failed",
+          "value": "Failed"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Malware Scan Date",
+      "name": "MalwareScanDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    }
+  ],
+  "childRelationships": [
+    {
+      "childSObject": "ApprovalSubmission",
+      "field": "RelatedRecordId",
+      "relationshipName": "ApprovalSubmissions"
+    },
+    {
+      "childSObject": "ApprovalWorkItem",
+      "field": "RelatedRecordId",
+      "relationshipName": "ApprovalWorkItems"
+    },
+    {
+      "childSObject": "AttachedContentDocument",
+      "field": "ContentDocumentId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "AuthorizationFormText",
+      "field": "ContentDocumentId",
+      "relationshipName": "AuthorizationFormTexts"
+    },
+    {
+      "childSObject": "AuthorizationFormTextChangeEvent",
+      "field": "ContentDocumentId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ContentAsset",
+      "field": "ContentDocumentId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ContentDistribution",
+      "field": "ContentDocumentId",
+      "relationshipName": "ContentDistributions"
+    },
+    {
+      "childSObject": "ContentDocumentFeed",
+      "field": "ParentId",
+      "relationshipName": "Feeds"
+    },
+    {
+      "childSObject": "ContentDocumentHistory",
+      "field": "ContentDocumentId",
+      "relationshipName": "Histories"
+    },
+    {
+      "childSObject": "ContentDocumentLink",
+      "field": "ContentDocumentId",
+      "relationshipName": "ContentDocumentLinks"
+    },
+    {
+      "childSObject": "ContentDocumentLinkChangeEvent",
+      "field": "ContentDocumentId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ContentDocumentSubscription",
+      "field": "ContentDocumentId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ContentFolderMember",
+      "field": "ChildRecordId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ContentNotification",
+      "field": "EntityIdentifierId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ContentVersion",
+      "field": "ContentDocumentId",
+      "relationshipName": "ContentVersions"
+    },
+    {
+      "childSObject": "ContentVersionChangeEvent",
+      "field": "ContentDocumentId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ContentVersionComment",
+      "field": "ContentDocumentId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ContentWorkspaceDoc",
+      "field": "ContentDocumentId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "EntitySubscription",
+      "field": "ParentId",
+      "relationshipName": "FeedSubscriptionsForEntity"
+    },
+    {
+      "childSObject": "FeedAttachment",
+      "field": "RecordId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "FeedComment",
+      "field": "ParentId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "FeedItem",
+      "field": "ParentId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "FileEventStore",
+      "field": "DocumentId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "FlowExecutionErrorEvent",
+      "field": "ContextRecordId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "FlowOrchestrationWorkItem",
+      "field": "RelatedRecordId",
+      "relationshipName": "FlowOrchestrationWorkItems"
+    },
+    {
+      "childSObject": "FlowRecordRelation",
+      "field": "RelatedRecordId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "FolderedContentDocument",
+      "field": "ContentDocumentId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "Image",
+      "field": "ContentDocumentId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "OwnedContentDocument",
+      "field": "ContentDocumentId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "TopicAssignment",
+      "field": "EntityId",
+      "relationshipName": "TopicAssignments"
+    }
+  ]
+}

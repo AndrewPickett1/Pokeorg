@@ -1,0 +1,391 @@
+{
+  "name": "MessagingChannelUsage",
+  "label": "Messaging Channel Usage",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Messaging Channel Usage ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Modified On",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Messaging Channel ID",
+      "name": "MessagingChannelId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "MessagingChannel"
+      ],
+      "relationshipName": "MessagingChannel",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deployment Type",
+      "name": "DeploymentType",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "M & J",
+          "value": "MJ"
+        },
+        {
+          "active": true,
+          "label": "Conversation",
+          "value": "Conversation"
+        },
+        {
+          "active": true,
+          "label": "Messaging Engagement",
+          "value": "MessagingEngagement"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deployment Status",
+      "name": "DeploymentStatus",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "New",
+          "value": "New"
+        },
+        {
+          "active": true,
+          "label": "Provisioning",
+          "value": "Provisioning"
+        },
+        {
+          "active": true,
+          "label": "Active",
+          "value": "Active"
+        },
+        {
+          "active": true,
+          "label": "Disabled",
+          "value": "Disabled"
+        },
+        {
+          "active": true,
+          "label": "Error",
+          "value": "Error"
+        },
+        {
+          "active": true,
+          "label": "Deprovisioning",
+          "value": "Deprovisioning"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Error Reason",
+      "name": "ErrorReason",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Internal Error",
+          "value": "InternalError"
+        },
+        {
+          "active": true,
+          "label": "Invalid Selection",
+          "value": "InvalidSelection"
+        },
+        {
+          "active": true,
+          "label": "Provisioning Error",
+          "value": "ProvisioningError"
+        },
+        {
+          "active": true,
+          "label": "Deprovisioning Error",
+          "value": "DeprovisioningError"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Routing Override",
+      "name": "RoutingOverride",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Non-Session Messages",
+          "value": "NonSessionMessages"
+        },
+        {
+          "active": true,
+          "label": "M & J Keywords Only",
+          "value": "MJKeywordsOnly"
+        },
+        {
+          "active": true,
+          "label": "M & J Keywords with Non-Session Messages",
+          "value": "MJKeywordsWithNonSessionMessages"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Disabled Time",
+      "name": "DisabledTime",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": "The level of customer consent required for your company to message them on this channel. Customers can opt out any time. If you don’t see a particular consent level, this channel type doesn’t allow it. Implicit Opt-In: By sending an initial message to your company, the customer agrees to receive messages. Explicit Opt-In and Double Opt-In: The customer uses keywords to actively opt into receiving messages.",
+      "label": "Consent Type",
+      "name": "ConsentType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Implicit Opt-In",
+          "value": "ImplicitOptIn"
+        },
+        {
+          "active": true,
+          "label": "Explicit Opt-In",
+          "value": "ExplicitOptIn"
+        },
+        {
+          "active": true,
+          "label": "Double Opt-In",
+          "value": "DoubleOptIn"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Error Details",
+      "name": "ErrorDetails",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    }
+  ],
+  "childRelationships": [
+    {
+      "childSObject": "CommSubscriptionChannelType",
+      "field": "MessagingChannelUsageId",
+      "relationshipName": "MessagingChannelUsages"
+    },
+    {
+      "childSObject": "CommSubscriptionChannelTypeChangeEvent",
+      "field": "MessagingChannelUsageId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "MsgChannelLanguageKeyword",
+      "field": "MessagingChannelUsageId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "MsgChannelUsageExternalOrg",
+      "field": "MessagingChannelUsageId",
+      "relationshipName": null
+    }
+  ]
+}

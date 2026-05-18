@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This channel sends battle messages from the moves screen to the battle message window</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>Record Id</description>
+        <fieldName>recordId</fieldName>
+    </lightningMessageFields>
+    <masterLabel>Approval Path</masterLabel>
+</LightningMessageChannel>

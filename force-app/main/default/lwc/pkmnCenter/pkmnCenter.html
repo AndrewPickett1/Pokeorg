@@ -1,0 +1,60 @@
+<template>
+    <lightning-card>
+        <div class="slds-grid">
+
+            <!-- pkmn center resource -->
+            <div class="slds-col slds-size_1-of-2">
+                <div class="slds-grid_vertical">
+                    <!-- <div class="slds-col slds-size_1-of-2"> -->
+                        <div class="slds-var-p-around_medium slds-align_absolute-center">
+                            <img src={background}>
+                        </div>
+                    <!-- </div> -->
+
+                    <div class="slds-align_absolute-center">
+                        <lightning-button variant="brand" label="Heal Pokemon" onclick={handleClick}></lightning-button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- pkmn party -->
+            <div class="slds-col slds-size_1-of-2">
+                <div class="slds-var-p-around_medium slds-grid_vertical">
+                    <!-- loop through all pokemon in your party and display the window for each -->
+                    <template for:each={partyPkmn} for:item="pkmn">
+                        <div key={pkmn.Id}>
+                            <div class="slds-var-m-bottom_medium slds-box slds-col"> 
+                                <div class="slds-grid">
+
+                                    <!-- Sprite -->
+                                    <div class="slds-col slds-align_absolute-center slds-size_1-of-5">
+                                        <div class="slds-box slds-size_3-of-4 slds-align_absolute-center">
+                                            <c-pkmn-sprite
+                                            pkmn-id={pkmn.Id}
+                                            height=80
+                                            width=80
+                                            ></c-pkmn-sprite>
+                                        </div>
+                                    </div>
+        
+                                    <!-- Health Bar -->
+                                    <div class="slds-col slds-var-p-horizontal_small slds-box slds-size_4-of-5 slds-grid_vertical-align-center">
+                                        <c-pkmn-health-bar
+                                        pkmn-id={pkmn.Id}
+                                        ></c-pkmn-health-bar>
+                                    </div>
+        
+                                </div>
+                            </div>        
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+        </div>
+            
+        
+    
+    </lightning-card>
+</template>

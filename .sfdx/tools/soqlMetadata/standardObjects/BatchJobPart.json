@@ -1,0 +1,1734 @@
+{
+  "name": "BatchJobPart",
+  "label": "Batch Job Part",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Batch Job Part ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Name",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Run ID",
+      "name": "BatchJobId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "BatchJob"
+      ],
+      "relationshipName": "BatchJob",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Start Date",
+      "name": "StartTime",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "End Date",
+      "name": "EndTime",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": "Completed",
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Status",
+      "name": "Status",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Completed",
+          "value": "Completed"
+        },
+        {
+          "active": true,
+          "label": "In Progress",
+          "value": "InProgress"
+        },
+        {
+          "active": true,
+          "label": "Failed",
+          "value": "Failed"
+        },
+        {
+          "active": true,
+          "label": "Canceled",
+          "value": "Canceled"
+        },
+        {
+          "active": true,
+          "label": "Waiting",
+          "value": "Waiting"
+        },
+        {
+          "active": true,
+          "label": "New",
+          "value": "New"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Input Record",
+      "name": "InputRecordCount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Output Record",
+      "name": "OutputRecordCount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Total Failure",
+      "name": "FailedRecordCount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Retry Count",
+      "name": "RetryCount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Node",
+      "name": "Type",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Source",
+          "value": "Source"
+        },
+        {
+          "active": true,
+          "label": "Join",
+          "value": "Join"
+        },
+        {
+          "active": true,
+          "label": "Filter",
+          "value": "Filter"
+        },
+        {
+          "active": true,
+          "label": "Append",
+          "value": "Append"
+        },
+        {
+          "active": true,
+          "label": "Datasync",
+          "value": "Datasync"
+        },
+        {
+          "active": true,
+          "label": "Compute",
+          "value": "Compute"
+        },
+        {
+          "active": true,
+          "label": "Aggregate",
+          "value": "Aggregate"
+        },
+        {
+          "active": true,
+          "label": "Register",
+          "value": "Register"
+        },
+        {
+          "active": true,
+          "label": "Slice",
+          "value": "Slice"
+        },
+        {
+          "active": true,
+          "label": "Transform",
+          "value": "Transform"
+        },
+        {
+          "active": true,
+          "label": "Writeback",
+          "value": "Writeback"
+        },
+        {
+          "active": true,
+          "label": "Execution",
+          "value": "Execution"
+        },
+        {
+          "active": true,
+          "label": "Hierarchy",
+          "value": "Hierarchy"
+        },
+        {
+          "active": true,
+          "label": "Custom",
+          "value": "Custom"
+        },
+        {
+          "active": true,
+          "label": "Forecast",
+          "value": "Forecast"
+        },
+        {
+          "active": true,
+          "label": "Csv Ingestion",
+          "value": "CsvIngestion"
+        },
+        {
+          "active": true,
+          "label": "Atomic Writeback",
+          "value": "AtomicWriteback"
+        },
+        {
+          "active": true,
+          "label": "Output Records Node",
+          "value": "OutputRecordsNode"
+        },
+        {
+          "active": true,
+          "label": "Summary",
+          "value": "Summary"
+        },
+        {
+          "active": true,
+          "label": "Analysis",
+          "value": "Analysis"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Batch Job Part ID",
+      "name": "ParentBatchJobPartId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "BatchJobPart"
+      ],
+      "relationshipName": "ParentBatchJobPart",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Error",
+      "name": "ErrorDescription",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Failed Records File Name",
+      "name": "FailedRecFileName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Failed Records File ContentType",
+      "name": "FailedRecFileContentType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": null,
+          "value": "application/pdf"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.ms-powerpoint"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.ms-powerpoint.presentation.macroEnabled.12"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.openxmlformats-officedocument.presentationml.template"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/msword"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.ms-word.document.macroEnabled.12"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.openxmlformats-officedocument.wordprocessingml.template"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.openxmlformats-officedocument.presentationml.slideshow"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.ms-excel"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.openxmlformats-officedocument.spreadsheetml.template"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "audio/aac"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "audio/amr"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "video/x-msvideo"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/bmp"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/csv"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/postscript"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/octet-stream"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/x-shockwave-flash"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/gif"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/html"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/jpeg"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/jpeg;type=mobile"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/javascript"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/json"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "audio/mpeg"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "video/mpeg"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "video/quicktime"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.oasis.opendocument.presentation"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.oasis.opendocument.spreadsheet"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.oasis.opendocument.text"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "audio/ogg"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "video/ogg"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/png"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/vnd.adobe.photoshop"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/rtf"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/snote"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/stypi"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/plain"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.visio"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/vtt"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "audio/x-ms-wmv"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/xml"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/zip"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/x-gzip"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/webviewhtml"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "message/rfc822"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/x-zip-compressed"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "video/x-ms-asf"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/vnd.dwg"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/java-archive"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/x-javascript"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/opx"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/x-photoshop"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/tiff"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "audio/x-wav"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/css"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "audio/mp4"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "video/x-m4v"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "video/mp4"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "audio/x-ms-wma"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/svg+xml"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/x-c"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/x-c++"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/x-java-source"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/x-sql"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/xhtml+xml"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.ms-infopath"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.google-apps.document"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.google-apps.presentation"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.google-apps.spreadsheet"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.google-apps.drawing"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.google-apps.form"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.google-apps.script"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.box.notes"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/vnd.salesforce.quip-doc"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/vnd.salesforce.quip-sheet"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/vnd.salesforce.quip-chat"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/vnd.salesforce.quip-slides"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/vnd.salesforce.quip-template"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "model/vnd.usdz+zip"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/octet-stream;type=unknown"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/html"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/xml"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/rtf"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/webp"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/avif"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/calendar"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "audio/x-caf"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "video/3gpp"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "video/3gpp2"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/vcard"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Failed Records File Length",
+      "name": "FailedRecFileLength",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Failed Records File Body",
+      "name": "FailedRecFileBody",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "base64"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Record File Name",
+      "name": "RecordFileName",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Record File ContentType",
+      "name": "RecordFileContentType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": null,
+          "value": "application/pdf"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.ms-powerpoint"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.ms-powerpoint.presentation.macroEnabled.12"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.openxmlformats-officedocument.presentationml.template"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/msword"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.ms-word.document.macroEnabled.12"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.openxmlformats-officedocument.wordprocessingml.template"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.openxmlformats-officedocument.presentationml.slideshow"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.ms-excel"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.ms-excel.sheet.macroEnabled.12"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.openxmlformats-officedocument.spreadsheetml.template"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "audio/aac"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "audio/amr"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "video/x-msvideo"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/bmp"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/csv"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/postscript"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/octet-stream"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/x-shockwave-flash"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/gif"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/html"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/jpeg"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/jpeg;type=mobile"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/javascript"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/json"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "audio/mpeg"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "video/mpeg"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "video/quicktime"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.oasis.opendocument.presentation"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.oasis.opendocument.spreadsheet"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.oasis.opendocument.text"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "audio/ogg"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "video/ogg"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/png"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/vnd.adobe.photoshop"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/rtf"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/snote"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/stypi"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/plain"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.visio"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/vtt"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "audio/x-ms-wmv"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/xml"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/zip"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/x-gzip"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/webviewhtml"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "message/rfc822"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/x-zip-compressed"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "video/x-ms-asf"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/vnd.dwg"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/java-archive"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/x-javascript"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/opx"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/x-photoshop"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/tiff"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "audio/x-wav"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/css"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "audio/mp4"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "video/x-m4v"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "video/mp4"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "audio/x-ms-wma"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/svg+xml"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/x-c"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/x-c++"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/x-java-source"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/x-sql"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/xhtml+xml"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.ms-infopath"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.google-apps.document"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.google-apps.presentation"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.google-apps.spreadsheet"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.google-apps.drawing"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.google-apps.form"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.google-apps.script"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/vnd.box.notes"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/vnd.salesforce.quip-doc"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/vnd.salesforce.quip-sheet"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/vnd.salesforce.quip-chat"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/vnd.salesforce.quip-slides"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/vnd.salesforce.quip-template"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "model/vnd.usdz+zip"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/octet-stream;type=unknown"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "application/html"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/xml"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/rtf"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/webp"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "image/avif"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/calendar"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "audio/x-caf"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "video/3gpp"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "video/3gpp2"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "text/vcard"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Record File Length",
+      "name": "RecordFileLength",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "int"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Record File Body",
+      "name": "RecordFileBody",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "base64"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Input Row",
+      "name": "InputRowCount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "long"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Output Row",
+      "name": "OutputRowCount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "long"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Total Failure Row",
+      "name": "FailedRowCount",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "long"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "User Reference",
+      "name": "UserReference",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    }
+  ],
+  "childRelationships": [
+    {
+      "childSObject": "ApprovalSubmission",
+      "field": "RelatedRecordId",
+      "relationshipName": "ApprovalSubmissions"
+    },
+    {
+      "childSObject": "ApprovalWorkItem",
+      "field": "RelatedRecordId",
+      "relationshipName": "ApprovalWorkItems"
+    },
+    {
+      "childSObject": "AttachedContentDocument",
+      "field": "LinkedEntityId",
+      "relationshipName": "AttachedContentDocuments"
+    },
+    {
+      "childSObject": "BatchJobPart",
+      "field": "ParentBatchJobPartId",
+      "relationshipName": "ChildBatchJobParts"
+    },
+    {
+      "childSObject": "BatchJobPartFailedRecord",
+      "field": "BatchJobPartId",
+      "relationshipName": "BatchJobPart"
+    },
+    {
+      "childSObject": "BatchJobPartFeed",
+      "field": "ParentId",
+      "relationshipName": "Feeds"
+    },
+    {
+      "childSObject": "BatchJobPartHistory",
+      "field": "BatchJobPartId",
+      "relationshipName": "Histories"
+    },
+    {
+      "childSObject": "CombinedAttachment",
+      "field": "ParentId",
+      "relationshipName": "CombinedAttachments"
+    },
+    {
+      "childSObject": "ContentDocumentLink",
+      "field": "LinkedEntityId",
+      "relationshipName": "ContentDocumentLinks"
+    },
+    {
+      "childSObject": "ContentDocumentLinkChangeEvent",
+      "field": "LinkedEntityId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ContentVersion",
+      "field": "FirstPublishLocationId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ContentVersionChangeEvent",
+      "field": "FirstPublishLocationId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "EntitySubscription",
+      "field": "ParentId",
+      "relationshipName": "FeedSubscriptionsForEntity"
+    },
+    {
+      "childSObject": "FeedComment",
+      "field": "ParentId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "FeedItem",
+      "field": "ParentId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "FlowExecutionErrorEvent",
+      "field": "ContextRecordId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "FlowOrchestrationWorkItem",
+      "field": "RelatedRecordId",
+      "relationshipName": "FlowOrchestrationWorkItems"
+    },
+    {
+      "childSObject": "FlowRecordRelation",
+      "field": "RelatedRecordId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ProcessInstance",
+      "field": "TargetObjectId",
+      "relationshipName": "ProcessInstances"
+    },
+    {
+      "childSObject": "ProcessInstanceChangeEvent",
+      "field": "TargetObjectId",
+      "relationshipName": null
+    },
+    {
+      "childSObject": "ProcessInstanceHistory",
+      "field": "TargetObjectId",
+      "relationshipName": "ProcessSteps"
+    }
+  ]
+}

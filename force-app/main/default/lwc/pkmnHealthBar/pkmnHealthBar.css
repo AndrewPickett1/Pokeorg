@@ -1,0 +1,19 @@
+.status-badge-psn{
+    --slds-c-badge-color-background: purple;
+    --slds-c-badge-text-color: white;
+}
+
+.status-badge-brn{
+    --slds-c-badge-color-background: red;
+    --slds-c-badge-text-color: white;
+}
+
+.status-badge-prlz{
+    --slds-c-badge-color-background: gold;
+    --slds-c-badge-text-color: black;
+}
+
+.status-badge-frz{
+    --slds-c-badge-color-background: lightblue;
+    --slds-c-badge-text-color: black;
+}

@@ -1,0 +1,603 @@
+{
+  "name": "InvoiceLineHistory",
+  "label": "Invoice Line  History",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Invoice Line History ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Invoice Line ID",
+      "name": "InvoiceLineId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "InvoiceLine"
+      ],
+      "relationshipName": "InvoiceLine",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Changed Field",
+      "name": "Field",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Adjustment Amount",
+          "value": "AdjustmentAmount"
+        },
+        {
+          "active": true,
+          "label": "Charge Amount",
+          "value": "ChargeAmount"
+        },
+        {
+          "active": true,
+          "label": "Corporate Currency Conversion Date",
+          "value": "CorporateCurrencyCvsnDate"
+        },
+        {
+          "active": true,
+          "label": "Corporate Currency Conversion Rate",
+          "value": "CorporateCurrencyCvsnRate"
+        },
+        {
+          "active": true,
+          "label": "Corporate Currency Converted Total Charge Amount",
+          "value": "CorpCurrencyCnvChargeAmt"
+        },
+        {
+          "active": true,
+          "label": "Corporate Currency Converted Total Tax Amount",
+          "value": "CorpCurrencyCnvTotalTaxAmt"
+        },
+        {
+          "active": true,
+          "label": "Created.",
+          "value": "created"
+        },
+        {
+          "active": true,
+          "label": "Custom Person Merged",
+          "value": "customPersonMerged"
+        },
+        {
+          "active": true,
+          "label": "Description",
+          "value": "Description"
+        },
+        {
+          "active": true,
+          "label": "Feed event",
+          "value": "feedEvent"
+        },
+        {
+          "active": true,
+          "label": "Functional Currency Conversion Date",
+          "value": "FunctionalCurrencyCvsnDate"
+        },
+        {
+          "active": true,
+          "label": "Functional Currency Conversion Rate",
+          "value": "FunctionalCurrencyCvsnRate"
+        },
+        {
+          "active": true,
+          "label": "Functional Currency Converted Charge Amount",
+          "value": "FuncCurrencyCnvChargeAmt"
+        },
+        {
+          "active": true,
+          "label": "Functional Currency Converted Total Tax Amount",
+          "value": "FuncCrcyCnvTotalTaxAmt"
+        },
+        {
+          "active": true,
+          "label": "Group Reference Entity Item",
+          "value": "GroupReferenceEntityItem"
+        },
+        {
+          "active": true,
+          "label": "Individual Merged",
+          "value": "individualMerged"
+        },
+        {
+          "active": true,
+          "label": "Invoice",
+          "value": "Invoice"
+        },
+        {
+          "active": true,
+          "label": "Invoice Line End Date",
+          "value": "InvoiceLineEndDate"
+        },
+        {
+          "active": true,
+          "label": "Invoice Line Start Date",
+          "value": "InvoiceLineStartDate"
+        },
+        {
+          "active": true,
+          "label": "Name",
+          "value": "Name"
+        },
+        {
+          "active": true,
+          "label": "Owner (Accepted)",
+          "value": "ownerAccepted"
+        },
+        {
+          "active": true,
+          "label": "Owner (Assignment)",
+          "value": "ownerAssignment"
+        },
+        {
+          "active": true,
+          "label": "Product",
+          "value": "Product2"
+        },
+        {
+          "active": true,
+          "label": "Quantity",
+          "value": "Quantity"
+        },
+        {
+          "active": true,
+          "label": "Record locked.",
+          "value": "locked"
+        },
+        {
+          "active": true,
+          "label": "Record unlocked.",
+          "value": "unlocked"
+        },
+        {
+          "active": true,
+          "label": "Reference Entity Item",
+          "value": "ReferenceEntityItem"
+        },
+        {
+          "active": true,
+          "label": "Reference Entity Item Type",
+          "value": "ReferenceEntityItemType"
+        },
+        {
+          "active": true,
+          "label": "Reference Entity Item Type Code",
+          "value": "ReferenceEntityItemTypeCode"
+        },
+        {
+          "active": true,
+          "label": "Related Line",
+          "value": "RelatedLine"
+        },
+        {
+          "active": true,
+          "label": "Tax Amount",
+          "value": "TaxAmount"
+        },
+        {
+          "active": true,
+          "label": "Tax Code",
+          "value": "TaxCode"
+        },
+        {
+          "active": true,
+          "label": "Tax Effective Date",
+          "value": "TaxEffectiveDate"
+        },
+        {
+          "active": true,
+          "label": "Tax Name",
+          "value": "TaxName"
+        },
+        {
+          "active": true,
+          "label": "Tax Processing Status",
+          "value": "TaxProcessingStatus"
+        },
+        {
+          "active": true,
+          "label": "Tax Rate",
+          "value": "TaxRate"
+        },
+        {
+          "active": true,
+          "label": "Total Applied Credit Memo Line Amount",
+          "value": "TotAppliedCrMemoLineAmt"
+        },
+        {
+          "active": true,
+          "label": "Total Payment Line Invoice Line Applied",
+          "value": "TotPymtLineInvLineApplied"
+        },
+        {
+          "active": true,
+          "label": "Total Payment Line Invoice Line Unapplied",
+          "value": "TotPymtLineInvLineUapp"
+        },
+        {
+          "active": true,
+          "label": "Total Tax Amount",
+          "value": "TotalTaxAmount"
+        },
+        {
+          "active": true,
+          "label": "Total Tax Converted Neg Amount",
+          "value": "TotalTaxConvertedNegAmount"
+        },
+        {
+          "active": true,
+          "label": "Total Unapplied Credit Memo Line Amount",
+          "value": "TotUnappliedCrMemoLineAmt"
+        },
+        {
+          "active": true,
+          "label": "Type",
+          "value": "Type"
+        },
+        {
+          "active": true,
+          "label": "Unit Price",
+          "value": "UnitPrice"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Datatype",
+      "name": "DataType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": null,
+          "value": "Address"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AnyType"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "AutoNumber"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Base64"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "BitVector"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Boolean"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Content"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Currency"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DataCategoryGroupReference"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DateOnly"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DateTime"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Division"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Double"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "DynamicEnum"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Email"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EncryptedBase64"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EncryptedText"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EntityId"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "EnumOrId"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "ExternalId"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Fax"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "File"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "HtmlMultiLineText"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "HtmlStringPlusClob"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "InetAddress"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Json"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Location"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MultiEnum"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "MultiLineText"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Namespace"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Percent"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "PersonName"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Phone"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Raw"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "RecordType"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "SfdcEncryptedText"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "SimpleNamespace"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "StringPlusClob"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Switchable_PersonName"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Text"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "TimeOnly"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "Url"
+        },
+        {
+          "active": true,
+          "label": null,
+          "value": "YearQuarter"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Old Value",
+      "name": "OldValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "New Value",
+      "name": "NewValue",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "anyType"
+    }
+  ],
+  "childRelationships": []
+}

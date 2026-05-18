@@ -1,0 +1,2647 @@
+{
+  "name": "ContactPointPhoneChangeEvent",
+  "label": "Contact Point Phone Change Event",
+  "custom": false,
+  "queryable": false,
+  "fields": [
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Change Event ID",
+      "name": "Id",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Replay ID",
+      "name": "ReplayId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Change Event Header",
+      "name": "ChangeEventHeader",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "complexvalue"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Owner ID",
+      "name": "OwnerId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Name",
+      "name": "Name",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Parent ID",
+      "name": "ParentId",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [
+        "Account",
+        "Individual"
+      ],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "reference"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Active from Date",
+      "name": "ActiveFromDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "date"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Active to Date",
+      "name": "ActiveToDate",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "date"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Best time to contact end time",
+      "name": "BestTimeToContactEndTime",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "time"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Best time to contact start time",
+      "name": "BestTimeToContactStartTime",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "time"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Best time to contact time zone",
+      "name": "BestTimeToContactTimezone",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "(GMT+14:00) Line Islands Time (Pacific/Kiritimati)",
+          "value": "Pacific/Kiritimati"
+        },
+        {
+          "active": true,
+          "label": "(GMT+13:00) Apia Standard Time (Pacific/Apia)",
+          "value": "Pacific/Apia"
+        },
+        {
+          "active": true,
+          "label": "(GMT+13:00) Phoenix Islands Time (Pacific/Enderbury)",
+          "value": "Pacific/Enderbury"
+        },
+        {
+          "active": true,
+          "label": "(GMT+13:00) Tokelau Time (Pacific/Fakaofo)",
+          "value": "Pacific/Fakaofo"
+        },
+        {
+          "active": true,
+          "label": "(GMT+13:00) Tonga Standard Time (Pacific/Tongatapu)",
+          "value": "Pacific/Tongatapu"
+        },
+        {
+          "active": true,
+          "label": "(GMT+12:45) Chatham Standard Time (Pacific/Chatham)",
+          "value": "Pacific/Chatham"
+        },
+        {
+          "active": true,
+          "label": "(GMT+12:00) New Zealand Standard Time (Antarctica/McMurdo)",
+          "value": "Antarctica/McMurdo"
+        },
+        {
+          "active": true,
+          "label": "(GMT+12:00) Anadyr Standard Time (Asia/Anadyr)",
+          "value": "Asia/Anadyr"
+        },
+        {
+          "active": true,
+          "label": "(GMT+12:00) Petropavlovsk-Kamchatski Standard Time (Asia/Kamchatka)",
+          "value": "Asia/Kamchatka"
+        },
+        {
+          "active": true,
+          "label": "(GMT+12:00) New Zealand Standard Time (Pacific/Auckland)",
+          "value": "Pacific/Auckland"
+        },
+        {
+          "active": true,
+          "label": "(GMT+12:00) Fiji Standard Time (Pacific/Fiji)",
+          "value": "Pacific/Fiji"
+        },
+        {
+          "active": true,
+          "label": "(GMT+12:00) Tuvalu Time (Pacific/Funafuti)",
+          "value": "Pacific/Funafuti"
+        },
+        {
+          "active": true,
+          "label": "(GMT+12:00) Marshall Islands Time (Pacific/Kwajalein)",
+          "value": "Pacific/Kwajalein"
+        },
+        {
+          "active": true,
+          "label": "(GMT+12:00) Marshall Islands Time (Pacific/Majuro)",
+          "value": "Pacific/Majuro"
+        },
+        {
+          "active": true,
+          "label": "(GMT+12:00) Nauru Time (Pacific/Nauru)",
+          "value": "Pacific/Nauru"
+        },
+        {
+          "active": true,
+          "label": "(GMT+12:00) Gilbert Islands Time (Pacific/Tarawa)",
+          "value": "Pacific/Tarawa"
+        },
+        {
+          "active": true,
+          "label": "(GMT+12:00) Wake Island Time (Pacific/Wake)",
+          "value": "Pacific/Wake"
+        },
+        {
+          "active": true,
+          "label": "(GMT+12:00) Wallis & Futuna Time (Pacific/Wallis)",
+          "value": "Pacific/Wallis"
+        },
+        {
+          "active": true,
+          "label": "(GMT+11:00) Magadan Standard Time (Asia/Magadan)",
+          "value": "Asia/Magadan"
+        },
+        {
+          "active": true,
+          "label": "(GMT+11:00) Sakhalin Standard Time (Asia/Sakhalin)",
+          "value": "Asia/Sakhalin"
+        },
+        {
+          "active": true,
+          "label": "(GMT+11:00) Magadan Standard Time (Asia/Srednekolymsk)",
+          "value": "Asia/Srednekolymsk"
+        },
+        {
+          "active": true,
+          "label": "(GMT+11:00) Bougainville Standard Time (Pacific/Bougainville)",
+          "value": "Pacific/Bougainville"
+        },
+        {
+          "active": true,
+          "label": "(GMT+11:00) Vanuatu Standard Time (Pacific/Efate)",
+          "value": "Pacific/Efate"
+        },
+        {
+          "active": true,
+          "label": "(GMT+11:00) Solomon Islands Time (Pacific/Guadalcanal)",
+          "value": "Pacific/Guadalcanal"
+        },
+        {
+          "active": true,
+          "label": "(GMT+11:00) Kosrae Time (Pacific/Kosrae)",
+          "value": "Pacific/Kosrae"
+        },
+        {
+          "active": true,
+          "label": "(GMT+11:00) Norfolk Island Standard Time (Pacific/Norfolk)",
+          "value": "Pacific/Norfolk"
+        },
+        {
+          "active": true,
+          "label": "(GMT+11:00) New Caledonia Standard Time (Pacific/Noumea)",
+          "value": "Pacific/Noumea"
+        },
+        {
+          "active": true,
+          "label": "(GMT+11:00) Ponape Time (Pacific/Ponape)",
+          "value": "Pacific/Ponape"
+        },
+        {
+          "active": true,
+          "label": "(GMT+10:30) Lord Howe Standard Time (Australia/Lord_Howe)",
+          "value": "Australia/Lord_Howe"
+        },
+        {
+          "active": true,
+          "label": "(GMT+10:00) Dumont-d’Urville Time (Antarctica/DumontDUrville)",
+          "value": "Antarctica/DumontDUrville"
+        },
+        {
+          "active": true,
+          "label": "(GMT+10:00) Australian Eastern Standard Time (Antarctica/Macquarie)",
+          "value": "Antarctica/Macquarie"
+        },
+        {
+          "active": true,
+          "label": "(GMT+10:00) Vladivostok Standard Time (Asia/Ust-Nera)",
+          "value": "Asia/Ust-Nera"
+        },
+        {
+          "active": true,
+          "label": "(GMT+10:00) Vladivostok Standard Time (Asia/Vladivostok)",
+          "value": "Asia/Vladivostok"
+        },
+        {
+          "active": true,
+          "label": "(GMT+10:00) Australian Eastern Standard Time (Australia/Brisbane)",
+          "value": "Australia/Brisbane"
+        },
+        {
+          "active": true,
+          "label": "(GMT+10:00) Australian Eastern Standard Time (Australia/Currie)",
+          "value": "Australia/Currie"
+        },
+        {
+          "active": true,
+          "label": "(GMT+10:00) Australian Eastern Standard Time (Australia/Hobart)",
+          "value": "Australia/Hobart"
+        },
+        {
+          "active": true,
+          "label": "(GMT+10:00) Australian Eastern Standard Time (Australia/Lindeman)",
+          "value": "Australia/Lindeman"
+        },
+        {
+          "active": true,
+          "label": "(GMT+10:00) Australian Eastern Standard Time (Australia/Melbourne)",
+          "value": "Australia/Melbourne"
+        },
+        {
+          "active": true,
+          "label": "(GMT+10:00) Australian Eastern Standard Time (Australia/Sydney)",
+          "value": "Australia/Sydney"
+        },
+        {
+          "active": true,
+          "label": "(GMT+10:00) Chamorro Standard Time (Pacific/Guam)",
+          "value": "Pacific/Guam"
+        },
+        {
+          "active": true,
+          "label": "(GMT+10:00) Papua New Guinea Time (Pacific/Port_Moresby)",
+          "value": "Pacific/Port_Moresby"
+        },
+        {
+          "active": true,
+          "label": "(GMT+10:00) Chamorro Standard Time (Pacific/Saipan)",
+          "value": "Pacific/Saipan"
+        },
+        {
+          "active": true,
+          "label": "(GMT+10:00) Chuuk Time (Pacific/Truk)",
+          "value": "Pacific/Truk"
+        },
+        {
+          "active": true,
+          "label": "(GMT+09:30) Australian Central Standard Time (Australia/Adelaide)",
+          "value": "Australia/Adelaide"
+        },
+        {
+          "active": true,
+          "label": "(GMT+09:30) Australian Central Standard Time (Australia/Broken_Hill)",
+          "value": "Australia/Broken_Hill"
+        },
+        {
+          "active": true,
+          "label": "(GMT+09:30) Australian Central Standard Time (Australia/Darwin)",
+          "value": "Australia/Darwin"
+        },
+        {
+          "active": true,
+          "label": "(GMT+09:00) Yakutsk Standard Time (Asia/Chita)",
+          "value": "Asia/Chita"
+        },
+        {
+          "active": true,
+          "label": "(GMT+09:00) East Timor Time (Asia/Dili)",
+          "value": "Asia/Dili"
+        },
+        {
+          "active": true,
+          "label": "(GMT+09:00) Eastern Indonesia Time (Asia/Jayapura)",
+          "value": "Asia/Jayapura"
+        },
+        {
+          "active": true,
+          "label": "(GMT+09:00) Yakutsk Standard Time (Asia/Khandyga)",
+          "value": "Asia/Khandyga"
+        },
+        {
+          "active": true,
+          "label": "(GMT+09:00) Korean Standard Time (Asia/Seoul)",
+          "value": "Asia/Seoul"
+        },
+        {
+          "active": true,
+          "label": "(GMT+09:00) Japan Standard Time (Asia/Tokyo)",
+          "value": "Asia/Tokyo"
+        },
+        {
+          "active": true,
+          "label": "(GMT+09:00) Yakutsk Standard Time (Asia/Yakutsk)",
+          "value": "Asia/Yakutsk"
+        },
+        {
+          "active": true,
+          "label": "(GMT+09:00) Palau Time (Pacific/Palau)",
+          "value": "Pacific/Palau"
+        },
+        {
+          "active": true,
+          "label": "(GMT+08:45) Australian Central Western Standard Time (Australia/Eucla)",
+          "value": "Australia/Eucla"
+        },
+        {
+          "active": true,
+          "label": "(GMT+08:00) Casey Time (Antarctica/Casey)",
+          "value": "Antarctica/Casey"
+        },
+        {
+          "active": true,
+          "label": "(GMT+08:00) Brunei Darussalam Time (Asia/Brunei)",
+          "value": "Asia/Brunei"
+        },
+        {
+          "active": true,
+          "label": "(GMT+08:00) Ulaanbaatar Standard Time (Asia/Choibalsan)",
+          "value": "Asia/Choibalsan"
+        },
+        {
+          "active": true,
+          "label": "(GMT+08:00) Hong Kong Standard Time (Asia/Hong_Kong)",
+          "value": "Asia/Hong_Kong"
+        },
+        {
+          "active": true,
+          "label": "(GMT+08:00) Irkutsk Standard Time (Asia/Irkutsk)",
+          "value": "Asia/Irkutsk"
+        },
+        {
+          "active": true,
+          "label": "(GMT+08:00) Malaysia Time (Asia/Kuala_Lumpur)",
+          "value": "Asia/Kuala_Lumpur"
+        },
+        {
+          "active": true,
+          "label": "(GMT+08:00) Malaysia Time (Asia/Kuching)",
+          "value": "Asia/Kuching"
+        },
+        {
+          "active": true,
+          "label": "(GMT+08:00) China Standard Time (Asia/Macau)",
+          "value": "Asia/Macau"
+        },
+        {
+          "active": true,
+          "label": "(GMT+08:00) Central Indonesia Time (Asia/Makassar)",
+          "value": "Asia/Makassar"
+        },
+        {
+          "active": true,
+          "label": "(GMT+08:00) Philippine Standard Time (Asia/Manila)",
+          "value": "Asia/Manila"
+        },
+        {
+          "active": true,
+          "label": "(GMT+08:00) China Standard Time (Asia/Shanghai)",
+          "value": "Asia/Shanghai"
+        },
+        {
+          "active": true,
+          "label": "(GMT+08:00) Singapore Standard Time (Asia/Singapore)",
+          "value": "Asia/Singapore"
+        },
+        {
+          "active": true,
+          "label": "(GMT+08:00) Taipei Standard Time (Asia/Taipei)",
+          "value": "Asia/Taipei"
+        },
+        {
+          "active": true,
+          "label": "(GMT+08:00) Ulaanbaatar Standard Time (Asia/Ulaanbaatar)",
+          "value": "Asia/Ulaanbaatar"
+        },
+        {
+          "active": true,
+          "label": "(GMT+08:00) Australian Western Standard Time (Australia/Perth)",
+          "value": "Australia/Perth"
+        },
+        {
+          "active": true,
+          "label": "(GMT+07:00) Davis Time (Antarctica/Davis)",
+          "value": "Antarctica/Davis"
+        },
+        {
+          "active": true,
+          "label": "(GMT+07:00) Indochina Time (Asia/Bangkok)",
+          "value": "Asia/Bangkok"
+        },
+        {
+          "active": true,
+          "label": "(GMT+07:00) Moscow Standard Time + 4 (Asia/Barnaul)",
+          "value": "Asia/Barnaul"
+        },
+        {
+          "active": true,
+          "label": "(GMT+07:00) Indochina Time (Asia/Ho_Chi_Minh)",
+          "value": "Asia/Ho_Chi_Minh"
+        },
+        {
+          "active": true,
+          "label": "(GMT+07:00) Hovd Standard Time (Asia/Hovd)",
+          "value": "Asia/Hovd"
+        },
+        {
+          "active": true,
+          "label": "(GMT+07:00) Western Indonesia Time (Asia/Jakarta)",
+          "value": "Asia/Jakarta"
+        },
+        {
+          "active": true,
+          "label": "(GMT+07:00) Krasnoyarsk Standard Time (Asia/Krasnoyarsk)",
+          "value": "Asia/Krasnoyarsk"
+        },
+        {
+          "active": true,
+          "label": "(GMT+07:00) Krasnoyarsk Standard Time (Asia/Novokuznetsk)",
+          "value": "Asia/Novokuznetsk"
+        },
+        {
+          "active": true,
+          "label": "(GMT+07:00) Novosibirsk Standard Time (Asia/Novosibirsk)",
+          "value": "Asia/Novosibirsk"
+        },
+        {
+          "active": true,
+          "label": "(GMT+07:00) Indochina Time (Asia/Phnom_Penh)",
+          "value": "Asia/Phnom_Penh"
+        },
+        {
+          "active": true,
+          "label": "(GMT+07:00) Western Indonesia Time (Asia/Pontianak)",
+          "value": "Asia/Pontianak"
+        },
+        {
+          "active": true,
+          "label": "(GMT+07:00) Moscow Standard Time + 4 (Asia/Tomsk)",
+          "value": "Asia/Tomsk"
+        },
+        {
+          "active": true,
+          "label": "(GMT+07:00) Indochina Time (Asia/Vientiane)",
+          "value": "Asia/Vientiane"
+        },
+        {
+          "active": true,
+          "label": "(GMT+07:00) Christmas Island Time (Indian/Christmas)",
+          "value": "Indian/Christmas"
+        },
+        {
+          "active": true,
+          "label": "(GMT+06:30) Myanmar Time (Asia/Rangoon)",
+          "value": "Asia/Rangoon"
+        },
+        {
+          "active": true,
+          "label": "(GMT+06:30) Cocos Islands Time (Indian/Cocos)",
+          "value": "Indian/Cocos"
+        },
+        {
+          "active": true,
+          "label": "(GMT+06:00) Kyrgyzstan Time (Asia/Bishkek)",
+          "value": "Asia/Bishkek"
+        },
+        {
+          "active": true,
+          "label": "(GMT+06:00) Bangladesh Standard Time (Asia/Dhaka)",
+          "value": "Asia/Dhaka"
+        },
+        {
+          "active": true,
+          "label": "(GMT+06:00) Omsk Standard Time (Asia/Omsk)",
+          "value": "Asia/Omsk"
+        },
+        {
+          "active": true,
+          "label": "(GMT+06:00) Bhutan Time (Asia/Thimphu)",
+          "value": "Asia/Thimphu"
+        },
+        {
+          "active": true,
+          "label": "(GMT+06:00) China Standard Time (Asia/Urumqi)",
+          "value": "Asia/Urumqi"
+        },
+        {
+          "active": true,
+          "label": "(GMT+06:00) Indian Ocean Time (Indian/Chagos)",
+          "value": "Indian/Chagos"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:45) Nepal Time (Asia/Kathmandu)",
+          "value": "Asia/Kathmandu"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:30) India Standard Time (Asia/Colombo)",
+          "value": "Asia/Colombo"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:30) India Standard Time (Asia/Kolkata)",
+          "value": "Asia/Kolkata"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:00) Mawson Time (Antarctica/Mawson)",
+          "value": "Antarctica/Mawson"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:00) Vostok Time (Antarctica/Vostok)",
+          "value": "Antarctica/Vostok"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:00) East Kazakhstan Time (Asia/Almaty)",
+          "value": "Asia/Almaty"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:00) West Kazakhstan Time (Asia/Aqtau)",
+          "value": "Asia/Aqtau"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:00) West Kazakhstan Time (Asia/Aqtobe)",
+          "value": "Asia/Aqtobe"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:00) Turkmenistan Standard Time (Asia/Ashgabat)",
+          "value": "Asia/Ashgabat"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:00) West Kazakhstan Time (Asia/Atyrau)",
+          "value": "Asia/Atyrau"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:00) Tajikistan Time (Asia/Dushanbe)",
+          "value": "Asia/Dushanbe"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:00) Pakistan Standard Time (Asia/Karachi)",
+          "value": "Asia/Karachi"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:00) West Kazakhstan Time (Asia/Oral)",
+          "value": "Asia/Oral"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:00) East Kazakhstan Time (Asia/Qostanay)",
+          "value": "Asia/Qostanay"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:00) West Kazakhstan Time (Asia/Qyzylorda)",
+          "value": "Asia/Qyzylorda"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:00) Uzbekistan Standard Time (Asia/Samarkand)",
+          "value": "Asia/Samarkand"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:00) Uzbekistan Standard Time (Asia/Tashkent)",
+          "value": "Asia/Tashkent"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:00) Yekaterinburg Standard Time (Asia/Yekaterinburg)",
+          "value": "Asia/Yekaterinburg"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:00) French Southern & Antarctic Time (Indian/Kerguelen)",
+          "value": "Indian/Kerguelen"
+        },
+        {
+          "active": true,
+          "label": "(GMT+05:00) Maldives Time (Indian/Maldives)",
+          "value": "Indian/Maldives"
+        },
+        {
+          "active": true,
+          "label": "(GMT+04:30) Afghanistan Time (Asia/Kabul)",
+          "value": "Asia/Kabul"
+        },
+        {
+          "active": true,
+          "label": "(GMT+04:00) Azerbaijan Standard Time (Asia/Baku)",
+          "value": "Asia/Baku"
+        },
+        {
+          "active": true,
+          "label": "(GMT+04:00) Gulf Standard Time (Asia/Dubai)",
+          "value": "Asia/Dubai"
+        },
+        {
+          "active": true,
+          "label": "(GMT+04:00) Gulf Standard Time (Asia/Muscat)",
+          "value": "Asia/Muscat"
+        },
+        {
+          "active": true,
+          "label": "(GMT+04:00) Georgia Standard Time (Asia/Tbilisi)",
+          "value": "Asia/Tbilisi"
+        },
+        {
+          "active": true,
+          "label": "(GMT+04:00) Armenia Standard Time (Asia/Yerevan)",
+          "value": "Asia/Yerevan"
+        },
+        {
+          "active": true,
+          "label": "(GMT+04:00) Samara Standard Time (Europe/Astrakhan)",
+          "value": "Europe/Astrakhan"
+        },
+        {
+          "active": true,
+          "label": "(GMT+04:00) Samara Standard Time (Europe/Samara)",
+          "value": "Europe/Samara"
+        },
+        {
+          "active": true,
+          "label": "(GMT+04:00) Moscow Standard Time + 1 (Europe/Saratov)",
+          "value": "Europe/Saratov"
+        },
+        {
+          "active": true,
+          "label": "(GMT+04:00) Moscow Standard Time + 1 (Europe/Ulyanovsk)",
+          "value": "Europe/Ulyanovsk"
+        },
+        {
+          "active": true,
+          "label": "(GMT+04:00) Seychelles Time (Indian/Mahe)",
+          "value": "Indian/Mahe"
+        },
+        {
+          "active": true,
+          "label": "(GMT+04:00) Mauritius Standard Time (Indian/Mauritius)",
+          "value": "Indian/Mauritius"
+        },
+        {
+          "active": true,
+          "label": "(GMT+04:00) Réunion Time (Indian/Reunion)",
+          "value": "Indian/Reunion"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) East Africa Time (Africa/Addis_Ababa)",
+          "value": "Africa/Addis_Ababa"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) East Africa Time (Africa/Asmera)",
+          "value": "Africa/Asmera"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Standard Time (Africa/Cairo)",
+          "value": "Africa/Cairo"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) East Africa Time (Africa/Dar_es_Salaam)",
+          "value": "Africa/Dar_es_Salaam"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) East Africa Time (Africa/Djibouti)",
+          "value": "Africa/Djibouti"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) East Africa Time (Africa/Kampala)",
+          "value": "Africa/Kampala"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) East Africa Time (Africa/Mogadishu)",
+          "value": "Africa/Mogadishu"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) East Africa Time (Africa/Nairobi)",
+          "value": "Africa/Nairobi"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Syowa Time (Antarctica/Syowa)",
+          "value": "Antarctica/Syowa"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Arabian Standard Time (Asia/Aden)",
+          "value": "Asia/Aden"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Standard Time (Asia/Amman)",
+          "value": "Asia/Amman"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Arabian Standard Time (Asia/Baghdad)",
+          "value": "Asia/Baghdad"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Arabian Standard Time (Asia/Bahrain)",
+          "value": "Asia/Bahrain"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Summer Time (Asia/Beirut)",
+          "value": "Asia/Beirut"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Summer Time (Asia/Famagusta)",
+          "value": "Asia/Famagusta"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Summer Time (Asia/Gaza)",
+          "value": "Asia/Gaza"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Summer Time (Asia/Hebron)",
+          "value": "Asia/Hebron"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Israel Daylight Time (Asia/Jerusalem)",
+          "value": "Asia/Jerusalem"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Arabian Standard Time (Asia/Kuwait)",
+          "value": "Asia/Kuwait"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Summer Time (Asia/Nicosia)",
+          "value": "Asia/Nicosia"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Arabian Standard Time (Asia/Qatar)",
+          "value": "Asia/Qatar"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Arabian Standard Time (Asia/Riyadh)",
+          "value": "Asia/Riyadh"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Summer Time (Europe/Athens)",
+          "value": "Europe/Athens"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Summer Time (Europe/Bucharest)",
+          "value": "Europe/Bucharest"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Summer Time (Europe/Chisinau)",
+          "value": "Europe/Chisinau"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Summer Time (Europe/Helsinki)",
+          "value": "Europe/Helsinki"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Standard Time (Europe/Istanbul)",
+          "value": "Europe/Istanbul"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Summer Time (Europe/Kyiv)",
+          "value": "Europe/Kiev"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Moscow Standard Time (Europe/Kirov)",
+          "value": "Europe/Kirov"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Summer Time (Europe/Mariehamn)",
+          "value": "Europe/Mariehamn"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Moscow Standard Time (Europe/Minsk)",
+          "value": "Europe/Minsk"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Moscow Standard Time (Europe/Moscow)",
+          "value": "Europe/Moscow"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Summer Time (Europe/Riga)",
+          "value": "Europe/Riga"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Summer Time (Europe/Sofia)",
+          "value": "Europe/Sofia"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Summer Time (Europe/Tallinn)",
+          "value": "Europe/Tallinn"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Summer Time (Europe/Uzhgorod)",
+          "value": "Europe/Uzhgorod"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Summer Time (Europe/Vilnius)",
+          "value": "Europe/Vilnius"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Volgograd Standard Time (Europe/Volgograd)",
+          "value": "Europe/Volgograd"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) Eastern European Summer Time (Europe/Zaporozhye)",
+          "value": "Europe/Zaporozhye"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) East Africa Time (Indian/Antananarivo)",
+          "value": "Indian/Antananarivo"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) East Africa Time (Indian/Comoro)",
+          "value": "Indian/Comoro"
+        },
+        {
+          "active": true,
+          "label": "(GMT+03:00) East Africa Time (Indian/Mayotte)",
+          "value": "Indian/Mayotte"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central Africa Time (Africa/Blantyre)",
+          "value": "Africa/Blantyre"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central Africa Time (Africa/Bujumbura)",
+          "value": "Africa/Bujumbura"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Africa/Ceuta)",
+          "value": "Africa/Ceuta"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central Africa Time (Africa/Gaborone)",
+          "value": "Africa/Gaborone"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central Africa Time (Africa/Harare)",
+          "value": "Africa/Harare"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) South Africa Standard Time (Africa/Johannesburg)",
+          "value": "Africa/Johannesburg"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central Africa Time (Africa/Juba)",
+          "value": "Africa/Juba"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central Africa Time (Africa/Khartoum)",
+          "value": "Africa/Khartoum"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central Africa Time (Africa/Kigali)",
+          "value": "Africa/Kigali"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central Africa Time (Africa/Lubumbashi)",
+          "value": "Africa/Lubumbashi"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central Africa Time (Africa/Lusaka)",
+          "value": "Africa/Lusaka"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central Africa Time (Africa/Maputo)",
+          "value": "Africa/Maputo"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) South Africa Standard Time (Africa/Maseru)",
+          "value": "Africa/Maseru"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) South Africa Standard Time (Africa/Mbabane)",
+          "value": "Africa/Mbabane"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Eastern European Standard Time (Africa/Tripoli)",
+          "value": "Africa/Tripoli"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central Africa Time (Africa/Windhoek)",
+          "value": "Africa/Windhoek"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Antarctica/Troll)",
+          "value": "Antarctica/Troll"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Arctic/Longyearbyen)",
+          "value": "Arctic/Longyearbyen"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Amsterdam)",
+          "value": "Europe/Amsterdam"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Andorra)",
+          "value": "Europe/Andorra"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Belgrade)",
+          "value": "Europe/Belgrade"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Berlin)",
+          "value": "Europe/Berlin"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Bratislava)",
+          "value": "Europe/Bratislava"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Brussels)",
+          "value": "Europe/Brussels"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Budapest)",
+          "value": "Europe/Budapest"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Busingen)",
+          "value": "Europe/Busingen"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Copenhagen)",
+          "value": "Europe/Copenhagen"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Gibraltar)",
+          "value": "Europe/Gibraltar"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Eastern European Standard Time (Europe/Kaliningrad)",
+          "value": "Europe/Kaliningrad"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Ljubljana)",
+          "value": "Europe/Ljubljana"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Luxembourg)",
+          "value": "Europe/Luxembourg"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Madrid)",
+          "value": "Europe/Madrid"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Malta)",
+          "value": "Europe/Malta"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Monaco)",
+          "value": "Europe/Monaco"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Oslo)",
+          "value": "Europe/Oslo"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Paris)",
+          "value": "Europe/Paris"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Podgorica)",
+          "value": "Europe/Podgorica"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Prague)",
+          "value": "Europe/Prague"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Rome)",
+          "value": "Europe/Rome"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/San_Marino)",
+          "value": "Europe/San_Marino"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Sarajevo)",
+          "value": "Europe/Sarajevo"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Skopje)",
+          "value": "Europe/Skopje"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Stockholm)",
+          "value": "Europe/Stockholm"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Tirane)",
+          "value": "Europe/Tirane"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Vaduz)",
+          "value": "Europe/Vaduz"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Vatican)",
+          "value": "Europe/Vatican"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Vienna)",
+          "value": "Europe/Vienna"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Warsaw)",
+          "value": "Europe/Warsaw"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Zagreb)",
+          "value": "Europe/Zagreb"
+        },
+        {
+          "active": true,
+          "label": "(GMT+02:00) Central European Summer Time (Europe/Zurich)",
+          "value": "Europe/Zurich"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) Central European Standard Time (Africa/Algiers)",
+          "value": "Africa/Algiers"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) West Africa Standard Time (Africa/Bangui)",
+          "value": "Africa/Bangui"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) West Africa Standard Time (Africa/Brazzaville)",
+          "value": "Africa/Brazzaville"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) Western European Summer Time (Africa/Casablanca)",
+          "value": "Africa/Casablanca"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) West Africa Standard Time (Africa/Douala)",
+          "value": "Africa/Douala"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) Western European Summer Time (Africa/El_Aaiun)",
+          "value": "Africa/El_Aaiun"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) West Africa Standard Time (Africa/Kinshasa)",
+          "value": "Africa/Kinshasa"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) West Africa Standard Time (Africa/Lagos)",
+          "value": "Africa/Lagos"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) West Africa Standard Time (Africa/Libreville)",
+          "value": "Africa/Libreville"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) West Africa Standard Time (Africa/Luanda)",
+          "value": "Africa/Luanda"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) West Africa Standard Time (Africa/Malabo)",
+          "value": "Africa/Malabo"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) West Africa Standard Time (Africa/Ndjamena)",
+          "value": "Africa/Ndjamena"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) West Africa Standard Time (Africa/Niamey)",
+          "value": "Africa/Niamey"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) West Africa Standard Time (Africa/Porto-Novo)",
+          "value": "Africa/Porto-Novo"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) Central European Standard Time (Africa/Tunis)",
+          "value": "Africa/Tunis"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) Western European Summer Time (Atlantic/Canary)",
+          "value": "Atlantic/Canary"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) Western European Summer Time (Atlantic/Faeroe)",
+          "value": "Atlantic/Faeroe"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) Western European Summer Time (Atlantic/Madeira)",
+          "value": "Atlantic/Madeira"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) Irish Standard Time (Europe/Dublin)",
+          "value": "Europe/Dublin"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) British Summer Time (Europe/Guernsey)",
+          "value": "Europe/Guernsey"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) British Summer Time (Europe/Isle_of_Man)",
+          "value": "Europe/Isle_of_Man"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) British Summer Time (Europe/Jersey)",
+          "value": "Europe/Jersey"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) Western European Summer Time (Europe/Lisbon)",
+          "value": "Europe/Lisbon"
+        },
+        {
+          "active": true,
+          "label": "(GMT+01:00) British Summer Time (Europe/London)",
+          "value": "Europe/London"
+        },
+        {
+          "active": true,
+          "label": "(GMT+00:00) Greenwich Mean Time (Africa/Abidjan)",
+          "value": "Africa/Abidjan"
+        },
+        {
+          "active": true,
+          "label": "(GMT+00:00) Greenwich Mean Time (Africa/Accra)",
+          "value": "Africa/Accra"
+        },
+        {
+          "active": true,
+          "label": "(GMT+00:00) Greenwich Mean Time (Africa/Bamako)",
+          "value": "Africa/Bamako"
+        },
+        {
+          "active": true,
+          "label": "(GMT+00:00) Greenwich Mean Time (Africa/Banjul)",
+          "value": "Africa/Banjul"
+        },
+        {
+          "active": true,
+          "label": "(GMT+00:00) Greenwich Mean Time (Africa/Bissau)",
+          "value": "Africa/Bissau"
+        },
+        {
+          "active": true,
+          "label": "(GMT+00:00) Greenwich Mean Time (Africa/Conakry)",
+          "value": "Africa/Conakry"
+        },
+        {
+          "active": true,
+          "label": "(GMT+00:00) Greenwich Mean Time (Africa/Dakar)",
+          "value": "Africa/Dakar"
+        },
+        {
+          "active": true,
+          "label": "(GMT+00:00) Greenwich Mean Time (Africa/Freetown)",
+          "value": "Africa/Freetown"
+        },
+        {
+          "active": true,
+          "label": "(GMT+00:00) Greenwich Mean Time (Africa/Lome)",
+          "value": "Africa/Lome"
+        },
+        {
+          "active": true,
+          "label": "(GMT+00:00) Greenwich Mean Time (Africa/Monrovia)",
+          "value": "Africa/Monrovia"
+        },
+        {
+          "active": true,
+          "label": "(GMT+00:00) Greenwich Mean Time (Africa/Nouakchott)",
+          "value": "Africa/Nouakchott"
+        },
+        {
+          "active": true,
+          "label": "(GMT+00:00) Greenwich Mean Time (Africa/Ouagadougou)",
+          "value": "Africa/Ouagadougou"
+        },
+        {
+          "active": true,
+          "label": "(GMT+00:00) Greenwich Mean Time (Africa/Sao_Tome)",
+          "value": "Africa/Sao_Tome"
+        },
+        {
+          "active": true,
+          "label": "(GMT+00:00) Greenwich Mean Time (America/Danmarkshavn)",
+          "value": "America/Danmarkshavn"
+        },
+        {
+          "active": true,
+          "label": "(GMT+00:00) Azores Summer Time (Atlantic/Azores)",
+          "value": "Atlantic/Azores"
+        },
+        {
+          "active": true,
+          "label": "(GMT+00:00) Greenwich Mean Time (Atlantic/Reykjavik)",
+          "value": "Atlantic/Reykjavik"
+        },
+        {
+          "active": true,
+          "label": "(GMT+00:00) Greenwich Mean Time (Atlantic/St_Helena)",
+          "value": "Atlantic/St_Helena"
+        },
+        {
+          "active": true,
+          "label": "(GMT+00:00) Greenwich Mean Time (GMT)",
+          "value": "GMT"
+        },
+        {
+          "active": true,
+          "label": "(GMT-01:00) West Greenland Summer Time (America/Godthab)",
+          "value": "America/Godthab"
+        },
+        {
+          "active": true,
+          "label": "(GMT-01:00) East Greenland Summer Time (America/Scoresbysund)",
+          "value": "America/Scoresbysund"
+        },
+        {
+          "active": true,
+          "label": "(GMT-01:00) Cape Verde Standard Time (Atlantic/Cape_Verde)",
+          "value": "Atlantic/Cape_Verde"
+        },
+        {
+          "active": true,
+          "label": "(GMT-02:00) St Pierre & Miquelon Daylight Time (America/Miquelon)",
+          "value": "America/Miquelon"
+        },
+        {
+          "active": true,
+          "label": "(GMT-02:00) Fernando de Noronha Standard Time (America/Noronha)",
+          "value": "America/Noronha"
+        },
+        {
+          "active": true,
+          "label": "(GMT-02:00) South Georgia Time (Atlantic/South_Georgia)",
+          "value": "Atlantic/South_Georgia"
+        },
+        {
+          "active": true,
+          "label": "(GMT-02:30) Newfoundland Daylight Time (America/St_Johns)",
+          "value": "America/St_Johns"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Brasilia Standard Time (America/Araguaina)",
+          "value": "America/Araguaina"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Argentina Standard Time (America/Argentina/Buenos_Aires)",
+          "value": "America/Argentina/Buenos_Aires"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Argentina Standard Time (America/Argentina/La_Rioja)",
+          "value": "America/Argentina/La_Rioja"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Argentina Standard Time (America/Argentina/Rio_Gallegos)",
+          "value": "America/Argentina/Rio_Gallegos"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Argentina Standard Time (America/Argentina/Salta)",
+          "value": "America/Argentina/Salta"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Argentina Standard Time (America/Argentina/San_Juan)",
+          "value": "America/Argentina/San_Juan"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Argentina Standard Time (America/Argentina/San_Luis)",
+          "value": "America/Argentina/San_Luis"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Argentina Standard Time (America/Argentina/Tucuman)",
+          "value": "America/Argentina/Tucuman"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Argentina Standard Time (America/Argentina/Ushuaia)",
+          "value": "America/Argentina/Ushuaia"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Paraguay Standard Time (America/Asuncion)",
+          "value": "America/Asuncion"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Brasilia Standard Time (America/Bahia)",
+          "value": "America/Bahia"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Brasilia Standard Time (America/Belem)",
+          "value": "America/Belem"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Argentina Standard Time (America/Catamarca)",
+          "value": "America/Catamarca"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) French Guiana Time (America/Cayenne)",
+          "value": "America/Cayenne"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Argentina Standard Time (America/Cordoba)",
+          "value": "America/Cordoba"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Brasilia Standard Time (America/Fortaleza)",
+          "value": "America/Fortaleza"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Atlantic Daylight Time (America/Glace_Bay)",
+          "value": "America/Glace_Bay"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Atlantic Daylight Time (America/Goose_Bay)",
+          "value": "America/Goose_Bay"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Atlantic Daylight Time (America/Halifax)",
+          "value": "America/Halifax"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Argentina Standard Time (America/Jujuy)",
+          "value": "America/Jujuy"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Brasilia Standard Time (America/Maceio)",
+          "value": "America/Maceio"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Argentina Standard Time (America/Mendoza)",
+          "value": "America/Mendoza"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Atlantic Daylight Time (America/Moncton)",
+          "value": "America/Moncton"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Uruguay Standard Time (America/Montevideo)",
+          "value": "America/Montevideo"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Suriname Time (America/Paramaribo)",
+          "value": "America/Paramaribo"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Chile Standard Time (America/Punta_Arenas)",
+          "value": "America/Punta_Arenas"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Brasilia Standard Time (America/Recife)",
+          "value": "America/Recife"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Brasilia Standard Time (America/Santarem)",
+          "value": "America/Santarem"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Brasilia Standard Time (America/Sao_Paulo)",
+          "value": "America/Sao_Paulo"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Atlantic Daylight Time (America/Thule)",
+          "value": "America/Thule"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Chile Standard Time (Antarctica/Palmer)",
+          "value": "Antarctica/Palmer"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Rothera Time (Antarctica/Rothera)",
+          "value": "Antarctica/Rothera"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Atlantic Daylight Time (Atlantic/Bermuda)",
+          "value": "Atlantic/Bermuda"
+        },
+        {
+          "active": true,
+          "label": "(GMT-03:00) Falkland Islands Standard Time (Atlantic/Stanley)",
+          "value": "Atlantic/Stanley"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/Anguilla)",
+          "value": "America/Anguilla"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/Antigua)",
+          "value": "America/Antigua"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/Aruba)",
+          "value": "America/Aruba"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/Barbados)",
+          "value": "America/Barbados"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/Blanc-Sablon)",
+          "value": "America/Blanc-Sablon"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Amazon Standard Time (America/Boa_Vista)",
+          "value": "America/Boa_Vista"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Amazon Standard Time (America/Campo_Grande)",
+          "value": "America/Campo_Grande"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Venezuela Time (America/Caracas)",
+          "value": "America/Caracas"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Amazon Standard Time (America/Cuiaba)",
+          "value": "America/Cuiaba"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/Curacao)",
+          "value": "America/Curacao"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Detroit)",
+          "value": "America/Detroit"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/Dominica)",
+          "value": "America/Dominica"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Grand_Turk)",
+          "value": "America/Grand_Turk"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/Grenada)",
+          "value": "America/Grenada"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/Guadeloupe)",
+          "value": "America/Guadeloupe"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Guyana Time (America/Guyana)",
+          "value": "America/Guyana"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Indiana/Indianapolis)",
+          "value": "America/Indiana/Indianapolis"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Indiana/Marengo)",
+          "value": "America/Indiana/Marengo"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Indiana/Petersburg)",
+          "value": "America/Indiana/Petersburg"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Indiana/Vevay)",
+          "value": "America/Indiana/Vevay"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Indiana/Vincennes)",
+          "value": "America/Indiana/Vincennes"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Indiana/Winamac)",
+          "value": "America/Indiana/Winamac"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Iqaluit)",
+          "value": "America/Iqaluit"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Kentucky/Monticello)",
+          "value": "America/Kentucky/Monticello"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/Kralendijk)",
+          "value": "America/Kralendijk"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Bolivia Time (America/La_Paz)",
+          "value": "America/La_Paz"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Louisville)",
+          "value": "America/Louisville"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/Lower_Princes)",
+          "value": "America/Lower_Princes"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Amazon Standard Time (America/Manaus)",
+          "value": "America/Manaus"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/Marigot)",
+          "value": "America/Marigot"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/Martinique)",
+          "value": "America/Martinique"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Montreal)",
+          "value": "America/Montreal"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/Montserrat)",
+          "value": "America/Montserrat"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Nassau)",
+          "value": "America/Nassau"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Eastern Daylight Time (America/New_York)",
+          "value": "America/New_York"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Nipigon)",
+          "value": "America/Nipigon"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Pangnirtung)",
+          "value": "America/Pangnirtung"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Port-au-Prince)",
+          "value": "America/Port-au-Prince"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/Port_of_Spain)",
+          "value": "America/Port_of_Spain"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Amazon Standard Time (America/Porto_Velho)",
+          "value": "America/Porto_Velho"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/Puerto_Rico)",
+          "value": "America/Puerto_Rico"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Chile Standard Time (America/Santiago)",
+          "value": "America/Santiago"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/Santo_Domingo)",
+          "value": "America/Santo_Domingo"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/St_Barthelemy)",
+          "value": "America/St_Barthelemy"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/St_Kitts)",
+          "value": "America/St_Kitts"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/St_Lucia)",
+          "value": "America/St_Lucia"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/St_Thomas)",
+          "value": "America/St_Thomas"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/St_Vincent)",
+          "value": "America/St_Vincent"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Thunder_Bay)",
+          "value": "America/Thunder_Bay"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Eastern Daylight Time (America/Toronto)",
+          "value": "America/Toronto"
+        },
+        {
+          "active": true,
+          "label": "(GMT-04:00) Atlantic Standard Time (America/Tortola)",
+          "value": "America/Tortola"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Colombia Standard Time (America/Bogota)",
+          "value": "America/Bogota"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Eastern Standard Time (America/Cancun)",
+          "value": "America/Cancun"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Eastern Standard Time (America/Cayman)",
+          "value": "America/Cayman"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Central Daylight Time (America/Chicago)",
+          "value": "America/Chicago"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Eastern Standard Time (America/Coral_Harbour)",
+          "value": "America/Coral_Harbour"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Acre Standard Time (America/Eirunepe)",
+          "value": "America/Eirunepe"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Ecuador Time (America/Guayaquil)",
+          "value": "America/Guayaquil"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Central Daylight Time (America/Indiana/Knox)",
+          "value": "America/Indiana/Knox"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Central Daylight Time (America/Indiana/Tell_City)",
+          "value": "America/Indiana/Tell_City"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Eastern Standard Time (America/Jamaica)",
+          "value": "America/Jamaica"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Peru Standard Time (America/Lima)",
+          "value": "America/Lima"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Central Daylight Time (America/Matamoros)",
+          "value": "America/Matamoros"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Central Daylight Time (America/Menominee)",
+          "value": "America/Menominee"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Central Daylight Time (America/North_Dakota/Beulah)",
+          "value": "America/North_Dakota/Beulah"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Central Daylight Time (America/North_Dakota/Center)",
+          "value": "America/North_Dakota/Center"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Central Daylight Time (America/North_Dakota/New_Salem)",
+          "value": "America/North_Dakota/New_Salem"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Mountain Daylight Time (America/Ojinaga)",
+          "value": "America/Ojinaga"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Eastern Standard Time (America/Panama)",
+          "value": "America/Panama"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Central Daylight Time (America/Rainy_River)",
+          "value": "America/Rainy_River"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Central Daylight Time (America/Rankin_Inlet)",
+          "value": "America/Rankin_Inlet"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Central Daylight Time (America/Resolute)",
+          "value": "America/Resolute"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Acre Standard Time (America/Rio_Branco)",
+          "value": "America/Rio_Branco"
+        },
+        {
+          "active": true,
+          "label": "(GMT-05:00) Central Daylight Time (America/Winnipeg)",
+          "value": "America/Winnipeg"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Central Standard Time (America/Bahia_Banderas)",
+          "value": "America/Bahia_Banderas"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Central Standard Time (America/Belize)",
+          "value": "America/Belize"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Mountain Daylight Time (America/Boise)",
+          "value": "America/Boise"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Mountain Daylight Time (America/Cambridge_Bay)",
+          "value": "America/Cambridge_Bay"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Mexican Pacific Standard Time (America/Chihuahua)",
+          "value": "America/Chihuahua"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Central Standard Time (America/Costa_Rica)",
+          "value": "America/Costa_Rica"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Mountain Daylight Time (America/Denver)",
+          "value": "America/Denver"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Mountain Daylight Time (America/Edmonton)",
+          "value": "America/Edmonton"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Central Standard Time (America/El_Salvador)",
+          "value": "America/El_Salvador"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Central Standard Time (America/Guatemala)",
+          "value": "America/Guatemala"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Mountain Daylight Time (America/Inuvik)",
+          "value": "America/Inuvik"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Central Standard Time (America/Managua)",
+          "value": "America/Managua"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Central Standard Time (America/Merida)",
+          "value": "America/Merida"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Central Standard Time (America/Mexico_City)",
+          "value": "America/Mexico_City"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Central Standard Time (America/Monterrey)",
+          "value": "America/Monterrey"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Central Standard Time (America/Regina)",
+          "value": "America/Regina"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Central Standard Time (America/Swift_Current)",
+          "value": "America/Swift_Current"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Central Standard Time (America/Tegucigalpa)",
+          "value": "America/Tegucigalpa"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Mountain Daylight Time (America/Yellowknife)",
+          "value": "America/Yellowknife"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Easter Island Standard Time (Pacific/Easter)",
+          "value": "Pacific/Easter"
+        },
+        {
+          "active": true,
+          "label": "(GMT-06:00) Galapagos Time (Pacific/Galapagos)",
+          "value": "Pacific/Galapagos"
+        },
+        {
+          "active": true,
+          "label": "(GMT-07:00) Mountain Standard Time (America/Creston)",
+          "value": "America/Creston"
+        },
+        {
+          "active": true,
+          "label": "(GMT-07:00) Yukon Time (America/Dawson)",
+          "value": "America/Dawson"
+        },
+        {
+          "active": true,
+          "label": "(GMT-07:00) Mountain Standard Time (America/Dawson_Creek)",
+          "value": "America/Dawson_Creek"
+        },
+        {
+          "active": true,
+          "label": "(GMT-07:00) Mountain Standard Time (America/Fort_Nelson)",
+          "value": "America/Fort_Nelson"
+        },
+        {
+          "active": true,
+          "label": "(GMT-07:00) Mexican Pacific Standard Time (America/Hermosillo)",
+          "value": "America/Hermosillo"
+        },
+        {
+          "active": true,
+          "label": "(GMT-07:00) Pacific Daylight Time (America/Los_Angeles)",
+          "value": "America/Los_Angeles"
+        },
+        {
+          "active": true,
+          "label": "(GMT-07:00) Mexican Pacific Standard Time (America/Mazatlan)",
+          "value": "America/Mazatlan"
+        },
+        {
+          "active": true,
+          "label": "(GMT-07:00) Mountain Standard Time (America/Phoenix)",
+          "value": "America/Phoenix"
+        },
+        {
+          "active": true,
+          "label": "(GMT-07:00) Northwest Mexico Daylight Time (America/Santa_Isabel)",
+          "value": "America/Santa_Isabel"
+        },
+        {
+          "active": true,
+          "label": "(GMT-07:00) Pacific Daylight Time (America/Tijuana)",
+          "value": "America/Tijuana"
+        },
+        {
+          "active": true,
+          "label": "(GMT-07:00) Pacific Daylight Time (America/Vancouver)",
+          "value": "America/Vancouver"
+        },
+        {
+          "active": true,
+          "label": "(GMT-07:00) Yukon Time (America/Whitehorse)",
+          "value": "America/Whitehorse"
+        },
+        {
+          "active": true,
+          "label": "(GMT-08:00) Alaska Daylight Time (America/Anchorage)",
+          "value": "America/Anchorage"
+        },
+        {
+          "active": true,
+          "label": "(GMT-08:00) Alaska Daylight Time (America/Juneau)",
+          "value": "America/Juneau"
+        },
+        {
+          "active": true,
+          "label": "(GMT-08:00) Alaska Daylight Time (America/Metlakatla)",
+          "value": "America/Metlakatla"
+        },
+        {
+          "active": true,
+          "label": "(GMT-08:00) Alaska Daylight Time (America/Nome)",
+          "value": "America/Nome"
+        },
+        {
+          "active": true,
+          "label": "(GMT-08:00) Alaska Daylight Time (America/Sitka)",
+          "value": "America/Sitka"
+        },
+        {
+          "active": true,
+          "label": "(GMT-08:00) Alaska Daylight Time (America/Yakutat)",
+          "value": "America/Yakutat"
+        },
+        {
+          "active": true,
+          "label": "(GMT-08:00) Pitcairn Time (Pacific/Pitcairn)",
+          "value": "Pacific/Pitcairn"
+        },
+        {
+          "active": true,
+          "label": "(GMT-09:00) Hawaii-Aleutian Daylight Time (America/Adak)",
+          "value": "America/Adak"
+        },
+        {
+          "active": true,
+          "label": "(GMT-09:00) Gambier Time (Pacific/Gambier)",
+          "value": "Pacific/Gambier"
+        },
+        {
+          "active": true,
+          "label": "(GMT-09:30) Marquesas Time (Pacific/Marquesas)",
+          "value": "Pacific/Marquesas"
+        },
+        {
+          "active": true,
+          "label": "(GMT-10:00) Hawaii-Aleutian Standard Time (Pacific/Honolulu)",
+          "value": "Pacific/Honolulu"
+        },
+        {
+          "active": true,
+          "label": "(GMT-10:00) Hawaii-Aleutian Standard Time (Pacific/Johnston)",
+          "value": "Pacific/Johnston"
+        },
+        {
+          "active": true,
+          "label": "(GMT-10:00) Cook Islands Standard Time (Pacific/Rarotonga)",
+          "value": "Pacific/Rarotonga"
+        },
+        {
+          "active": true,
+          "label": "(GMT-10:00) Tahiti Time (Pacific/Tahiti)",
+          "value": "Pacific/Tahiti"
+        },
+        {
+          "active": true,
+          "label": "(GMT-11:00) Samoa Standard Time (Pacific/Midway)",
+          "value": "Pacific/Midway"
+        },
+        {
+          "active": true,
+          "label": "(GMT-11:00) Niue Time (Pacific/Niue)",
+          "value": "Pacific/Niue"
+        },
+        {
+          "active": true,
+          "label": "(GMT-11:00) Samoa Standard Time (Pacific/Pago_Pago)",
+          "value": "Pacific/Pago_Pago"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Is Primary",
+      "name": "IsPrimary",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Area code",
+      "name": "AreaCode",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Telephone number",
+      "name": "TelephoneNumber",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "phone"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Extension number",
+      "name": "ExtensionNumber",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Phone Type",
+      "name": "PhoneType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Home",
+          "value": "Home"
+        },
+        {
+          "active": true,
+          "label": "Mobile",
+          "value": "Mobile"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Is SMS capable",
+      "name": "IsSmsCapable",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Formatted international phone number",
+      "name": "FormattedInternationalPhoneNumber",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Formatted national phone number",
+      "name": "FormattedNationalPhoneNumber",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "string"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Is fax capable",
+      "name": "IsFaxCapable",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Is personal phone",
+      "name": "IsPersonalPhone",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Is business phone",
+      "name": "IsBusinessPhone",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Preference Rank",
+      "name": "PreferenceRank",
+      "nillable": true,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "int"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": false,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Usage Type",
+      "name": "UsageType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Home",
+          "value": "Home"
+        },
+        {
+          "active": true,
+          "label": "Work",
+          "value": "Work"
+        },
+        {
+          "active": true,
+          "label": "Temporary",
+          "value": "Temporary"
+        },
+        {
+          "active": true,
+          "label": "Inactive",
+          "value": "Inactive"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": false,
+      "type": "picklist"
+    }
+  ],
+  "childRelationships": []
+}

@@ -1,0 +1,107 @@
+{
+  "name": "CronJobDetail",
+  "label": "Cron Job",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Job ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Job Name",
+      "name": "Name",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "string"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Type",
+      "name": "JobType",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Data Export",
+          "value": "1"
+        },
+        {
+          "active": true,
+          "label": "Dashboard Refresh",
+          "value": "3"
+        },
+        {
+          "active": true,
+          "label": "Reporting Snapshot",
+          "value": "4"
+        },
+        {
+          "active": true,
+          "label": "Scheduled Flow",
+          "value": "6"
+        },
+        {
+          "active": true,
+          "label": "Scheduled Apex",
+          "value": "7"
+        },
+        {
+          "active": true,
+          "label": "Report Run",
+          "value": "8"
+        },
+        {
+          "active": true,
+          "label": "Batch Job",
+          "value": "9"
+        },
+        {
+          "active": true,
+          "label": "Reporting Notification",
+          "value": "A"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    }
+  ],
+  "childRelationships": [
+    {
+      "childSObject": "CronTrigger",
+      "field": "CronJobDetailId",
+      "relationshipName": null
+    }
+  ]
+}

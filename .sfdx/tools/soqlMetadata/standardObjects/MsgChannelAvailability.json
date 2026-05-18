@@ -1,0 +1,977 @@
+{
+  "name": "MsgChannelAvailability",
+  "label": "Messaging Channel Availability",
+  "custom": false,
+  "queryable": true,
+  "fields": [
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Messaging Channel Availability ID",
+      "name": "Id",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "id"
+    },
+    {
+      "aggregatable": false,
+      "custom": false,
+      "defaultValue": false,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Deleted",
+      "name": "IsDeleted",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "boolean"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Created Date",
+      "name": "CreatedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Created By ID",
+      "name": "CreatedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "CreatedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "Last Modified Date",
+      "name": "LastModifiedDate",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Last Modified By ID",
+      "name": "LastModifiedById",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "User"
+      ],
+      "relationshipName": "LastModifiedBy",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": false,
+      "inlineHelpText": null,
+      "label": "System Modstamp",
+      "name": "SystemModstamp",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "datetime"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Messaging Channel ID",
+      "name": "MessagingChannelId",
+      "nillable": false,
+      "picklistValues": [],
+      "referenceTo": [
+        "MessagingChannel"
+      ],
+      "relationshipName": "MessagingChannel",
+      "sortable": true,
+      "type": "reference"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Type",
+      "name": "Type",
+      "nillable": false,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "Country",
+          "value": "Country"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    },
+    {
+      "aggregatable": true,
+      "custom": false,
+      "defaultValue": null,
+      "extraTypeInfo": null,
+      "filterable": true,
+      "groupable": true,
+      "inlineHelpText": null,
+      "label": "Country Code",
+      "name": "CountryCode",
+      "nillable": true,
+      "picklistValues": [
+        {
+          "active": true,
+          "label": "0",
+          "value": "AL"
+        },
+        {
+          "active": true,
+          "label": "1",
+          "value": "AR"
+        },
+        {
+          "active": true,
+          "label": "2",
+          "value": "AT"
+        },
+        {
+          "active": true,
+          "label": "3",
+          "value": "BH"
+        },
+        {
+          "active": true,
+          "label": "4",
+          "value": "BA"
+        },
+        {
+          "active": true,
+          "label": "5",
+          "value": "BR"
+        },
+        {
+          "active": true,
+          "label": "6",
+          "value": "CL"
+        },
+        {
+          "active": true,
+          "label": "7",
+          "value": "CO"
+        },
+        {
+          "active": true,
+          "label": "8",
+          "value": "CR"
+        },
+        {
+          "active": true,
+          "label": "9",
+          "value": "HR"
+        },
+        {
+          "active": true,
+          "label": "10",
+          "value": "CY"
+        },
+        {
+          "active": true,
+          "label": "11",
+          "value": "DK"
+        },
+        {
+          "active": true,
+          "label": "12",
+          "value": "DO"
+        },
+        {
+          "active": true,
+          "label": "13",
+          "value": "EC"
+        },
+        {
+          "active": true,
+          "label": "14",
+          "value": "EE"
+        },
+        {
+          "active": true,
+          "label": "15",
+          "value": "FI"
+        },
+        {
+          "active": true,
+          "label": "16",
+          "value": "DE"
+        },
+        {
+          "active": true,
+          "label": "17",
+          "value": "GR"
+        },
+        {
+          "active": true,
+          "label": "18",
+          "value": "HN"
+        },
+        {
+          "active": true,
+          "label": "19",
+          "value": "HU"
+        },
+        {
+          "active": true,
+          "label": "20",
+          "value": "IS"
+        },
+        {
+          "active": true,
+          "label": "21",
+          "value": "IN"
+        },
+        {
+          "active": true,
+          "label": "22",
+          "value": "IL"
+        },
+        {
+          "active": true,
+          "label": "23",
+          "value": "LV"
+        },
+        {
+          "active": true,
+          "label": "24",
+          "value": "LB"
+        },
+        {
+          "active": true,
+          "label": "25",
+          "value": "LI"
+        },
+        {
+          "active": true,
+          "label": "26",
+          "value": "LT"
+        },
+        {
+          "active": true,
+          "label": "27",
+          "value": "LU"
+        },
+        {
+          "active": true,
+          "label": "28",
+          "value": "MO"
+        },
+        {
+          "active": true,
+          "label": "29",
+          "value": "MY"
+        },
+        {
+          "active": true,
+          "label": "30",
+          "value": "MT"
+        },
+        {
+          "active": true,
+          "label": "31",
+          "value": "MX"
+        },
+        {
+          "active": true,
+          "label": "32",
+          "value": "MZ"
+        },
+        {
+          "active": true,
+          "label": "33",
+          "value": "NL"
+        },
+        {
+          "active": true,
+          "label": "34",
+          "value": "NZ"
+        },
+        {
+          "active": true,
+          "label": "35",
+          "value": "NO"
+        },
+        {
+          "active": true,
+          "label": "36",
+          "value": "PK"
+        },
+        {
+          "active": true,
+          "label": "37",
+          "value": "PA"
+        },
+        {
+          "active": true,
+          "label": "38",
+          "value": "PY"
+        },
+        {
+          "active": true,
+          "label": "39",
+          "value": "PE"
+        },
+        {
+          "active": true,
+          "label": "40",
+          "value": "PT"
+        },
+        {
+          "active": true,
+          "label": "41",
+          "value": "RS"
+        },
+        {
+          "active": true,
+          "label": "42",
+          "value": "SK"
+        },
+        {
+          "active": true,
+          "label": "43",
+          "value": "SI"
+        },
+        {
+          "active": true,
+          "label": "44",
+          "value": "ZA"
+        },
+        {
+          "active": true,
+          "label": "45",
+          "value": "KR"
+        },
+        {
+          "active": true,
+          "label": "46",
+          "value": "ES"
+        },
+        {
+          "active": true,
+          "label": "47",
+          "value": "SE"
+        },
+        {
+          "active": true,
+          "label": "48",
+          "value": "CH"
+        },
+        {
+          "active": true,
+          "label": "49",
+          "value": "TW"
+        },
+        {
+          "active": true,
+          "label": "50",
+          "value": "TT"
+        },
+        {
+          "active": true,
+          "label": "51",
+          "value": "UA"
+        },
+        {
+          "active": true,
+          "label": "52",
+          "value": "UY"
+        },
+        {
+          "active": true,
+          "label": "53",
+          "value": "VE"
+        },
+        {
+          "active": true,
+          "label": "54",
+          "value": "ZW"
+        },
+        {
+          "active": true,
+          "label": "55",
+          "value": "AI"
+        },
+        {
+          "active": true,
+          "label": "56",
+          "value": "AW"
+        },
+        {
+          "active": true,
+          "label": "57",
+          "value": "BF"
+        },
+        {
+          "active": true,
+          "label": "58",
+          "value": "BT"
+        },
+        {
+          "active": true,
+          "label": "59",
+          "value": "GD"
+        },
+        {
+          "active": true,
+          "label": "60",
+          "value": "GY"
+        },
+        {
+          "active": true,
+          "label": "61",
+          "value": "IQ"
+        },
+        {
+          "active": true,
+          "label": "62",
+          "value": "KN"
+        },
+        {
+          "active": true,
+          "label": "63",
+          "value": "KY"
+        },
+        {
+          "active": true,
+          "label": "64",
+          "value": "LA"
+        },
+        {
+          "active": true,
+          "label": "65",
+          "value": "LC"
+        },
+        {
+          "active": true,
+          "label": "66",
+          "value": "ML"
+        },
+        {
+          "active": true,
+          "label": "67",
+          "value": "MS"
+        },
+        {
+          "active": true,
+          "label": "68",
+          "value": "PW"
+        },
+        {
+          "active": true,
+          "label": "69",
+          "value": "SL"
+        },
+        {
+          "active": true,
+          "label": "70",
+          "value": "TC"
+        },
+        {
+          "active": true,
+          "label": "71",
+          "value": "TG"
+        },
+        {
+          "active": true,
+          "label": "72",
+          "value": "TJ"
+        },
+        {
+          "active": true,
+          "label": "73",
+          "value": "VC"
+        },
+        {
+          "active": true,
+          "label": "74",
+          "value": "WS"
+        },
+        {
+          "active": true,
+          "label": "75",
+          "value": "XK"
+        },
+        {
+          "active": true,
+          "label": "76",
+          "value": "AD"
+        },
+        {
+          "active": true,
+          "label": "77",
+          "value": "AF"
+        },
+        {
+          "active": true,
+          "label": "78",
+          "value": "AM"
+        },
+        {
+          "active": true,
+          "label": "79",
+          "value": "AO"
+        },
+        {
+          "active": true,
+          "label": "80",
+          "value": "AZ"
+        },
+        {
+          "active": true,
+          "label": "81",
+          "value": "BB"
+        },
+        {
+          "active": true,
+          "label": "82",
+          "value": "BD"
+        },
+        {
+          "active": true,
+          "label": "83",
+          "value": "BJ"
+        },
+        {
+          "active": true,
+          "label": "84",
+          "value": "BL"
+        },
+        {
+          "active": true,
+          "label": "85",
+          "value": "BM"
+        },
+        {
+          "active": true,
+          "label": "86",
+          "value": "BN"
+        },
+        {
+          "active": true,
+          "label": "87",
+          "value": "BO"
+        },
+        {
+          "active": true,
+          "label": "88",
+          "value": "BS"
+        },
+        {
+          "active": true,
+          "label": "89",
+          "value": "BW"
+        },
+        {
+          "active": true,
+          "label": "90",
+          "value": "BZ"
+        },
+        {
+          "active": true,
+          "label": "91",
+          "value": "CD"
+        },
+        {
+          "active": true,
+          "label": "92",
+          "value": "CF"
+        },
+        {
+          "active": true,
+          "label": "93",
+          "value": "RU"
+        },
+        {
+          "active": true,
+          "label": "94",
+          "value": "CM"
+        },
+        {
+          "active": true,
+          "label": "95",
+          "value": "CN"
+        },
+        {
+          "active": true,
+          "label": "96",
+          "value": "CV"
+        },
+        {
+          "active": true,
+          "label": "97",
+          "value": "DM"
+        },
+        {
+          "active": true,
+          "label": "98",
+          "value": "ET"
+        },
+        {
+          "active": true,
+          "label": "99",
+          "value": "FJ"
+        },
+        {
+          "active": true,
+          "label": "100",
+          "value": "GA"
+        },
+        {
+          "active": true,
+          "label": "101",
+          "value": "GE"
+        },
+        {
+          "active": true,
+          "label": "102",
+          "value": "GF"
+        },
+        {
+          "active": true,
+          "label": "103",
+          "value": "GG"
+        },
+        {
+          "active": true,
+          "label": "104",
+          "value": "GI"
+        },
+        {
+          "active": true,
+          "label": "105",
+          "value": "GL"
+        },
+        {
+          "active": true,
+          "label": "106",
+          "value": "GM"
+        },
+        {
+          "active": true,
+          "label": "107",
+          "value": "GN"
+        },
+        {
+          "active": true,
+          "label": "108",
+          "value": "GP"
+        },
+        {
+          "active": true,
+          "label": "109",
+          "value": "GT"
+        },
+        {
+          "active": true,
+          "label": "110",
+          "value": "GU"
+        },
+        {
+          "active": true,
+          "label": "111",
+          "value": "GW"
+        },
+        {
+          "active": true,
+          "label": "112",
+          "value": "HT"
+        },
+        {
+          "active": true,
+          "label": "113",
+          "value": "IM"
+        },
+        {
+          "active": true,
+          "label": "114",
+          "value": "JE"
+        },
+        {
+          "active": true,
+          "label": "115",
+          "value": "JM"
+        },
+        {
+          "active": true,
+          "label": "116",
+          "value": "KG"
+        },
+        {
+          "active": true,
+          "label": "117",
+          "value": "KH"
+        },
+        {
+          "active": true,
+          "label": "118",
+          "value": "KM"
+        },
+        {
+          "active": true,
+          "label": "119",
+          "value": "KZ"
+        },
+        {
+          "active": true,
+          "label": "120",
+          "value": "LR"
+        },
+        {
+          "active": true,
+          "label": "121",
+          "value": "LY"
+        },
+        {
+          "active": true,
+          "label": "122",
+          "value": "MC"
+        },
+        {
+          "active": true,
+          "label": "123",
+          "value": "MD"
+        },
+        {
+          "active": true,
+          "label": "124",
+          "value": "ME"
+        },
+        {
+          "active": true,
+          "label": "125",
+          "value": "MF"
+        },
+        {
+          "active": true,
+          "label": "126",
+          "value": "MG"
+        },
+        {
+          "active": true,
+          "label": "127",
+          "value": "MK"
+        },
+        {
+          "active": true,
+          "label": "128",
+          "value": "MN"
+        },
+        {
+          "active": true,
+          "label": "129",
+          "value": "MP"
+        },
+        {
+          "active": true,
+          "label": "130",
+          "value": "MQ"
+        },
+        {
+          "active": true,
+          "label": "131",
+          "value": "MV"
+        },
+        {
+          "active": true,
+          "label": "132",
+          "value": "NA"
+        },
+        {
+          "active": true,
+          "label": "133",
+          "value": "NE"
+        },
+        {
+          "active": true,
+          "label": "134",
+          "value": "NI"
+        },
+        {
+          "active": true,
+          "label": "135",
+          "value": "NP"
+        },
+        {
+          "active": true,
+          "label": "136",
+          "value": "PF"
+        },
+        {
+          "active": true,
+          "label": "137",
+          "value": "PS"
+        },
+        {
+          "active": true,
+          "label": "138",
+          "value": "SD"
+        },
+        {
+          "active": true,
+          "label": "139",
+          "value": "SN"
+        },
+        {
+          "active": true,
+          "label": "140",
+          "value": "SO"
+        },
+        {
+          "active": true,
+          "label": "141",
+          "value": "SR"
+        },
+        {
+          "active": true,
+          "label": "142",
+          "value": "SV"
+        },
+        {
+          "active": true,
+          "label": "143",
+          "value": "SY"
+        },
+        {
+          "active": true,
+          "label": "144",
+          "value": "TD"
+        },
+        {
+          "active": true,
+          "label": "145",
+          "value": "TL"
+        },
+        {
+          "active": true,
+          "label": "146",
+          "value": "TM"
+        },
+        {
+          "active": true,
+          "label": "147",
+          "value": "TN"
+        },
+        {
+          "active": true,
+          "label": "148",
+          "value": "TO"
+        },
+        {
+          "active": true,
+          "label": "149",
+          "value": "TZ"
+        },
+        {
+          "active": true,
+          "label": "150",
+          "value": "UG"
+        },
+        {
+          "active": true,
+          "label": "151",
+          "value": "UZ"
+        },
+        {
+          "active": true,
+          "label": "152",
+          "value": "VG"
+        },
+        {
+          "active": true,
+          "label": "153",
+          "value": "VU"
+        },
+        {
+          "active": true,
+          "label": "154",
+          "value": "WF"
+        },
+        {
+          "active": true,
+          "label": "155",
+          "value": "YE"
+        },
+        {
+          "active": true,
+          "label": "156",
+          "value": "ZM"
+        }
+      ],
+      "referenceTo": [],
+      "relationshipName": null,
+      "sortable": true,
+      "type": "picklist"
+    }
+  ],
+  "childRelationships": []
+}
