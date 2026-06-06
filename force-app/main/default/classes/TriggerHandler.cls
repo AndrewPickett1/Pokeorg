@@ -1,4 +1,17 @@
 public virtual class TriggerHandler {
+
+    protected List<SObject> newList;
+    protected List<SObject> oldList;
+    protected Map<Id, SObject> newMap;
+    protected Map<Id, SObject> oldMap;
+
+    //constructor
+    public triggerHandler(){
+        this.newList = Trigger.new;
+        this.oldList = Trigger.old;
+        this.newMap = Trigger.newMap;
+        this.oldMap = Trigger.oldMap;
+    }
     
     protected virtual void handleBeforeInsert(){}
     protected virtual void handleAfterInsert(){}
@@ -13,27 +26,13 @@ public virtual class TriggerHandler {
     public void execute(){
         
         switch on Trigger.operationType{
-            when BEFORE_INSERT {
-                this.handleBeforeInsert();
-            }
-            when AFTER_INSERT {
-                this.handleAfterInsert();
-            }
-            when BEFORE_UPDATE {
-                this.handleBeforeUpdate();
-            }
-            when AFTER_UPDATE {
-                this.handleAfterUpdate();
-            }
-            when BEFORE_DELETE {
-                this.handleBeforeDelete();
-            }
-            when AFTER_DELETE {
-                this.handleAfterDelete();
-            }
-            when AFTER_UNDELETE {
-                this.handleAfterUndelete();
-            }
+            when BEFORE_INSERT { this.handleBeforeInsert(); }
+            when AFTER_INSERT { this.handleAfterInsert(); }
+            when BEFORE_UPDATE { this.handleBeforeUpdate(); }
+            when AFTER_UPDATE { this.handleAfterUpdate(); }
+            when BEFORE_DELETE { this.handleBeforeDelete(); }
+            when AFTER_DELETE { this.handleAfterDelete(); }
+            when AFTER_UNDELETE { this.handleAfterUndelete(); }
 
         }
     }
