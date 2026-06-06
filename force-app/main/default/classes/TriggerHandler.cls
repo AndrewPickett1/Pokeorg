@@ -6,7 +6,7 @@ public virtual class TriggerHandler {
     protected Map<Id, SObject> oldMap;
 
     //constructor
-    public triggerHandler(){
+    public TriggerHandler(){
         this.newList = Trigger.new;
         this.oldList = Trigger.old;
         this.newMap = Trigger.newMap;
