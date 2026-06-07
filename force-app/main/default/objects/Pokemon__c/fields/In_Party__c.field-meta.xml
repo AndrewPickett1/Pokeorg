@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>In_Party__c</fullName>
     <defaultValue>false</defaultValue>
-    <externalId>false</externalId>
     <label>In Party?</label>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

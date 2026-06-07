@@ -3,8 +3,8 @@
     <fullName>My_Pokemon</fullName>
     <columns>Sprite__c</columns>
     <columns>Pokedex_Entry__c</columns>
-    <columns>Owner__c</columns>
     <columns>NAME</columns>
+    <columns>Owner__c</columns>
     <columns>Level__c</columns>
     <columns>Current_HP__c</columns>
     <columns>Max_HP__c</columns>
