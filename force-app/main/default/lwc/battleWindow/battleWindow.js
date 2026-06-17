@@ -5,7 +5,10 @@
 
 import { LightningElement, api, wire } from 'lwc';
 import { getRecord, getFieldValue, getRecordNotifyChange } from 'lightning/uiRecordApi';
+
+//need to use custom css from static resource
 import {loadStyle} from 'lightning/platformResourceLoader';
+import AnimateCSS from '@salesforce/resourceUrl/AnimateCSS';
 
 import BATTLE_OBJECT from '@salesforce/schema/Battle__c';
 import PKMN1_ID from '@salesforce/schema/Battle__c.Pokemon_1__r.Id';
@@ -32,7 +35,6 @@ import battleClass from '@salesforce/apex/battleClass.turnCalc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import {RefreshEvent} from 'lightning/refresh'
 
-
 import { getRelatedListRecords } from 'lightning/uiRelatedListApi';
 
 
@@ -42,7 +44,7 @@ export default class BattleWindow extends LightningElement {
 
     //displays victory window if status = completed
     render(){
-        if (getFieldValue(this.battleRecord.data, BATTLE_STATUS) == 'Completed'){ 
+        if (getFieldValue(this.battleRecord.data, BATTLE_STATUS) === 'Completed'){ 
             return VICTORY_WINDOW;
         } else {
             return BATTLE_WINDOW;
@@ -94,9 +96,12 @@ export default class BattleWindow extends LightningElement {
     error;
 
     // pulls sprite URLs upon page load
-    connectedCallback(){
+    async connectedCallback(){
+        
+        //loads styles before running the rest of the initializations
+        await loadStyle(this, AnimateCSS);
+        
         //get pkmn 1 moves
-
         getPkmnMoveList({
             BattleId: this.recordId,
             Pkmn: 1
