@@ -1,3 +1,4 @@
 # SFDX local artifacts
 .sfdx/
 .sf/
+node_modules/
