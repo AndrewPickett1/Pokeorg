@@ -1,0 +1,81 @@
+.moves-container {
+    display: flex;
+    flex-direction: column; /* Stacks them vertically */
+    gap: 12px;             /* Puts 12px of space exactly *between* each item */
+    padding: 8px;          /* Optional: adds space inside the lightning-card edges */
+}
+
+.move-card{
+    background-color: #00a896; /* Teal border color */
+    padding: 2px; /* Emulates a border width when clipped */
+    clip-path: polygon(
+        15px 0%,                     /* Top-left corner cut */
+        calc(100% - 15px) 0%,        /* Top-right corner cut */
+        100% 50%,                    /* Right-middle point */
+        calc(100% - 15px) 100%,      /* Bottom-right corner cut */
+        15px 100%,                   /* Bottom-left corner cut */
+        0% 50%                       /* Left-middle point */
+        );
+    transition: transform 0.1s ease;
+}
+
+.move-card.is-selected{
+    background-color: #02ffd0; 
+    box-shadow: 0 0 8px #02ffd0;
+}
+
+.move-card-label{
+    display: block;
+    background-color: #343d3e; /* Dark inner body */
+    clip-path: polygon(
+        15px 0%,                     /* Top-left corner cut */
+        calc(100% - 15px) 0%,        /* Top-right corner cut */
+        100% 50%,                    /* Right-middle point */
+        calc(100% - 15px) 100%,      /* Bottom-right corner cut */
+        15px 100%,                   /* Bottom-left corner cut */
+        0% 50%                       /* Left-middle point */
+        );
+    padding: 8px 24px; /* Extra horizontal padding accounts for clipped edges */
+    cursor: pointer;
+}
+
+.move-card:hover {
+    transform: scale(1.002);
+}
+
+.move-card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: white
+}
+
+.move-card-header{
+    display: flex;
+    align-items: center;      /* Centers text vertically */
+    justify-content: center;  /* Centers text horizontally */
+    font-weight: bold;        /* Optional: makes the move name stand out */
+    font-size: 1.1rem;
+}
+
+.move-card-footer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;  /* Centers the Type Pill and PP horizontally */
+    gap: 16px;                /* Adds a nice gap between the pill and PP */
+    font-size: 0.9rem;
+}
+
+.move-card-type-pill{
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 1px 6px;
+    border: 1px solid #ffffff;
+    text-transform: uppercase;
+    min-width: 60px;
+    text-align: center;
+}
+
+
+
