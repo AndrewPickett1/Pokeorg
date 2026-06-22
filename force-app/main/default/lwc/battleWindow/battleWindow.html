@@ -51,31 +51,20 @@
             <div class="slds-grid slds-gutters">
                 <!-- pkmn 1 moves -->
                 <div class="slds-col slds-size_1-of-2 slds-box">
-                    <div class="slds-text-heading_medium">{pkmn1NameField} Moves:</div> 
-                    <template for:each={pkmn1MoveSet} for:item="move">
-                        <div key={move.Id} class="slds-var-p-around_medium">
-                            <lightning-button 
-                            label={move.Move__c} 
-                            variant="brand" 
-                            onclick={handlePkmn1MoveSelection}
-                            value={move.Id}></lightning-button>
-                        </div>
-                    </template>
+                    <c-battle-move-selector 
+                    pkmn-name={pkmn1NameField} 
+                    move-list={pkmn1MoveSet}
+                    onmoveselected={handlePkmn1MoveSelection}
+                    ></c-battle-move-selector>
                 </div>
+                
                 <!-- pkmn 2 moves -->
                 <div class="slds-col slds-size_1-of-2 slds-box">
-                    
-                    <!-- title -->
-                    <div class="slds-text-heading_medium">{pkmn2NameField} Moves:</div> 
-                    <template for:each={pkmn2MoveSet} for:item="move">
-                        <div key={move.Id} class="slds-var-p-around_medium">
-                            <lightning-button 
-                            label={move.Move__c} 
-                            variant="brand" 
-                            onclick={handlePkmn2MoveSelection}
-                            value={move.Id}></lightning-button>
-                        </div>
-                    </template>
+                    <c-battle-move-selector 
+                    pkmn-name={pkmn2NameField} 
+                    move-list={pkmn2MoveSet}
+                    onmoveselected={handlePkmn2MoveSelection}
+                    ></c-battle-move-selector>    
 
                 </div>
             </div>

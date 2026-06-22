@@ -37,7 +37,7 @@ public class battleWindowController {
             System.debug('Battle Id: ' + battle);
             System.debug('Pkmn 1 Id: ' + battle.Pokemon_1__c);
 
-            List<Object> moveList = [SELECT Move__c FROM Move__c WHERE Pokemon__c = :battle.Pokemon_1__c LIMIT 4];
+            List<Object> moveList = [SELECT Move__c, Type__c FROM Move__c WHERE Pokemon__c = :battle.Pokemon_1__c LIMIT 4];
             system.debug(moveList);
             return moveList;
         } else {
@@ -45,7 +45,7 @@ public class battleWindowController {
             System.debug('Battle Id: ' + battle);
             System.debug('Pkmn 2 Id: ' + battle.Pokemon_2__c);
 
-            List<Object> moveList = [SELECT Move__c FROM Move__c WHERE Pokemon__c = :battle.Pokemon_2__c LIMIT 4];
+            List<Object> moveList = [SELECT Move__c, Type__c FROM Move__c WHERE Pokemon__c = :battle.Pokemon_2__c LIMIT 4];
             system.debug(moveList);
             return moveList;  
         }

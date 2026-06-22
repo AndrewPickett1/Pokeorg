@@ -51,11 +51,12 @@
 }
 
 .move-card-header{
-    display: flex;
+    display: inline-flex;
     align-items: center;      /* Centers text vertically */
     justify-content: center;  /* Centers text horizontally */
     font-weight: bold;        /* Optional: makes the move name stand out */
     font-size: 1.1rem;
+    gap: 16px; 
 }
 
 .move-card-footer {

@@ -109,9 +109,6 @@ export default class BattleWindow extends LightningElement {
             .then((result) => {
                 //initializes move set
                 this.pkmn1MoveSet = [
-                    {Move__c: '...'}, 
-                    {Move__c: '...'}, 
-                    {Move__c: '...'}, 
                     {Move__c: '...'}
                 ];
                 //populates moves into moveset
@@ -133,9 +130,6 @@ export default class BattleWindow extends LightningElement {
             .then((result) => {
                 //initializes move set
                 this.pkmn2MoveSet = [
-                    {Move__c: '...'}, 
-                    {Move__c: '...'}, 
-                    {Move__c: '...'}, 
                     {Move__c: '...'}
                 ];
 
@@ -152,15 +146,13 @@ export default class BattleWindow extends LightningElement {
     }
 
     handlePkmn1MoveSelection(event){
-        //console.log('Event Name: ' + event.target.value);
-        this.pkmn1MoveSelection = event.target.value
+        this.pkmn1MoveSelection = event.detail.moveId;
+        console.log('Event Received: ' + event.detail.moveId);
     }
 
     handlePkmn2MoveSelection(event){
-        //console.log('Event Name: ' + event.target.value);
-        this.pkmn2MoveSelection = event.target.value
-
-
+        this.pkmn2MoveSelection = event.detail.moveId;
+        console.log('Event Received: ' + event.detail.moveId);
     }
 
     handleTurnSubmission(){
