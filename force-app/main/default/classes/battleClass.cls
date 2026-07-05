@@ -100,8 +100,8 @@ public with sharing class battleClass {
             WHERE Id = :pkmn2Move 
             LIMIT 1
             ];
-        System.debug('Pkmn 1 Move: ' + pkmn1MoveRec.TM__r.Name);
-        System.debug('Pkmn 2 Move: ' + pkmn2MoveRec.TM__r.Name);
+        System.debug('Pkmn 1 Move: ' + pkmn1MoveRec);
+        System.debug('Pkmn 2 Move: ' + pkmn2MoveRec);
         
         // querys pokemon
         Pokemon__c pkmn1 = [
@@ -193,6 +193,27 @@ public with sharing class battleClass {
         return turnInfoMap;
 
         // Idea: Flow orchestration for prompting move selections from multiple users
+    }
+
+    @AuraEnabled
+    public static void decrementPP(Move__c pkmn1Move, Move__c pkmn2Move){
+        List<Move__c> movesToUpdate = new List<Move__c>();
+
+        if(pkmn1Move.PP__c > 0){
+            pkmn1Move.PP__c -= 1;
+            movesToUpdate.add(pkmn1Move);
+        }
+
+        if(pkmn2Move.PP__c > 0){
+            pkmn2Move.PP__c -= 1;
+            movesToUpdate.add(pkmn2Move);
+        }
+
+        if(!movesToUpdate.isEmpty()){
+            update movesToUpdate;
+        }
+
+        System.debug('DEcrementing PP');
     }
 
     //random num generator for move selection

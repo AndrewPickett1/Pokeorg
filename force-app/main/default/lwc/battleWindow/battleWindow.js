@@ -32,6 +32,7 @@ import VICTORY_WINDOW from './battleVictoryWindow.html';
 
 import getPkmnMoveList from '@salesforce/apex/battleWindowController.pkmnMoves';
 import battleClass from '@salesforce/apex/battleClass.turnCalc';
+import decrementPP from '@salesforce/apex/battleClass.decrementPP';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import {RefreshEvent} from 'lightning/refresh'
 
@@ -146,28 +147,31 @@ export default class BattleWindow extends LightningElement {
     }
 
     handlePkmn1MoveSelection(event){
-        this.pkmn1MoveSelection = event.detail.moveId;
-        console.log('Event Received: ' + event.detail.moveId);
+        this.pkmn1MoveSelection = event.detail;
+        console.log('Event Received: ' + event.detail.Id);
+        console.log('Event Detail: ' + JSON.stringify(this.pkmn1MoveSelection));
     }
 
     handlePkmn2MoveSelection(event){
-        this.pkmn2MoveSelection = event.detail.moveId;
-        console.log('Event Received: ' + event.detail.moveId);
+        this.pkmn2MoveSelection = event.detail;
+        console.log('Event Received: ' + event.detail.Id);
+        console.log('Event Detail: ' + JSON.stringify(this.pkmn2MoveSelection));
     }
 
     handleTurnSubmission(){
-        console.log('Pkmn 1 Move: ' + this.pkmn1MoveSelection);
-        console.log('Pkmn 2 Move: ' + this.pkmn2MoveSelection);
+        console.log('Pkmn 1 Move: ' + JSON.stringify(this.pkmn1MoveSelection));
+        console.log('Pkmn 2 Move: ' + JSON.stringify(this.pkmn2MoveSelection));
 
         //calls battle class
         battleClass({
-            pkmn1Move: this.pkmn1MoveSelection,
-            pkmn2Move: this.pkmn2MoveSelection
+            pkmn1Move: String(this.pkmn1MoveSelection.Id),
+            pkmn2Move: String(this.pkmn2MoveSelection.Id)
         })
         .then((result) => {
             console.log(result)
+            
             this.dispatchEvent(new RefreshEvent());
-
+            
             const event = new ShowToastEvent({
                 title: 'Success',
                 message: 'Move submitted successfully'
@@ -175,13 +179,24 @@ export default class BattleWindow extends LightningElement {
             this.dispatchEvent(event)
 
         })
-        .error((error) => {
+        .catch((error) => {
+            console.log('error occurred')
             console.error(error);
         })
-        //refresh page
-        //getRecordNotifyChange([{recordId: this.recordId}])
+        
+        decrementPP({
+            pkmn1Move: this.pkmn1MoveSelection,
+            pkmn2Move: this.pkmn2MoveSelection
+        })
+        .then((result) => {
+            console.log('PP Decremented')
+            this.dispatchEvent(new RefreshEvent());
+        })
+        .catch((error) => {
+            console.log('error decrementing')
+        })
 
-        //toast success event
+        
 
 
     }

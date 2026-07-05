@@ -18,9 +18,15 @@ export default class BattleMoveSelector extends LightningElement {
     handleSelection(event){
         this.selectedRecordId = event.target.value;
 
-        console.log('move list: ' + JSON.stringify(this.moveList));
+        const selectedMove = this.moveList.find(move => move.Id === event.target.value)
 
-        const moveSelectedEvent = new CustomEvent('moveselected', {detail: {moveId: event.target.value}});
+        console.log('Selected Move: ' + JSON.stringify(selectedMove));
+
+        
+
+        //const moveSelectedEvent = new CustomEvent('moveselected', {detail: {moveId: event.target.value}});
+        const moveSelectedEvent = new CustomEvent('moveselected', {detail: selectedMove});
+
         this.dispatchEvent(moveSelectedEvent);
         
     }
