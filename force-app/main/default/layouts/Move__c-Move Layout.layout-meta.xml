@@ -28,6 +28,14 @@
                 <behavior>Readonly</behavior>
                 <field>Move__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>PP__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Max_PP__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsTopToBottom</style>

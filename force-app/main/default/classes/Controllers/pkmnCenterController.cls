@@ -27,6 +27,26 @@ public class pkmnCenterController {
         }
 
         update partyPkmn;
+
+        List<Move__c> pkmnMoves = new List<Move__c>([
+            SELECT Id, PP__c, Max_PP__c 
+            FROM Move__c
+            WHERE Pokemon__c IN :partyPkmn
+            ]);
+        
+        List<Move__c> movesToUpdate = new List<Move__c>();
+        for(Move__c move : pkmnMoves){
+            if(move.PP__c != move.Max_PP__c && move.Max_PP__c != null){
+                move.PP__c = move.Max_PP__c;
+                movesToUpdate.add(move);
+            }
+        }
+
+        if(!movesToUpdate.isEmpty()){
+            update movesToUpdate;
+        }
+
+
     }
     
 }
