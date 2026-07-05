@@ -1,35 +1,6 @@
 public class battleWindowController {
     
     @AuraEnabled
-    public static String leftPkmnImgUrl(String BattleId){
-        //TODO you're always going to be querying for the sprites at the same time so they should probably be one query
-        Battle__c Battle = [
-            SELECT Pokemon_1__r.Pokedex_Entry__r.Sprite_Back_URL__c
-            FROM Battle__c 
-            WHERE Id = :BattleId
-            LIMIT 1
-            ];
-        String imgUrl = string.valueOf(Battle.Pokemon_1__r.Pokedex_Entry__r.Sprite_Back_URL__c);
-
-        System.debug('Left Pkmn Img URL is: ' + imgUrl);
-        return imgUrl;
-    }
-
-    @AuraEnabled
-    public static string rightPkmnImgUrl(String BattleId){
-        Battle__c Battle = [
-            SELECT Pokemon_2__r.Pokedex_Entry__r.Sprite_Front_URL__c
-            FROM Battle__c 
-            WHERE Id = :BattleId
-            LIMIT 1
-            ];
-        String imgUrl = string.valueOf(Battle.Pokemon_2__r.Pokedex_Entry__r.Sprite_Front_URL__c);
-
-        System.debug('Right Pkmn Img URL is: ' + imgUrl);
-        return imgUrl;
-    }
-
-    @AuraEnabled
     public static List<Object> pkmnMoves(String BattleId, Integer Pkmn){
 
         if(Pkmn == 1){

@@ -55,26 +55,18 @@ export default class BattleWindow extends LightningElement {
     @api recordId;
     battleObject = BATTLE_OBJECT
 
-    //pokemon arent refreshing because the battle record hasn't changed
     @wire(getRecord, {
         recordId: '$recordId', 
         fields: [PKMN1_ID, PKMN2_ID, PKMN1_NAME, PKMN2_NAME, PKMN1_SPRITE, PKMN2_SPRITE, PKMN1_MAXHP, PKMN1_CURRHP, PKMN2_MAXHP, PKMN2_CURRHP, BATTLE_STATUS, VICTOR]})
     battleRecord;
 
-    // names and sprites
-    // I think these need to be done in a getter since it is possible to switch out the pokemon on the Battle record. 
-    get pkmn1NameField(){
-        return getFieldValue(this.battleRecord.data, PKMN1_NAME)
-    }
-    get pkmn2NameField(){
-        return getFieldValue(this.battleRecord.data, PKMN2_NAME)
-    }
     get pkmn1SpriteURL(){
         return getFieldValue(this.battleRecord.data, PKMN1_SPRITE)
     }
     get pkmn2SpriteURL(){
         return getFieldValue(this.battleRecord.data, PKMN2_SPRITE)
     }
+
     get victor(){
         if(getFieldValue(this.battleRecord.data, PKMN1_ID) === getFieldValue(this.battleRecord.data, VICTOR)){
             return getFieldValue(this.battleRecord.data, PKMN1_NAME)
@@ -83,7 +75,6 @@ export default class BattleWindow extends LightningElement {
         }
     }
 
-    // is fainted logic
     get pkmn1Id(){
         return getFieldValue(this.battleRecord.data, PKMN1_ID)
     }
