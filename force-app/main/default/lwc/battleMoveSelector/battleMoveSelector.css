@@ -6,8 +6,8 @@
 }
 
 .move-card{
-    background-color: #00a896; /* Teal border color */
-    padding: 2px; /* Emulates a border width when clipped */
+    background-color: var(--slds-g-color-brand-base-40);
+    padding: 3px; /* Emulates a border width when clipped */
     clip-path: polygon(
         15px 0%,                     /* Top-left corner cut */
         calc(100% - 15px) 0%,        /* Top-right corner cut */
@@ -20,13 +20,13 @@
 }
 
 .move-card.is-selected{
-    background-color: #02ffd0; 
-    box-shadow: 0 0 8px #02ffd0;
+    background-color: var(--slds-g-color-brand-base-65); 
+    box-shadow: 0 0 8px var(--slds-g-color-brand-base-65); 
 }
 
 .move-card-label{
     display: block;
-    background-color: #343d3e; /* Dark inner body */
+    background-color: var(--slds-g-color-surface-1);
     clip-path: polygon(
         15px 0%,                     /* Top-left corner cut */
         calc(100% - 15px) 0%,        /* Top-right corner cut */
@@ -47,7 +47,7 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
-    color: white
+    color: var(--slds-g-color-on-surface-2);
 }
 
 .move-card-header{
@@ -72,7 +72,7 @@
     font-size: 0.75rem;
     font-weight: bold;
     padding: 1px 6px;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--slds-g-color-on-surface-2);
     text-transform: uppercase;
     min-width: 60px;
     text-align: center;
