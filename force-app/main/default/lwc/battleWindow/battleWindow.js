@@ -82,6 +82,15 @@ export default class BattleWindow extends LightningElement {
         return getFieldValue(this.battleRecord.data, PKMN2_ID)
     }
 
+
+    //needed to pass names to child component
+    get pkmn1NameField(){
+        return getFieldValue(this.battleRecord.data, PKMN1_NAME)
+    }
+    get pkmn2NameField(){
+        return getFieldValue(this.battleRecord.data, PKMN2_NAME)
+    }
+
     //instantiate move set vars
     pkmn1MoveSet; pkmn2MoveSet;
     pkmn1MoveSelection; pkmn2MoveSelection;
