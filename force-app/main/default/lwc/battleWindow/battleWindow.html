@@ -46,11 +46,13 @@
 
     <!-- Moves -->
     <lightning-card>
+        
         <div class="slds-var-m-top_small slds-var-m-bottom_medium">
             
-            <div class="slds-grid slds-gutters">
+            <div class="move-selector-container">
+                
                 <!-- pkmn 1 moves -->
-                <div class="slds-col slds-size_1-of-2 slds-box">
+                <div class="move-selector slds-box">
                     <c-battle-move-selector 
                     pkmn-name={pkmn1NameField} 
                     move-list={pkmn1MoveSet}
@@ -59,13 +61,12 @@
                 </div>
                 
                 <!-- pkmn 2 moves -->
-                <div class="slds-col slds-size_1-of-2 slds-box">
+                <div class="move-selector slds-box">
                     <c-battle-move-selector 
                     pkmn-name={pkmn2NameField} 
                     move-list={pkmn2MoveSet}
                     onmoveselected={handlePkmn2MoveSelection}
                     ></c-battle-move-selector>    
-
                 </div>
             </div>
             

@@ -1,0 +1,10 @@
+.move-selector-container{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 0 16px
+}
+
+.move-selector{
+    flex: 1;
+}
