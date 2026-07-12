@@ -17,10 +17,9 @@
     <tabs>Pokedex_Entry__c</tabs>
     <tabs>Pokemon__c</tabs>
     <tabs>Battle__c</tabs>
-    <tabs>TM__c</tabs>
-    <tabs>Move__c</tabs>
     <tabs>Pokemon_Center</tabs>
     <tabs>Move_Trainer</tabs>
+    <tabs>TM__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Pokedex_UtilityBar</utilityBar>
     <workspaceConfig>
@@ -29,9 +28,6 @@
         </mappings>
         <mappings>
             <tab>Move_Trainer</tab>
-        </mappings>
-        <mappings>
-            <tab>Move__c</tab>
         </mappings>
         <mappings>
             <tab>Pokedex_Entry__c</tab>
