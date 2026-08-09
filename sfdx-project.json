@@ -1,12 +1,12 @@
 {
-"packageDirectories": [
+  "packageDirectories": [
     {
-    "path": "force-app",
-    "default": true
+      "path": "force-app",
+      "default": true
     }
-],
-"name": "PokeOrg",
-"namespace": "",
-"sfdcLoginUrl": "https://login.salesforce.com",
-"sourceApiVersion": "60.0"
+  ],
+  "name": "PokeOrg",
+  "namespace": "",
+  "sfdcLoginUrl": "https://cunning-badger-4d3h50-dev-ed.trailblaze.my.salesforce.com/",
+  "sourceApiVersion": "60.0"
 }
