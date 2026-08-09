@@ -1,0 +1,43 @@
+<template>
+  <div class="slds-grid slds-gutters">
+    <!-- existing Party Pkmn -->
+    <div class="slds-col slds-size_1-of-6">
+      <lightning-card title="Current Party">
+        <!-- inner div to enforce a min height for the component -->
+        <div class="slds-p-left_small" style="height: 600px">
+          <template for:each={currentPartyPkmn} for:item="pkmn">
+            <div key={pkmn.Id}>
+              <!-- sprite -->
+              <c-pkmn-sprite
+                pkmn-id={pkmn.Id}
+                height="80"
+                width="80"
+              ></c-pkmn-sprite>
+            </div>
+          </template>
+        </div>
+      </lightning-card>
+    </div>
+
+    <!-- all available pokemon -->
+    <div class="slds-col slds-size_5-of-6">
+      <lightning-card title="My Pokemon">
+        <!-- inner div to enforce a min height for the component -->
+        <div class="slds-p-left_small" style="height: 600px">
+          <div class="slds-grid slds-wrap slds-gutters">
+            <template for:each={nonCurrentPartyPkmn} for:item="pkmn">
+              <div key={pkmn.Id} class="slds-col slds-size_1-of-12">
+                <!-- sprite -->
+                <c-pkmn-sprite
+                  pkmn-id={pkmn.Id}
+                  height="80"
+                  width="80"
+                ></c-pkmn-sprite>
+              </div>
+            </template>
+          </div>
+        </div>
+      </lightning-card>
+    </div>
+  </div>
+</template>
