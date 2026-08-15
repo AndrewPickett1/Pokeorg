@@ -16,6 +16,7 @@ public with sharing class BattleService {
         List<Move__c> moveRecords = [SELECT 
             Id, 
             Pokemon__c, 
+            PP__c,
             TM__r.Category__c, 
             TM__r.Power__c,
             TM__r.Type__c,
@@ -61,73 +62,22 @@ public with sharing class BattleService {
         }
     }
     
-    public Map<String, Map<String, String>> turnCalc(Id pkmn1Move, Id pkmn2Move){
+    public void turnCalc(Id pkmn1Move, Id pkmn2Move){
         
-        // finds first mover
-        moveOrderCalc(this.pkmn1, this.pkmn2);
+        determineMoveOrder(this.pkmn1, this.pkmn2);
 
-        //Maps of turn info
-        Map<String, Map<String, String>> turnInfoMap = new Map<String, Map<String, String>>();
-
-        applyTurn(this.firstMover, this.secondMover, this.firstMoverAttack, turnInfoMap);
-        applyTurn(this.secondMover, this.firstMover, this.secondMoverAttack, turnInfoMap);
+        applyTurn(this.firstMover, this.secondMover, this.firstMoverAttack);
+        applyTurn(this.secondMover, this.firstMover, this.secondMoverAttack);
         
+        update this.pkmn1;
+        update this.pkmn2;
 
-        //checks whether or not the pkmns HP has 0 or below HP. If so, set to 0
-        if(pkmn1.Current_HP__c <= 0){
-            System.debug('finish the battle here');
-            System.debug('Winner: Pkmn 2');
-            //prevents pokemons HP from going below 0
-            pkmn1.Current_HP__c = 0;
-            update pkmn1;
-            update pkmn2;
-
-        } else if(pkmn2.Current_HP__c <= 0) {
-            System.debug('finish the battle here');
-            System.debug('Winner: Pkmn 1');
-            //prevents pokemons HP from going below 0
-            pkmn2.Current_HP__c = 0;
-            update pkmn1;
-            update pkmn2;
-
-        } else {
-            update pkmn1;
-            update pkmn2;
-        }
-        
-        System.debug(turnInfoMap);
-        return turnInfoMap;
-
-        // Idea: Flow orchestration for prompting move selections from multiple users
-    }
-
-    private Boolean eligibleToAttack(Pokemon__c pkmn){
-        return pkmn.Current_HP__c > 0 && pkmn.Status__c != 'Sleep';
-    }
-
-    public void decrementPP(Move__c pkmn1Move, Move__c pkmn2Move){
-        List<Move__c> movesToUpdate = new List<Move__c>();
-
-        if(pkmn1Move.PP__c > 0){
-            pkmn1Move.PP__c -= 1;
-            movesToUpdate.add(pkmn1Move);
-        }
-
-        if(pkmn2Move.PP__c > 0){
-            pkmn2Move.PP__c -= 1;
-            movesToUpdate.add(pkmn2Move);
-        }
-
-        if(!movesToUpdate.isEmpty()){
-            update movesToUpdate;
-        }
-
-        System.debug('DEcrementing PP');
+        update this.pkmn1Move;
+        update this.pkmn2Move;
     }
 
     private Integer damageCalc(Pokemon__c attackingPkmn, Pokemon__c defendingPkmn, Move__c move){
         Decimal damage = 0;
-        
         
         if(move.TM__r.Category__c == 'Status Modifier'){
             //Status Modifier
@@ -162,7 +112,15 @@ public with sharing class BattleService {
         return Integer.valueOf(damage);
     }
 
-    private void moveOrderCalc(Pokemon__c pkmn1, Pokemon__c pkmn2){
+    private Boolean eligibleToAttack(Pokemon__c pkmn){
+        return pkmn.Current_HP__c > 0 && pkmn.Status__c != 'Sleep';
+    }
+
+    public void decrementPP(Move__c move){
+            move.PP__c -= 1;
+    }
+
+    private void determineMoveOrder(Pokemon__c pkmn1, Pokemon__c pkmn2){
         
         if(pkmn1.Pokedex_Entry__r.Speed__c > pkmn1.Pokedex_Entry__r.Speed__c){
             this.firstMover = pkmn1;
@@ -182,21 +140,12 @@ public with sharing class BattleService {
         System.debug('Second Mover: ' + this.secondMover);
     }
 
-    private void applyTurn(Pokemon__c attackingPkmn, Pokemon__c defendingPokemon, Move__c move, Map<String, Map<String, String>> turnInfoMap){
+    private void applyTurn(Pokemon__c attackingPkmn, Pokemon__c defendingPokemon, Move__c move){
         
         if(!eligibleToAttack(attackingPkmn)) return;
-        
-        Integer dmg = 0;
-        dmg = damageCalc(attackingPkmn, defendingPokemon, move);
-        defendingPokemon.Current_HP__c -= dmg;
+        defendingPokemon.Current_HP__c -=  damageCalc(attackingPkmn, defendingPokemon, move);
+        decrementPP(move);
 
-        //creats map of key info from this pokemons turn
-        Map<String, String> turnInfo = new Map<String, String>{
-            'attackingPkmn' => attackingPkmn.Pokedex_Entry__r.Name,
-            'move' => move.TM__r.Name,
-            'dmg' => String.valueOf(dmg)
-        };
-        turnInfoMap.put(attackingPkmn.Pokedex_Entry__r.Name, turnInfo);
 
     }
 

@@ -1,10 +1,5 @@
-//to do:
-// Buttons should have visual selection
-// moves should be accessed via a wire
-// toast event/page refresh on move submission
-
 import { LightningElement, api, wire } from 'lwc';
-import { getRecord, getFieldValue, getRecordNotifyChange } from 'lightning/uiRecordApi';
+import { getRecord, getFieldValue } from 'lightning/uiRecordApi';
 
 //need to use custom css from static resource
 import {loadStyle} from 'lightning/platformResourceLoader';
@@ -32,12 +27,8 @@ import VICTORY_WINDOW from './battleVictoryWindow.html';
 
 import getPkmnMoveList from '@salesforce/apex/battleWindowController.pkmnMoves';
 import battleClass from '@salesforce/apex/battleClass.turnCalc';
-import decrementPP from '@salesforce/apex/battleClass.decrementPP';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import {RefreshEvent} from 'lightning/refresh'
-
-import { getRelatedListRecords } from 'lightning/uiRelatedListApi';
-
 
 export default class BattleWindow extends LightningElement {
     
@@ -182,18 +173,6 @@ export default class BattleWindow extends LightningElement {
         .catch((error) => {
             console.log('error occurred')
             console.error(error);
-        })
-        
-        decrementPP({
-            pkmn1Move: this.pkmn1MoveSelection,
-            pkmn2Move: this.pkmn2MoveSelection
-        })
-        .then((result) => {
-            console.log('PP Decremented')
-            this.dispatchEvent(new RefreshEvent());
-        })
-        .catch((error) => {
-            console.log('error decrementing')
         })
 
         
