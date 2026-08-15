@@ -1,101 +1,77 @@
 public with sharing class BattleService {
+    private Move__c pkmn1Move;
+    private Move__c pkmn2Move;
+
+    private Pokemon__c pkmn1;
+    private Pokemon__c pkmn2;
+
+    private Pokemon__c firstMover;
+    private Pokemon__c secondMover;
+
+    private Move__c firstMoverAttack;
+    private Move__c secondMoverAttack;
+
+
+    public BattleService(Id pkmn1MoveId, Id pkmn2MoveId){
+        List<Move__c> moveRecords = [SELECT 
+            Id, 
+            Pokemon__c, 
+            TM__r.Category__c, 
+            TM__r.Power__c,
+            TM__r.Type__c,
+            TM__r.Name,
+            TM__r.Status_Modifier__c
+            FROM Move__c 
+            WHERE (Id = :pkmn1MoveId OR Id = :pkmn2MoveId)
+            LIMIT 2
+            ];
+        
+        for(Move__c move : moveRecords){
+            if(move.Id == pkmn1MoveId){
+                this.pkmn1Move = move;
+            } else {
+                this.pkmn2Move = move;
+            }
+        }
+
+        List<Pokemon__c> pkmnRecords = [
+            SELECT 
+            Id, 
+            Pokedex_Entry__r.Speed__c, 
+            Pokedex_Entry__r.Attack__c, 
+            Pokedex_Entry__r.Defense__c, 
+            Pokedex_Entry__r.Sp_Attack__c,
+            Pokedex_Entry__r.Sp_Defense__c,
+            Pokedex_Entry__r.Type__c,
+            Pokedex_Entry__r.Name,
+            Current_HP__c, 
+            Status__c,
+            Level__c
+            FROM Pokemon__c 
+            WHERE (Id = :this.pkmn1Move.Pokemon__c OR Id = :this.pkmn2Move.Pokemon__c)
+            LIMIT 2
+            ];
+
+        for(Pokemon__c pkmn : pkmnRecords){
+            if(pkmn.Id == this.pkmn1Move.Pokemon__c){
+                this.pkmn1 = pkmn;
+            } else {
+                this.pkmn2 = pkmn;
+            }
+        }
+    }
     
     public Map<String, Map<String, String>> turnCalc(Id pkmn1Move, Id pkmn2Move){
-
-        //I wonder if these queries should be done in a constructor
-        // querys moves used
-        Move__c pkmn1MoveRec = [
-            SELECT 
-            Id, 
-            Pokemon__c, 
-            TM__r.Category__c, 
-            TM__r.Power__c,
-            TM__r.Type__c,
-            TM__r.Name,
-            TM__r.Status_Modifier__c
-            FROM Move__c 
-            WHERE Id = :pkmn1Move 
-            LIMIT 1
-            ];
-        Move__c pkmn2MoveRec = [
-            SELECT 
-            Id, 
-            Pokemon__c, 
-            TM__r.Category__c, 
-            TM__r.Power__c,
-            TM__r.Type__c,
-            TM__r.Name,
-            TM__r.Status_Modifier__c
-            FROM Move__c 
-            WHERE Id = :pkmn2Move 
-            LIMIT 1
-            ];
-        System.debug('Pkmn 1 Move: ' + pkmn1MoveRec);
-        System.debug('Pkmn 2 Move: ' + pkmn2MoveRec);
         
-        // querys pokemon
-        Pokemon__c pkmn1 = [
-            SELECT 
-            Id, 
-            Pokedex_Entry__r.Speed__c, 
-            Pokedex_Entry__r.Attack__c, 
-            Pokedex_Entry__r.Defense__c, 
-            Pokedex_Entry__r.Sp_Attack__c,
-            Pokedex_Entry__r.Sp_Defense__c,
-            Pokedex_Entry__r.Type__c,
-            Pokedex_Entry__r.Name,
-            Current_HP__c, 
-            Level__c
-            FROM Pokemon__c 
-            WHERE Id = :pkmn1MoveRec.Pokemon__c
-            ];
-        Pokemon__c pkmn2 = [
-            SELECT
-            Id, 
-            Pokedex_Entry__r.Speed__c, 
-            Pokedex_Entry__r.Attack__c, 
-            Pokedex_Entry__r.Defense__c, 
-            Pokedex_Entry__r.Sp_Attack__c,
-            Pokedex_Entry__r.Sp_Defense__c,
-            Pokedex_Entry__r.Type__c,
-            Pokedex_Entry__r.Name,
-            Current_HP__c, 
-            Level__c
-            FROM Pokemon__c 
-            WHERE Id = :pkmn2MoveRec.Pokemon__c
-            ];
-        System.debug('Pkmn 1 Name: ' + pkmn1.Pokedex_Entry__r.Name);
-        System.debug('Pkmn 2 Name: ' + pkmn2.Pokedex_Entry__r.Name);
-
         // finds first mover
-        Pokemon__c firstMover = moveOrderCalc(pkmn1, pkmn2);
+        moveOrderCalc(this.pkmn1, this.pkmn2);
 
         //Maps of turn info
         Map<String, Map<String, String>> turnInfoMap = new Map<String, Map<String, String>>();
 
-        if(pkmn1 == firstMover){
-            //pkmn1 moves first
-            applyTurn(pkmn1, pkmn2, pkmn1MoveRec, turnInfoMap);
-            
-            //pkmn2 moves second
-            if (pkmn2.Current_HP__c > 0) {
-                applyTurn(pkmn2, pkmn1, pkmn2MoveRec, turnInfoMap);
-            } else {
-                system.debug('Battle Complete: pkmn 2 fainted');
-            }
+        applyTurn(this.firstMover, this.secondMover, this.firstMoverAttack, turnInfoMap);
+        applyTurn(this.secondMover, this.firstMover, this.secondMoverAttack, turnInfoMap);
         
-        } else {
-            
-            //pkmn2 moves first
-            applyTurn(pkmn2, pkmn1, pkmn2MoveRec, turnInfoMap);
-
-            //pkmn1 moves second
-            if(pkmn1.Current_HP__c > 0){
-                applyTurn(pkmn1, pkmn2, pkmn1MoveRec, turnInfoMap);
-            } else {
-                system.debug('Battle Complete: pkmn 1 fainted');
-            }
-        }
 
         //checks whether or not the pkmns HP has 0 or below HP. If so, set to 0
         if(pkmn1.Current_HP__c <= 0){
@@ -123,6 +99,10 @@ public with sharing class BattleService {
         return turnInfoMap;
 
         // Idea: Flow orchestration for prompting move selections from multiple users
+    }
+
+    private Boolean eligibleToAttack(Pokemon__c pkmn){
+        return pkmn.Current_HP__c > 0 && pkmn.Status__c != 'Sleep';
     }
 
     public void decrementPP(Move__c pkmn1Move, Move__c pkmn2Move){
@@ -182,27 +162,33 @@ public with sharing class BattleService {
         return Integer.valueOf(damage);
     }
 
-    private Pokemon__c moveOrderCalc(Pokemon__c pkmn1, Pokemon__c pkmn2){
+    private void moveOrderCalc(Pokemon__c pkmn1, Pokemon__c pkmn2){
         
         if(pkmn1.Pokedex_Entry__r.Speed__c > pkmn1.Pokedex_Entry__r.Speed__c){
-            System.debug('First Mover: Pkmn 1');
-            return pkmn1;
+            this.firstMover = pkmn1;
+            this.secondMover = pkmn2;
+
+            this.firstMoverAttack = this.pkmn1Move;
+            this.secondMoverAttack = this.pkmn2Move;
         } else {
-            System.debug('First Mover: Pkmn 2');
-            return pkmn2;
+            this.firstMover = pkmn2; 
+            this.secondMover= pkmn1; 
+
+            this.firstMoverAttack = this.pkmn2Move;
+            this.secondMoverAttack = this.pkmn1Move;
         }
+
+        System.debug('First Mover: ' + this.firstMover);
+        System.debug('Second Mover: ' + this.secondMover);
     }
 
     private void applyTurn(Pokemon__c attackingPkmn, Pokemon__c defendingPokemon, Move__c move, Map<String, Map<String, String>> turnInfoMap){
+        
+        if(!eligibleToAttack(attackingPkmn)) return;
+        
         Integer dmg = 0;
         dmg = damageCalc(attackingPkmn, defendingPokemon, move);
         defendingPokemon.Current_HP__c -= dmg;
-
-        System.debug('Attacking Pokemon: ' + attackingPkmn.Pokedex_Entry__r.Name);
-        System.debug('Defending Pokemon: ' + defendingPokemon.Pokedex_Entry__r.Name);
-        System.debug('Move: ' + move.TM__r.Name);
-        System.debug('Damage: ' + dmg);
-        System.debug('Defending Pokemon HP: ' + defendingPokemon.Current_HP__c);
 
         //creats map of key info from this pokemons turn
         Map<String, String> turnInfo = new Map<String, String>{
