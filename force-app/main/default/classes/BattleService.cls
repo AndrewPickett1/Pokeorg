@@ -122,7 +122,7 @@ public with sharing class BattleService {
 
     private void determineMoveOrder(Pokemon__c pkmn1, Pokemon__c pkmn2){
         
-        if(pkmn1.Pokedex_Entry__r.Speed__c > pkmn1.Pokedex_Entry__r.Speed__c){
+        if(pkmn1.Pokedex_Entry__r.Speed__c > pkmn2.Pokedex_Entry__r.Speed__c){
             this.firstMover = pkmn1;
             this.secondMover = pkmn2;
 
