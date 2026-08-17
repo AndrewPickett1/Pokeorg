@@ -62,7 +62,7 @@ public with sharing class BattleService {
         }
     }
     
-    public void turnCalc(Id pkmn1Move, Id pkmn2Move){
+    public void turnCalc(){
         
         determineMoveOrder(this.pkmn1, this.pkmn2);
 
@@ -120,6 +120,7 @@ public with sharing class BattleService {
             move.PP__c -= 1;
     }
 
+    //todo - add tie conditions
     private void determineMoveOrder(Pokemon__c pkmn1, Pokemon__c pkmn2){
         
         if(pkmn1.Pokedex_Entry__r.Speed__c > pkmn2.Pokedex_Entry__r.Speed__c){
@@ -147,10 +148,5 @@ public with sharing class BattleService {
         decrementPP(move);
 
 
-    }
-
-    //random num generator for move selection
-    private Integer randomIntGen(Integer max){
-        return Integer.valueOf(math.random() * max);
     }
 }
